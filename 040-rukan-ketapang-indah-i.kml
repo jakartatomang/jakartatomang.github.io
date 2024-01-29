@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns = "http://earth.google.com/kml/2.0">
+<Document>
+<Placemark><name>RUKAN KETAPANG INDAH I</name>
+<Polygon><innerBoundaryIs>
+<LinearRing>
+<coordinates>
+         106.8139919,-6.1597043
+106.8140859,-6.1597461
+106.8142763,-6.1599355
+106.8143327,-6.1603755
+106.8146448,-6.1603462
+106.8159707,-6.1601623
+106.8167137,-6.1600503
+106.8167673,-6.160045
+106.8175827,-6.1599276
+106.8176122,-6.159917
+106.8175854,-6.1596876
+106.8175291,-6.1592609
+106.8171321,-6.1593143
+106.8156891,-6.1595436
+106.8156703,-6.1593516
+106.8155362,-6.1593676
+106.8155255,-6.1592396
+106.8154289,-6.1592476
+106.8154155,-6.1591489
+106.8148147,-6.1592129
+106.814702,-6.1592663
+106.814525,-6.1593116
+106.8142863,-6.1593409
+106.8139919,-6.1597043
+        </coordinates>
+</LinearRing>
+</innerBoundaryIs>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+106.7780382,-6.1630476,0
+106.7788107,-6.188946,0
+106.8261034,-6.188178,0
+106.8249017,-6.1626636,0
+106.7780382,-6.1630476,0
+</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+<Style>
+<LineStyle>
+<color>ff424242</color>
+<width>3</width>
+</LineStyle>
+<PolyStyle>
+<color>4d424242</color>
+<fill>1</fill>
+<outline>0</outline>
+</PolyStyle>
+</Style>
+</Placemark>
+</Document>
+</kml>

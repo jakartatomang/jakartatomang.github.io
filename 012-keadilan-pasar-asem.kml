@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns = "http://earth.google.com/kml/2.0">
+<Document>
+<Placemark><name>KEADILAN PASAR ASEM</name>
+<Polygon><innerBoundaryIs>
+<LinearRing>
+<coordinates>
+         106.8120063,-6.1462617
+106.8117937,-6.1463303
+106.8117833,-6.1463813
+106.8117635,-6.1464056
+106.8114326,-6.1465276
+106.8114061,-6.146527
+106.8113854,-6.1465363
+106.8114246,-6.146644
+106.8115034,-6.1468723
+106.8115506,-6.14701
+106.8116073,-6.1471384
+106.8119265,-6.1470327
+106.812243,-6.146959
+106.8121659,-6.146701
+106.8120854,-6.1464303
+106.8120063,-6.1462617
+        </coordinates>
+</LinearRing>
+</innerBoundaryIs>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+106.7780382,-6.1630476,0
+106.7788107,-6.188946,0
+106.8261034,-6.188178,0
+106.8249017,-6.1626636,0
+106.7780382,-6.1630476,0
+</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+<Style>
+<LineStyle>
+<color>ff424242</color>
+<width>3</width>
+</LineStyle>
+<PolyStyle>
+<color>4d424242</color>
+<fill>1</fill>
+<outline>0</outline>
+</PolyStyle>
+</Style>
+</Placemark>
+</Document>
+</kml>

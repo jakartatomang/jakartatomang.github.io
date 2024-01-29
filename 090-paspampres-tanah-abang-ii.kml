@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns = "http://earth.google.com/kml/2.0">
+<Document>
+<Placemark><name>PASPAMPRES TANAH ABANG II</name>
+<Polygon><innerBoundaryIs>
+<LinearRing>
+<coordinates>
+         106.8155505,-6.1730837
+106.8156417,-6.1735477
+106.8157436,-6.1740064
+106.8157651,-6.1743744
+106.8157651,-6.1754357
+106.817192,-6.1754784
+106.8179752,-6.1755371
+106.8188657,-6.1756064
+106.8192466,-6.1756651
+106.8194075,-6.1749611
+106.8195255,-6.1742677
+106.8191929,-6.1741771
+106.818222,-6.1738571
+106.81753,-6.1736491
+106.8172832,-6.1735584
+106.8165161,-6.1730731
+106.8163659,-6.1728864
+106.8160226,-6.1729504
+106.8155505,-6.1730837
+        </coordinates>
+</LinearRing>
+</innerBoundaryIs>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+106.7780382,-6.1630476,0
+106.7788107,-6.188946,0
+106.8261034,-6.188178,0
+106.8249017,-6.1626636,0
+106.7780382,-6.1630476,0
+</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+<Style>
+<LineStyle>
+<color>ff424242</color>
+<width>3</width>
+</LineStyle>
+<PolyStyle>
+<color>4d424242</color>
+<fill>1</fill>
+<outline>0</outline>
+</PolyStyle>
+</Style>
+</Placemark>
+</Document>
+</kml>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns = "http://earth.google.com/kml/2.0">
+<Document>
+<Placemark><name>PETOJO BINATU, KAJI</name>
+<Polygon><innerBoundaryIs>
+<LinearRing>
+<coordinates>
+         106.8154041,-6.1678672
+106.8158199,-6.1694565
+106.8159352,-6.1700112
+106.8172441,-6.1697872
+106.8172119,-6.1695219
+106.8171047,-6.1690965
+106.8168579,-6.1683205
+106.816654,-6.1677179
+106.8165126,-6.1677192
+106.8164686,-6.1676826
+106.8160385,-6.1677206
+106.8156482,-6.1677872
+106.8154041,-6.1678672
+        </coordinates>
+</LinearRing>
+</innerBoundaryIs>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+106.7780382,-6.1630476,0
+106.7788107,-6.188946,0
+106.8261034,-6.188178,0
+106.8249017,-6.1626636,0
+106.7780382,-6.1630476,0
+</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+<Style>
+<LineStyle>
+<color>ff424242</color>
+<width>3</width>
+</LineStyle>
+<PolyStyle>
+<color>4d424242</color>
+<fill>1</fill>
+<outline>0</outline>
+</PolyStyle>
+</Style>
+</Placemark>
+</Document>
+</kml>

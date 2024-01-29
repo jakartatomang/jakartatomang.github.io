@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns = "http://earth.google.com/kml/2.0">
+<Document>
+<Placemark><name>CHANDRA DAN SEKITARNYA</name>
+<Polygon><innerBoundaryIs>
+<LinearRing>
+<coordinates>
+         106.8136527,-6.1418736
+106.813366,-6.1416959
+106.8130579,-6.1415183
+106.8127337,-6.1413472
+106.8123437,-6.1411482
+106.812049,-6.1413319
+106.8117033,-6.1415263
+106.8113925,-6.1417526
+106.8111863,-6.1418749
+106.8115887,-6.1422296
+106.8118274,-6.142387
+106.8120554,-6.142519
+106.8120789,-6.142539
+106.8120916,-6.1425696
+106.8120842,-6.142597
+106.8120688,-6.142627
+106.8119574,-6.142843
+106.8124007,-6.1430403
+106.8129804,-6.1433176
+106.8130679,-6.1433536
+106.8131464,-6.1431303
+106.8133975,-6.142504
+106.8135271,-6.1421868
+106.8136527,-6.1418736
+        </coordinates>
+</LinearRing>
+</innerBoundaryIs>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+106.7780382,-6.1630476,0
+106.7788107,-6.188946,0
+106.8261034,-6.188178,0
+106.8249017,-6.1626636,0
+106.7780382,-6.1630476,0
+</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+<Style>
+<LineStyle>
+<color>ff424242</color>
+<width>3</width>
+</LineStyle>
+<PolyStyle>
+<color>4d424242</color>
+<fill>1</fill>
+<outline>0</outline>
+</PolyStyle>
+</Style>
+</Placemark>
+</Document>
+</kml>

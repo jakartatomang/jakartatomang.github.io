@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns = "http://earth.google.com/kml/2.0">
+<Document>
+<Placemark><name>KEMENANGAN RAYA</name>
+<Polygon><innerBoundaryIs>
+<LinearRing>
+<coordinates>
+         106.8118294,-6.1445525
+106.8117302,-6.1449312
+106.8117329,-6.1450125
+106.8117101,-6.1450985
+106.8116685,-6.1453205
+106.8118308,-6.1453445
+106.8119394,-6.1453739
+106.8120279,-6.1453792
+106.8120896,-6.1453899
+106.8124571,-6.1455046
+106.8126395,-6.1448112
+106.8124973,-6.1447619
+106.8118294,-6.1445525
+        </coordinates>
+</LinearRing>
+</innerBoundaryIs>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+106.7780382,-6.1630476,0
+106.7788107,-6.188946,0
+106.8261034,-6.188178,0
+106.8249017,-6.1626636,0
+106.7780382,-6.1630476,0
+</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+<Style>
+<LineStyle>
+<color>ff424242</color>
+<width>3</width>
+</LineStyle>
+<PolyStyle>
+<color>4d424242</color>
+<fill>1</fill>
+<outline>0</outline>
+</PolyStyle>
+</Style>
+</Placemark>
+</Document>
+</kml>

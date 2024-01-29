@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns = "http://earth.google.com/kml/2.0">
+<Document>
+<Placemark><name>PASAR GLODOK</name>
+<Polygon><innerBoundaryIs>
+<LinearRing>
+<coordinates>
+         106.8137595,-6.1424331
+106.8136764,-6.1426171
+106.8136375,-6.1427118
+106.8136174,-6.1428091
+106.8136362,-6.1428518
+106.813663,-6.1428811
+106.8138863,-6.1429638
+106.8143509,-6.1431104
+106.8145687,-6.1432017
+106.8146062,-6.143279
+106.8147946,-6.143361
+106.8149831,-6.1434271
+106.8148006,-6.1427617
+106.8147078,-6.142708
+106.8146712,-6.142657
+106.8145794,-6.1425456
+106.8142586,-6.142318
+106.8140493,-6.1421662
+106.8139392,-6.1420971
+106.8137595,-6.1424331
+        </coordinates>
+</LinearRing>
+</innerBoundaryIs>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+106.7780382,-6.1630476,0
+106.7788107,-6.188946,0
+106.8261034,-6.188178,0
+106.8249017,-6.1626636,0
+106.7780382,-6.1630476,0
+</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+<Style>
+<LineStyle>
+<color>ff424242</color>
+<width>3</width>
+</LineStyle>
+<PolyStyle>
+<color>4d424242</color>
+<fill>1</fill>
+<outline>0</outline>
+</PolyStyle>
+</Style>
+</Placemark>
+</Document>
+</kml>
