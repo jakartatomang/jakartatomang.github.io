@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns = "http://earth.google.com/kml/2.0">
+<Document>
+<Placemark><name>KATALIA 1 – KATALIA 6</name>
+<Polygon><innerBoundaryIs>
+<LinearRing>
+<coordinates>
+         106.7981525,-6.182872
+106.7981686,-6.18348
+106.7981901,-6.1837573
+106.8001776,-6.1836507
+106.8001347,-6.1833627
+106.8001266,-6.182824
+106.8001079,-6.1824373
+106.800529,-6.1824053
+106.8004914,-6.1820614
+106.8004404,-6.182048
+106.8002822,-6.1820667
+106.7999952,-6.1821414
+106.7996948,-6.1822214
+106.7993193,-6.1823254
+106.7990162,-6.1823867
+106.7986246,-6.1824507
+106.7985978,-6.1824747
+106.7986139,-6.182848
+106.7981525,-6.182872
+        </coordinates>
+</LinearRing>
+</innerBoundaryIs>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+106.7780382,-6.1630476,0
+106.7788107,-6.188946,0
+106.8261034,-6.188178,0
+106.8249017,-6.1626636,0
+106.7780382,-6.1630476,0
+</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+<Style>
+<LineStyle>
+<color>ff424242</color>
+<width>3</width>
+</LineStyle>
+<PolyStyle>
+<color>4d424242</color>
+<fill>1</fill>
+<outline>0</outline>
+</PolyStyle>
+</Style>
+</Placemark>
+</Document>
+</kml>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns = "http://earth.google.com/kml/2.0">
+<Document>
+<Placemark><name>MANDALA SELATAN 6 – MANDALA SELATAN 2</name>
+<Polygon><innerBoundaryIs>
+<LinearRing>
+<coordinates>
+         106.7987636,-6.1721601
+106.7986402,-6.1724454
+106.7985463,-6.1726961
+106.8002764,-6.1736321
+106.8003729,-6.1733388
+106.7999947,-6.1731521
+106.8001691,-6.1728668
+106.7989996,-6.1722641
+106.7987636,-6.1721601
+        </coordinates>
+</LinearRing>
+</innerBoundaryIs>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+106.7780382,-6.1630476,0
+106.7788107,-6.188946,0
+106.8261034,-6.188178,0
+106.8249017,-6.1626636,0
+106.7780382,-6.1630476,0
+</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+<Style>
+<LineStyle>
+<color>ff424242</color>
+<width>3</width>
+</LineStyle>
+<PolyStyle>
+<color>4d424242</color>
+<fill>1</fill>
+<outline>0</outline>
+</PolyStyle>
+</Style>
+</Placemark>
+</Document>
+</kml>

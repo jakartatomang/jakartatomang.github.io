@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns = "http://earth.google.com/kml/2.0">
+<Document>
+<Placemark><name>KALI ANYAR – SETIA KAWAN</name>
+<Polygon><innerBoundaryIs>
+<LinearRing>
+<coordinates>
+         106.7995213,-6.16368
+106.8005996,-6.1632373
+106.8018066,-6.162736
+106.8017583,-6.16176
+106.8017261,-6.1610186
+106.8016818,-6.160144
+106.8015303,-6.1601439
+106.8015075,-6.1598559
+106.8009644,-6.1598399
+106.8007337,-6.1601332
+106.8004977,-6.160336
+106.8001973,-6.1605332
+106.7998271,-6.1607146
+106.7993818,-6.1609333
+106.7989473,-6.1611306
+106.7985075,-6.161312
+106.7987703,-6.1619039
+106.7991512,-6.1628266
+106.7993712,-6.16336
+106.7995213,-6.16368
+        </coordinates>
+</LinearRing>
+</innerBoundaryIs>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+106.7780382,-6.1630476,0
+106.7788107,-6.188946,0
+106.8261034,-6.188178,0
+106.8249017,-6.1626636,0
+106.7780382,-6.1630476,0
+</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+<Style>
+<LineStyle>
+<color>ff424242</color>
+<width>3</width>
+</LineStyle>
+<PolyStyle>
+<color>4d424242</color>
+<fill>1</fill>
+<outline>0</outline>
+</PolyStyle>
+</Style>
+</Placemark>
+</Document>
+</kml>

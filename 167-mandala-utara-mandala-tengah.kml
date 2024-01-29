@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns = "http://earth.google.com/kml/2.0">
+<Document>
+<Placemark><name>MANDALA UTARA – MANDALA TENGAH</name>
+<Polygon><innerBoundaryIs>
+<LinearRing>
+<coordinates>
+         106.7981627,-6.1724769
+106.7984899,-6.1726609
+106.7986804,-6.1721862
+106.798726,-6.1720662
+106.7989352,-6.1717089
+106.799198,-6.1714289
+106.7994073,-6.1713089
+106.7996674,-6.1712102
+106.8000295,-6.1711249
+106.800338,-6.1709889
+106.8001234,-6.1706049
+106.800051,-6.1706609
+106.7996272,-6.1707942
+106.7991659,-6.1709142
+106.7987072,-6.1712902
+106.7985463,-6.1714982
+106.7983907,-6.1717462
+106.7983102,-6.1720022
+106.7981627,-6.1724769
+        </coordinates>
+</LinearRing>
+</innerBoundaryIs>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+106.7780382,-6.1630476,0
+106.7788107,-6.188946,0
+106.8261034,-6.188178,0
+106.8249017,-6.1626636,0
+106.7780382,-6.1630476,0
+</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+<Style>
+<LineStyle>
+<color>ff424242</color>
+<width>3</width>
+</LineStyle>
+<PolyStyle>
+<color>4d424242</color>
+<fill>1</fill>
+<outline>0</outline>
+</PolyStyle>
+</Style>
+</Placemark>
+</Document>
+</kml>

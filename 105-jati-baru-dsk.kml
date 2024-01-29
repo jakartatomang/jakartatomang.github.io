@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns = "http://earth.google.com/kml/2.0">
+<Document>
+<Placemark><name>JATI BARU DSK</name>
+<Polygon><innerBoundaryIs>
+<LinearRing>
+<coordinates>
+         106.8103216,-6.1823409
+106.8105147,-6.1837382
+106.8104932,-6.1838182
+106.8105898,-6.1847301
+106.8112389,-6.1842821
+106.8119631,-6.1836155
+106.8127409,-6.1829115
+106.8130789,-6.1826342
+106.8132935,-6.1824262
+106.8133203,-6.1822395
+106.8133364,-6.1820422
+106.813331,-6.1818875
+106.8132237,-6.1816262
+106.8131111,-6.1814929
+106.8129984,-6.1814075
+106.8128536,-6.1813542
+106.8121187,-6.1813595
+106.8120972,-6.1819515
+106.8119631,-6.1822982
+106.8118558,-6.1822822
+106.8103216,-6.1823409
+        </coordinates>
+</LinearRing>
+</innerBoundaryIs>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+106.7780382,-6.1630476,0
+106.7788107,-6.188946,0
+106.8261034,-6.188178,0
+106.8249017,-6.1626636,0
+106.7780382,-6.1630476,0
+</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+<Style>
+<LineStyle>
+<color>ff424242</color>
+<width>3</width>
+</LineStyle>
+<PolyStyle>
+<color>4d424242</color>
+<fill>1</fill>
+<outline>0</outline>
+</PolyStyle>
+</Style>
+</Placemark>
+</Document>
+</kml>

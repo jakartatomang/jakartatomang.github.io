@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns = "http://earth.google.com/kml/2.0">
+<Document>
+<Placemark><name>S. PARMAN – GELONG BARU SELATAN 2</name>
+<Polygon><innerBoundaryIs>
+<LinearRing>
+<coordinates>
+         106.793635,-6.1754027
+106.7932703,-6.1758134
+106.7950244,-6.1774507
+106.7958371,-6.1783547
+106.7959498,-6.1785173
+106.7961804,-6.1789067
+106.796281,-6.178984
+106.7963957,-6.17904
+106.7965711,-6.179068
+106.7968537,-6.17892
+106.7966176,-6.1785333
+106.7966069,-6.1784907
+106.7966069,-6.178448
+106.7966337,-6.1784187
+106.7966767,-6.1783893
+106.7971729,-6.1781573
+106.7979105,-6.1777734
+106.7973821,-6.1769547
+106.7972641,-6.1767147
+106.7957996,-6.1774374
+106.7947401,-6.176456
+106.793635,-6.1754027
+        </coordinates>
+</LinearRing>
+</innerBoundaryIs>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+106.7780382,-6.1630476,0
+106.7788107,-6.188946,0
+106.8261034,-6.188178,0
+106.8249017,-6.1626636,0
+106.7780382,-6.1630476,0
+</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+<Style>
+<LineStyle>
+<color>ff424242</color>
+<width>3</width>
+</LineStyle>
+<PolyStyle>
+<color>4d424242</color>
+<fill>1</fill>
+<outline>0</outline>
+</PolyStyle>
+</Style>
+</Placemark>
+</Document>
+</kml>

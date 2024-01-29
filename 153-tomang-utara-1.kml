@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns = "http://earth.google.com/kml/2.0">
+<Document>
+<Placemark><name>TOMANG UTARA 1</name>
+<Polygon><innerBoundaryIs>
+<LinearRing>
+<coordinates>
+         106.8011602,-6.1689649
+106.8018347,-6.1685525
+106.8012595,-6.1677089
+106.8006345,-6.1668022
+106.7999586,-6.1671995
+106.799913,-6.1672475
+106.8000391,-6.1673649
+106.8004066,-6.1678928
+106.8011602,-6.1689649
+        </coordinates>
+</LinearRing>
+</innerBoundaryIs>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+106.7780382,-6.1630476,0
+106.7788107,-6.188946,0
+106.8261034,-6.188178,0
+106.8249017,-6.1626636,0
+106.7780382,-6.1630476,0
+</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+<Style>
+<LineStyle>
+<color>ff424242</color>
+<width>3</width>
+</LineStyle>
+<PolyStyle>
+<color>4d424242</color>
+<fill>1</fill>
+<outline>0</outline>
+</PolyStyle>
+</Style>
+</Placemark>
+</Document>
+</kml>

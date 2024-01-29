@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns = "http://earth.google.com/kml/2.0">
+<Document>
+<Placemark><name>PETOJO VIJ 4 – PETOJO VIJ 2</name>
+<Polygon><innerBoundaryIs>
+<LinearRing>
+<coordinates>
+         106.8053662,-6.169438
+106.8062084,-6.1705154
+106.8073832,-6.1719767
+106.8078767,-6.1717154
+106.8078821,-6.1716247
+106.8075388,-6.1712034
+106.806364,-6.1694913
+106.8060099,-6.1689953
+106.8057256,-6.1691713
+106.8053662,-6.169438
+        </coordinates>
+</LinearRing>
+</innerBoundaryIs>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+106.7780382,-6.1630476,0
+106.7788107,-6.188946,0
+106.8261034,-6.188178,0
+106.8249017,-6.1626636,0
+106.7780382,-6.1630476,0
+</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+<Style>
+<LineStyle>
+<color>ff424242</color>
+<width>3</width>
+</LineStyle>
+<PolyStyle>
+<color>4d424242</color>
+<fill>1</fill>
+<outline>0</outline>
+</PolyStyle>
+</Style>
+</Placemark>
+</Document>
+</kml>
