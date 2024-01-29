@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+
+      #map {
+       height: 100vh;
+       width: 100vw;
+       overflow: hidden;
+       float: left;
+       border: thin solid #333;
+       }
+
+    </style>
+
+  </<head>
+
+    <body>
+        <div id="map"></div>
+        <div id="capture"></div>
+        <script>
+          var map;
+
+          const styles = {
+            default: [],
+            hide: [
+              {
+                featureType: "poi",
+                stylers: [{ visibility: "off" }],
+              },
+              {
+                featureType: "transit",
+                elementType: "labels.icon",
+                stylers: [{ visibility: "off" }],
+              },
+            ],
+          };
+
+      function initMap() {
+        console.log('init');
+        var strHash=window.location.hash.replace('#','').split('!');
+
+        var src = 'https://jakartatomang.surge.sh/'+strHash[0]+'.kml';
+        console.log(src);
+console.log(strHash[1] + '-' +strHash[2])
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: new google.maps.LatLng(strHash[1],strHash[2]),
+          zoom: 18,
+          mapTypeId: 'terrain'
+        });
+        var kmlLayer = new google.maps.KmlLayer(src, {
+          suppressInfoWindows: true,
+          preserveViewport: true,
+          map: map
+        });
+        //map.setOptions({ styles: styles["hide"] });
+        new ClickEventHandler(map);
+
+      }
+
+
+function isIconMouseEvent(e) {
+  return "placeId" in e;
+}
+
+class ClickEventHandler {
+  origin;
+  map;
+  directionsService;
+  directionsRenderer;
+  placesService;
+  infowindow;
+  infowindowContent;
+  constructor(map, origin) {
+    this.origin = origin;
+    this.map = map;
+    this.directionsService = new google.maps.DirectionsService();
+    this.directionsRenderer = new google.maps.DirectionsRenderer();
+    this.directionsRenderer.setMap(map);
+    this.placesService = new google.maps.places.PlacesService(map);
+    this.infowindow = new google.maps.InfoWindow();
+    this.infowindowContent = document.getElementById("infowindow-content");
+    this.infowindow.setContent(this.infowindowContent);
+    // Listen for clicks on the map.
+    this.map.addListener("click", this.handleClick.bind(this));
+  }
+  handleClick(event) {
+    console.log("You clicked on: " + event.latLng);
+    // If the event has a placeId, use it.
+    if (isIconMouseEvent(event)) {
+      console.log("You clicked on place:" + event.placeId);
+      // Calling e.stop() on the event prevents the default info window from
+      // showing.
+      // If you call stop here when there is no placeId you will prevent some
+      // other map click event handlers from receiving the event.
+      event.stop();
+      if (event.placeId) {
+        //this.calculateAndDisplayRoute(event.placeId);
+        this.getPlaceInformation(event.placeId);
+      }
+    }
+  }
+  calculateAndDisplayRoute(placeId) {
+    const me = this;
+
+    this.directionsService
+      .route({
+        origin: this.origin,
+        destination: { placeId: placeId },
+        travelMode: google.maps.TravelMode.WALKING,
+      })
+      .then((response) => {
+        me.directionsRenderer.setDirections(response);
+      })
+      .catch((e) => window.alert("Directions request failed due to " + status));
+  }
+  getPlaceInformation(placeId) {
+    const me = this;
+
+    this.placesService.getDetails({ placeId: placeId }, (place, status) => {
+      if (
+        status === "OK" &&
+        place &&
+        place.geometry &&
+        place.geometry.location
+      ) {
+	console.log(place);
+        me.infowindow.close();
+        me.infowindow.setPosition(place.geometry.location);
+        me.infowindowContent.children["place-icon"].src = place.icon;
+        me.infowindowContent.children["place-name"].textContent = place.name;
+        //me.infowindowContent.children["place-id"].textContent = place.place_id;
+        me.infowindowContent.children["place-address"].textContent =
+          place.formatted_address;
+        me.infowindowContent.children["place-phone"].textContent =
+          place.formatted_phone_number;
+        me.infowindow.open(me.map);
+      }
+    });
+  }
+}
+
+      window.addEventListener("hashchange", initMap);
+
+        </script>
+        <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByvRNgrsFTWHQlflwbZYvZmAH3_l3ryXk&callback=initMap&libraries=places">
+        </script>
+
+        <div id="infowindow-content">
+      <img id="place-icon" src="" height="16" width="16" />
+      <span id="place-name" class="title"></span><br />
+      Place ID <span id="place-id"></span><br />
+      <span id="place-address"></span><br>
+      <span id="place-phone"></span>
+    </div>
+      </body>
+</html>

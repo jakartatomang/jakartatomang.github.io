@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns = "http://earth.google.com/kml/2.0">
+<Document>
+<Placemark><name>TUNJUNG – AT TAQWA 2</name>
+<Polygon><innerBoundaryIs>
+<LinearRing>
+<coordinates>
+         106.8033105,-6.175827
+106.8042171,-6.1772244
+106.8045551,-6.1770004
+106.8048662,-6.1767657
+106.8046677,-6.176467
+106.8054509,-6.175955
+106.8049038,-6.175139
+106.8037611,-6.175715
+106.8033105,-6.175827
+        </coordinates>
+</LinearRing>
+</innerBoundaryIs>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+106.7780382,-6.1630476,0
+106.7788107,-6.188946,0
+106.8261034,-6.188178,0
+106.8249017,-6.1626636,0
+106.7780382,-6.1630476,0
+</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+<Style>
+<LineStyle>
+<color>ff424242</color>
+<width>3</width>
+</LineStyle>
+<PolyStyle>
+<color>4d424242</color>
+<fill>1</fill>
+<outline>0</outline>
+</PolyStyle>
+</Style>
+</Placemark>
+</Document>
+</kml>

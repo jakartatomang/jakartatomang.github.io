@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns = "http://earth.google.com/kml/2.0">
+<Document>
+<Placemark><name>KOTA BAMBU SELATAN 1 – 2</name>
+<Polygon><innerBoundaryIs>
+<LinearRing>
+<coordinates>
+         106.7972638,-6.1877141
+106.7973872,-6.1893673
+106.7980416,-6.189282
+106.7991092,-6.1893727
+106.8000318,-6.189282
+106.8000479,-6.1886154
+106.8000962,-6.1880394
+106.800123,-6.1875007
+106.800123,-6.1872554
+106.8000211,-6.1867114
+106.8001284,-6.1864394
+106.8001499,-6.1858634
+106.7986693,-6.1859008
+106.7987283,-6.1869834
+106.7987551,-6.1872607
+106.7988624,-6.1876128
+106.7972638,-6.1877141
+        </coordinates>
+</LinearRing>
+</innerBoundaryIs>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+106.7780382,-6.1630476,0
+106.7788107,-6.188946,0
+106.8261034,-6.188178,0
+106.8249017,-6.1626636,0
+106.7780382,-6.1630476,0
+</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+<Style>
+<LineStyle>
+<color>ff424242</color>
+<width>3</width>
+</LineStyle>
+<PolyStyle>
+<color>4d424242</color>
+<fill>1</fill>
+<outline>0</outline>
+</PolyStyle>
+</Style>
+</Placemark>
+</Document>
+</kml>

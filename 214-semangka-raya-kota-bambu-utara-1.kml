@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns = "http://earth.google.com/kml/2.0">
+<Document>
+<Placemark><name>SEMANGKA RAYA – KOTA BAMBU UTARA 1</name>
+<Polygon><innerBoundaryIs>
+<LinearRing>
+<coordinates>
+         106.8056129,-6.1824272
+106.8055002,-6.1834245
+106.8055592,-6.1836538
+106.8060957,-6.1837018
+106.8066268,-6.1835632
+106.8070881,-6.1835258
+106.8071096,-6.1838618
+106.8072061,-6.1838671
+106.8075924,-6.1838991
+106.8077211,-6.1839418
+106.8083541,-6.1839045
+106.8083326,-6.1834992
+106.8083219,-6.1832698
+106.8082897,-6.1830618
+106.8081824,-6.1826405
+106.8075977,-6.1826885
+106.8070988,-6.1827685
+106.8070988,-6.1823738
+106.8065678,-6.1824218
+106.8058918,-6.1825018
+106.8056129,-6.1824272
+        </coordinates>
+</LinearRing>
+</innerBoundaryIs>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+106.7780382,-6.1630476,0
+106.7788107,-6.188946,0
+106.8261034,-6.188178,0
+106.8249017,-6.1626636,0
+106.7780382,-6.1630476,0
+</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+<Style>
+<LineStyle>
+<color>ff424242</color>
+<width>3</width>
+</LineStyle>
+<PolyStyle>
+<color>4d424242</color>
+<fill>1</fill>
+<outline>0</outline>
+</PolyStyle>
+</Style>
+</Placemark>
+</Document>
+</kml>
