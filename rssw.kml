@@ -2,7 +2,7 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Placemark>
     <name>RS Sumber Waras</name>
-    <description></description>
+    <description>RS Sumber Waras</description>
     <Point>
       <coordinates>106.7976862,-6.1663743</coordinates>
     </Point>
