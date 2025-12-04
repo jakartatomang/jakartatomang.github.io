@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+
+      #map {
+       height: 100vh;
+       width: 100vw;
+       overflow: hidden;
+       float: left;
+       border: thin solid #333;
+       }
+#infowindow-content{font-size:26px}
+
+    </style>
+
+  </<head>
+
+    <body>
+        <div id="title"></div>
+        <div id="map"></div>
+        <div id="capture"></div>
+        <script>
+          function initMap() {
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 12,
+    center: { lat: 37.06, lng: -95.68 },
+  });
+  const kmlLayer = new google.maps.KmlLayer({
+    url: "https://raw.githubusercontent.com/googlearchive/kml-samples/gh-pages/kml/Placemark/placemark.kml",
+    suppressInfoWindows: true,
+    map: map,
+  });
+
+  kmlLayer.addListener("click", (kmlEvent) => {
+    const text = kmlEvent.featureData.description;
+
+    showInContentWindow(text);
+  });
+
+  function showInContentWindow(text) {
+    const sidebar = document.getElementById("sidebar");
+
+    sidebar.innerHTML = text;
+  }
+}
+
+window.initMap = initMap;
+
+
+        </script>
+        <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByvRNgrsFTWHQlflwbZYvZmAH3_l3ryXk&callback=initMap&libraries=places">
+        </script>
+
+        <div id="infowindow-content">
+      <img id="place-icon" src="" height="16" width="16" />
+      <span id="place-name" class="title"></span><br />
+      <span id="place-address"></span><br>
+      Phone: <span id="place-phone"></span>
+    </div>
+      </body>
+</html>
