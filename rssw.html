@@ -1,28 +1,38 @@
-
-<!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
+	
+<style>
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
-      #map {
-       height: 100vh;
-       width: 100vw;
-       overflow: hidden;
-       float: left;
-       border: thin solid #333;
-       }
-#infowindow-content{font-size:26px}
+#container {
+  height: 100%;
+  display: flex;
+}
 
-    </style>
+#sidebar {
+  flex-basis: 15rem;
+  flex-grow: 1;
+  padding: 1rem;
+  max-width: 30rem;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: auto;
+}
 
-  </<head>
+#map {
+  flex-basis: 0;
+  flex-grow: 4;
+  height: 100%;
+}
+</style>
 
-    <body>
-        <div id="title"></div>
-        <div id="map"></div>
-        <div id="capture"></div>
-        <script>
+<script>
           function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 12,
@@ -51,15 +61,24 @@ window.initMap = initMap;
 
 
         </script>
-        <script async
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByvRNgrsFTWHQlflwbZYvZmAH3_l3ryXk&callback=initMap&libraries=places">
-        </script>
-
-        <div id="infowindow-content">
-      <img id="place-icon" src="" height="16" width="16" />
-      <span id="place-name" class="title"></span><br />
-      <span id="place-address"></span><br>
-      Phone: <span id="place-phone"></span>
+  </head>
+  <body>
+    <div id="container">
+      <div id="map"></div>
+      <div id="sidebar"></div>
     </div>
-      </body>
+
+    <!-- 
+      The `defer` attribute causes the script to execute after the full HTML
+      document has been parsed. For non-blocking uses, avoiding race conditions,
+      and consistent behavior across browsers, consider loading using Promises. See
+      https://developers.google.com/maps/documentation/javascript/load-maps-js-api
+      for more information.
+	  https://maps.googleapis.com/maps/api/js?key=AIzaSyByvRNgrsFTWHQlflwbZYvZmAH3_l3ryXk&callback=initMap&libraries=places
+      -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByvRNgrsFTWHQlflwbZYvZmAH3_l3ryXk&callback=initMap&v=weekly"
+      defer
+    ></script>
+  </body>
 </html>
