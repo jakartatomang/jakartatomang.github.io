@@ -68,7 +68,7 @@ window.initMap = initMap;
 	  https://maps.googleapis.com/maps/api/js?key=AIzaSyByvRNgrsFTWHQlflwbZYvZmAH3_l3ryXk&callback=initMap&libraries=places
       -->
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByvRNgrsFTWHQlflwbZYvZmAH3_l3ryXk&callback=initMap&v=weekly"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByvRNgrsFTWHQlflwbZYvZmAH3_l3ryXk&callback=initMap"
       defer
     ></script>
   </body>
@@ -108,26 +108,7 @@ body {
 }
 </style>
 
-<script>
-function initMap() {
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 18,
-    center: { lat:  -6.175879004536987,lng: 106.79240459287445},
-  });
 
-  const marker = new google.maps.Marker({
-    position: {lat:  -6.175879004536987,lng: 106.79240459287445 }, // Marker's position
-    map: map, // The map to which the marker is added
-    title: "My Marker" // Optional title for the marker (appears on hover)
-  });
-
-  
-}
-
-window.initMap = initMap;
-
-
-        </script>
   </head>
   <body>
     <div id="container">
