@@ -38,23 +38,15 @@ function initMap() {
     zoom: 18,
     center: { lat: -6.1663743,lng: 106.7976862 },
   });
-  const kmlLayer = new google.maps.KmlLayer({
-    url: "https://jakartatomang.github.io/rssw.kml",
-    suppressInfoWindows: true,
-    map: map,
+  
+  
+  const marker = new google.maps.Marker({
+    position: { lat: -6.1663743,lng: 106.7976862 }, // Marker's position
+    map: map, // The map to which the marker is added
+    title: "My Marker" // Optional title for the marker (appears on hover)
   });
 
-  kmlLayer.addListener("click", (kmlEvent) => {
-    const text = kmlEvent.featureData.description;
-
-    showInContentWindow(text);
-  });
-
-  function showInContentWindow(text) {
-    const sidebar = document.getElementById("sidebar");
-
-    sidebar.innerHTML = text;
-  }
+  
 }
 
 window.initMap = initMap;
