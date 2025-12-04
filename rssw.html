@@ -33,13 +33,13 @@ body {
 </style>
 
 <script>
-          function initMap() {
+function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 18,
-    center: { lng: 106.7976862, lat: -6.1663743 },
+    zoom: 12,
+    center: { lat: 37.06, lng: -95.68 },
   });
   const kmlLayer = new google.maps.KmlLayer({
-    url: "https://jakartatomang.github.io/rssw.kml",
+    url: "https://raw.githubusercontent.com/googlearchive/kml-samples/gh-pages/kml/Placemark/placemark.kml",
     suppressInfoWindows: true,
     map: map,
   });
@@ -82,4 +82,3 @@ window.initMap = initMap;
     ></script>
   </body>
 </html>
-
