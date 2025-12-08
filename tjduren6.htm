@@ -36,13 +36,16 @@ body {
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 18,
-    center: { lat: -6.180346,lng: 106.7837193 },
+    center: { lat: -6.1782948,lng: 106.7836303 },
   });
 
 		  
   const pathCoordinates = [
-	  { lat:  -6.180346, lng:106.7837193 },
-	  { lat: -6.1820793, lng:  106.7836389 },
+	  { lat: -6.1782948, lng:106.7836303 },
+	  { lat: -6.1803268, lng:  106.783641 },
+	  { lat: -6.1809107, lng:  106.7836571 },
+	  { lat: -6.1814947, lng:  106.7836517},
+	  { lat: -6.1821081, lng: 106.7835873 },
 	];
 	
   const flightPath = new google.maps.Polyline({
@@ -50,7 +53,7 @@ function initMap() {
 	  geodesic: true, // Optional: Draw a geodesic line (follows the curvature of the Earth)
 	  strokeColor: '#FF0000', // Red color
 	  strokeOpacity: 1.0,
-	  strokeWeight: 16,
+	  strokeWeight: 4,
 	});
 
 	// Add the polyline to the map
