@@ -1,0 +1,85 @@
+<html>
+  <head>
+	
+<style>
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  height: 100%;
+  display: flex;
+}
+
+#sidebar {
+  flex-basis: 15rem;
+  flex-grow: 1;
+  padding: 1rem;
+  max-width: 30rem;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+#map {
+  flex-basis: 0;
+  flex-grow: 4;
+  height: 100%;
+}
+</style>
+
+<script>
+function initMap() {
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 18,
+    center: { lat: -6.180346,lng: 106.7837193 },
+  });
+
+		  
+  const pathCoordinates = [
+	  { lat:  -6.180346, lng:106.7837193 },
+	  { lat: -6.1820793, lng:  106.7836389 },
+	];
+	
+  const flightPath = new google.maps.Polyline({
+	  path: pathCoordinates,
+	  geodesic: true, // Optional: Draw a geodesic line (follows the curvature of the Earth)
+	  strokeColor: '#FF0000', // Red color
+	  strokeOpacity: 1.0,
+	  strokeWeight: 16,
+	});
+
+	// Add the polyline to the map
+	flightPath.setMap(map);
+  
+}
+
+window.initMap = initMap;
+
+
+        </script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="map"></div>
+
+    </div>
+
+    <!-- 
+      The `defer` attribute causes the script to execute after the full HTML
+      document has been parsed. For non-blocking uses, avoiding race conditions,
+      and consistent behavior across browsers, consider loading using Promises. See
+      https://developers.google.com/maps/documentation/javascript/load-maps-js-api
+      for more information.
+	  https://maps.googleapis.com/maps/api/js?key=AIzaSyByvRNgrsFTWHQlflwbZYvZmAH3_l3ryXk&callback=initMap&libraries=places
+      -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByvRNgrsFTWHQlflwbZYvZmAH3_l3ryXk&callback=initMap&v=weekly"
+      defer
+    ></script>
+  </body>
+</html>
