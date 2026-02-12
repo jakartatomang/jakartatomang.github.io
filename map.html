@@ -40,12 +40,20 @@
           };
 
       function initMap() {
+        var dtNow=Date.now();
         console.log('init');
         var strHash=window.location.hash.replace('#','').split('!');
         document.getElementById("title").innerHTML=strHash[0];
         var src = 'https://jakartatomang.github.io/'+strHash[0]+'.kml';
-        console.log(src);
-console.log(strHash[1] + '-' +strHash[2])
+        if(strHash.length==4)
+        {
+          var dtExpire=strHash[3];
+          if(dtNow>dtExpire){
+            console.log('expired')
+            document.getElementById('map').innerHTML='Kartu daerah tidak bisa dikerjakan lagi.';
+            return;
+          }
+        }
         map = new google.maps.Map(document.getElementById('map'), {
           center: new google.maps.LatLng(strHash[1],strHash[2]),
           zoom: 18,
