@@ -1,3 +1,13 @@
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+      var dtExpire=Date.now()+10512000000;
+      var tags=document.querySelectorAll('a');
+      tags.forEach(tag=>{
+          var href=tag.getAttribute('href')+'!'+dtExpire
+          tag.setAttribute('href',href);
+      });
+  });
+</script>
 <div><a href=map.html#059-petojo-selatan-10-12-13!-6.1664919!106.80935065 target=map>059 PETOJO SELATAN 10, 12, 13</a></div>
 <div><a href=map.html#060-petojo-selatan-8-9-11!-6.1679333!106.809411149999 target=map>060 PETOJO SELATAN 8, 9, 11</a></div>
 <div><a href=map.html#061-sangihe-petojo-selatan-7!-6.1696079!106.80953695 target=map>061 SANGIHE, PETOJO SELATAN 7</a></div>
