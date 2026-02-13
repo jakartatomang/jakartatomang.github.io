@@ -20,11 +20,11 @@
     var dtNow=Date.now();
     console.log('init');
     var strHash=window.location.hash.replace('#','').split('!');
-    document.getElementById("title").innerHTML=strHash[0];
-    var src = 'https://jakartatomang.github.io/'+strHash[0]+'.jpg';
-    if(strHash.length==2)
+    document.getElementById("title").innerHTML=strHash[1]+' '+decodeURIComponent(strHash[0]).replace(/\+/g, ' ');
+    var src = 'https://jakartatomang.github.io/'+strHash[1]+'.jpg';
+    if(strHash.length==3)
     {
-      var dtExpire=strHash[1];
+      var dtExpire=strHash[2];
       if(dtNow>dtExpire){
         console.log('expired')
         document.getElementById('map').innerHTML='Kartu daerah tidak bisa dikerjakan lagi.';
