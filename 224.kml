@@ -1,72 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://www.opengis.net/kml/2.2">
-  <Document>
-    <name>Untitled layer</name>
-    <Style id="poly-000000-1200-77-nodesc-normal">
-      <LineStyle>
-        <color>ff000000</color>
-        <width>1.2</width>
-      </LineStyle>
-      <PolyStyle>
-        <color>4d000000</color>
-        <fill>1</fill>
-        <outline>1</outline>
-      </PolyStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <Style id="poly-000000-1200-77-nodesc-highlight">
-      <LineStyle>
-        <color>ff000000</color>
-        <width>1.8</width>
-      </LineStyle>
-      <PolyStyle>
-        <color>4d000000</color>
-        <fill>1</fill>
-        <outline>1</outline>
-      </PolyStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <StyleMap id="poly-000000-1200-77-nodesc">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#poly-000000-1200-77-nodesc-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#poly-000000-1200-77-nodesc-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
-    <Placemark>
-      <name>224</name>
-      <styleUrl>#poly-000000-1200-77-nodesc</styleUrl>
-      <Polygon>
-        <outerBoundaryIs>
-          <LinearRing>
-            <tessellate>1</tessellate>
-            <coordinates>
-              106.8216457,-6.1712959,0
-              106.8218635,-6.1721496,0
-              106.8215007,-6.1734597,0
-              106.8207229,-6.1753168,0
-              106.8169249,-6.181674,0
-              106.8170055,-6.1820638,0
-              106.8215974,-6.1833011,0
-              106.8227776,-6.1833225,0
-              106.8226274,-6.1810398,0
-              106.8224557,-6.1808265,0
-              106.8226059,-6.1804425,0
-              106.8228205,-6.1722933,0
-              106.82274,-6.1715839,0
-              106.8224986,-6.1712959,0
-              106.8216457,-6.1712959,0
-            </coordinates>
-          </LinearRing>
-        </outerBoundaryIs>
-      </Polygon>
-    </Placemark>
-  </Document>
+<kml xmlns = "http://earth.google.com/kml/2.0">
+<Document>
+<Placemark><name>ABDUL MUIS - MEDAN MERDEKA BARAT</name>
+<Polygon><innerBoundaryIs>
+<LinearRing>
+<coordinates>
+  106.8216457,-6.1712959,0
+  106.8218635,-6.1721496,0
+  106.8215007,-6.1734597,0
+  106.8207229,-6.1753168,0
+  106.8169249,-6.181674,0
+  106.8170055,-6.1820638,0
+  106.8215974,-6.1833011,0
+  106.8227776,-6.1833225,0
+  106.8226274,-6.1810398,0
+  106.8224557,-6.1808265,0
+  106.8226059,-6.1804425,0
+  106.8228205,-6.1722933,0
+  106.82274,-6.1715839,0
+  106.8224986,-6.1712959,0
+  106.8216457,-6.1712959,0
+        </coordinates>
+</LinearRing>
+</innerBoundaryIs>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+106.6262893,-6.085345,0
+106.6276625,-6.392505,0
+106.9874648,-6.3890931,0
+106.9854049,-6.0819311,0
+106.6262893,-6.085345,0
+</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+<Style>
+<LineStyle>
+<color>ff424242</color>
+<width>3</width>
+</LineStyle>
+<PolyStyle>
+<color>4d424242</color>
+<fill>1</fill>
+<outline>0</outline>
+</PolyStyle>
+</Style>
+</Placemark>
+</Document>
 </kml>
