@@ -21,7 +21,7 @@
     console.log('init');
     var strHash=window.location.hash.replace('#','').split('!');
     document.getElementById("title").innerHTML=strHash[1]+' '+decodeURIComponent(strHash[0]).replace(/\+/g, ' ');
-    var src = 'https://jakartatomang.github.io/'+strHash[1]+'.jpg';
+    var src = strHash[1]+'.jpg';
     if(strHash.length==3)
     {
       var dtExpire=strHash[2];
