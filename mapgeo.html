@@ -44,7 +44,7 @@
         console.log('init');
         var strHash=window.location.hash.replace('#','').split('!');
         document.getElementById("title").innerHTML=strHash[0];
-        var src = 'https://jakartatomang.github.io/'+strHash[0]+'.kml';
+        var src = 'https://jakartatomang.github.io/'+strHash[0]+'.geojson';
         if(strHash.length==4)
         {
           var dtExpire=strHash[3];
