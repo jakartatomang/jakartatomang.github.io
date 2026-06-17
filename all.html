@@ -1,0 +1,3064 @@
+<html>
+  <head>
+    <title>Polygon Arrays</title>
+
+    <style>
+
+      #map {
+       height: 100vh;
+       width: 100vw;
+       overflow: hidden;
+       float: left;
+       border: thin solid #333;
+       }
+#infowindow-content{font-size:26px}
+
+    </style>
+    <script >
+      var map;
+      var infoWindow;
+
+      function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 15,
+          center: { lat: -6.175967222416472, lng: 106.80327486190384 },
+          mapTypeId: "terrain",
+        });
+
+        const coordinates059=[{ lat: -6.1659639, lng:          106.8083046 },
+        { lat: -6.1668759, lng: 106.8083529 },
+        { lat: -6.1670279, lng: 106.8083127 },
+        { lat: -6.1671639, lng: 106.80831 },
+        { lat: -6.1670599, lng: 106.8098979 },
+        { lat: -6.1670519, lng: 106.8103967 },
+        { lat: -6.1658199, lng: 106.8102895 },
+        { lat: -6.1659639, lng: 106.8083046 },
+        ]
+        const polygon059=new google.maps.Polygon({paths: coordinates059, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon059.setMap(map);
+        polygon059.addListener('click',function(event){showInfo(event,'PETOJO SELATAN 10, 12, 13')});
+
+        const coordinates060=[{ lat: -6.167232, lng:          106.8083195 },
+        { lat: -6.168672, lng: 106.8083892 },
+        { lat: -6.16864, lng: 106.8090813 },
+        { lat: -6.1687413, lng: 106.8105028 },
+        { lat: -6.1671253, lng: 106.8103902 },
+        { lat: -6.167168, lng: 106.8095748 },
+        { lat: -6.167232, lng: 106.8083195 },
+        ]
+        const polygon060=new google.maps.Polygon({paths: coordinates060, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon060.setMap(map);
+        polygon060.addListener('click',function(event){showInfo(event,'PETOJO SELATAN 8, 9, 11')});
+
+        const coordinates061=[{ lat: -6.1702159, lng:          106.8084453 },
+        { lat: -6.1701572, lng: 106.8086491 },
+        { lat: -6.1701305, lng: 106.8090247 },
+        { lat: -6.1704612, lng: 106.8103067 },
+        { lat: -6.1704879, lng: 106.810693 },
+        { lat: -6.1688132, lng: 106.8105052 },
+        { lat: -6.1687279, lng: 106.8090354 },
+        { lat: -6.1687599, lng: 106.8083809 },
+        { lat: -6.1702159, lng: 106.8084453 },
+        ]
+        const polygon061=new google.maps.Polygon({paths: coordinates061, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon061.setMap(map);
+        polygon061.addListener('click',function(event){showInfo(event,'SANGIHE, PETOJO SELATAN 7')});
+
+        const coordinates062=[{ lat: -6.1702934, lng:          106.8084461 },
+        { lat: -6.1707388, lng: 106.808548 },
+        { lat: -6.1708268, lng: 106.8086043 },
+        { lat: -6.1711654, lng: 106.8087062 },
+        { lat: -6.1712908, lng: 106.808717 },
+        { lat: -6.1712561, lng: 106.8088216 },
+        { lat: -6.1709041, lng: 106.8107501 },
+        { lat: -6.1705681, lng: 106.8107206 },
+        { lat: -6.1705708, lng: 106.8104041 },
+        { lat: -6.1705628, lng: 106.8103263 },
+        { lat: -6.1705254, lng: 106.8102378 },
+        { lat: -6.1702108, lng: 106.8089745 },
+        { lat: -6.1702294, lng: 106.8086821 },
+        { lat: -6.1702934, lng: 106.8084461 },
+        ]
+        const polygon062=new google.maps.Polygon({paths: coordinates062, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon062.setMap(map);
+        polygon062.addListener('click',function(event){showInfo(event,'TALAUD, SANGIHE')});
+
+        const coordinates063=[{ lat: -6.1658082, lng:          106.8107312 },
+        { lat: -6.1682562, lng: 106.8109297 },
+        { lat: -6.1682509, lng: 106.8121742 },
+        { lat: -6.1657122, lng: 106.8120991 },
+        { lat: -6.1658082, lng: 106.8107312 },
+        ]
+        const polygon063=new google.maps.Polygon({paths: coordinates063, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon063.setMap(map);
+        polygon063.addListener('click',function(event){showInfo(event,'PETOJO SELATAN 3, 4, BALIKPAPAN I')});
+
+        const coordinates064=[{ lat: -6.1657017, lng:          106.8121771 },
+        { lat: -6.1678617, lng: 106.8122522 },
+        { lat: -6.1682511, lng: 106.812263 },
+        { lat: -6.1682404, lng: 106.8127699 },
+        { lat: -6.1681977, lng: 106.8132929 },
+        { lat: -6.1679897, lng: 106.8140225 },
+        { lat: -6.1656164, lng: 106.8133251 },
+        { lat: -6.1657017, lng: 106.8121771 },
+        ]
+        const polygon064=new google.maps.Polygon({paths: coordinates064, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon064.setMap(map);
+        polygon064.addListener('click',function(event){showInfo(event,'PETOJO SELATAN 2, SMAN 25')});
+
+        const coordinates065=[{ lat: -6.1708409, lng:          106.81117 },
+        { lat: -6.1706436, lng: 106.8124092 },
+        { lat: -6.1701156, lng: 106.8123019 },
+        { lat: -6.1689422, lng: 106.8122107 },
+        { lat: -6.1683396, lng: 106.8121839 },
+        { lat: -6.1683396, lng: 106.8109179 },
+        { lat: -6.1688462, lng: 106.810993 },
+        { lat: -6.1708409, lng: 106.81117 },
+        ]
+        const polygon065=new google.maps.Polygon({paths: coordinates065, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon065.setMap(map);
+        polygon065.addListener('click',function(event){showInfo(event,'CIDENG TIMUR 1, 2')});
+
+        const coordinates066=[{ lat: -6.1683438, lng:          106.8122651 },
+        { lat: -6.1690104, lng: 106.8122919 },
+        { lat: -6.1699731, lng: 106.8123536 },
+        { lat: -6.1706264, lng: 106.8124796 },
+        { lat: -6.1702051, lng: 106.8147166 },
+        { lat: -6.1680771, lng: 106.814046 },
+        { lat: -6.1682478, lng: 106.813456 },
+        { lat: -6.1683064, lng: 106.8129034 },
+        { lat: -6.1683438, lng: 106.8122651 },
+        ]
+        const polygon066=new google.maps.Polygon({paths: coordinates066, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon066.setMap(map);
+        polygon066.addListener('click',function(event){showInfo(event,'BALIKPAPAN 1, 2, SEMBOJA')});
+
+        const coordinates067=[{ lat: -6.1655968, lng:          106.8133925 },
+        { lat: -6.1680075, lng: 106.814106 },
+        { lat: -6.1678128, lng: 106.8147524 },
+        { lat: -6.1676821, lng: 106.81527 },
+        { lat: -6.1665541, lng: 106.8150152 },
+        { lat: -6.1655328, lng: 106.814739 },
+        { lat: -6.1655968, lng: 106.8133925 },
+        ]
+        const polygon067=new google.maps.Polygon({paths: coordinates067, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon067.setMap(map);
+        polygon067.addListener('click',function(event){showInfo(event,'RUKO SANGAJI MEGAH, MERLYN PARK ')});
+
+        const coordinates068=[{ lat: -6.1680892, lng:          106.8141542 },
+        { lat: -6.1691586, lng: 106.8144949 },
+        { lat: -6.1701852, lng: 106.8147926 },
+        { lat: -6.1700252, lng: 106.8158601 },
+        { lat: -6.1688066, lng: 106.8155651 },
+        { lat: -6.1677586, lng: 106.8152915 },
+        { lat: -6.1678786, lng: 106.8147524 },
+        { lat: -6.1680092, lng: 106.8143527 },
+        { lat: -6.1680892, lng: 106.8141542 },
+        ]
+        const polygon068=new google.maps.Polygon({paths: coordinates068, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon068.setMap(map);
+        polygon068.addListener('click',function(event){showInfo(event,'KAJI 1, 2, 3')});
+
+        const coordinates069=[{ lat: -6.1649465, lng:          106.8191306 },
+        { lat: -6.1653492, lng: 106.8192003 },
+        { lat: -6.1654545, lng: 106.8191225 },
+        { lat: -6.1656512, lng: 106.8186223 },
+        { lat: -6.1663202, lng: 106.8183775 },
+        { lat: -6.1668665, lng: 106.8181918 },
+        { lat: -6.1669438, lng: 106.8180872 },
+        { lat: -6.1670945, lng: 106.8181368 },
+        { lat: -6.1671939, lng: 106.8181831 },
+        { lat: -6.1672612, lng: 106.818283 },
+        { lat: -6.1670052, lng: 106.8192754 },
+        { lat: -6.1668452, lng: 106.8203107 },
+        { lat: -6.1648345, lng: 106.8198923 },
+        { lat: -6.1649465, lng: 106.8191306 },
+        ]
+        const polygon069=new google.maps.Polygon({paths: coordinates069, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon069.setMap(map);
+        polygon069.addListener('click',function(event){showInfo(event,'DUTA MERLIN')});
+
+        const coordinates070=[{ lat: -6.1673211, lng:          106.8182679 },
+        { lat: -6.1675184, lng: 106.8183537 },
+        { lat: -6.1675904, lng: 106.8184342 },
+        { lat: -6.1677597, lng: 106.8187266 },
+        { lat: -6.1678871, lng: 106.8188567 },
+        { lat: -6.1679614, lng: 106.8189324 },
+        { lat: -6.1683612, lng: 106.8192225 },
+        { lat: -6.1687771, lng: 106.8195447 },
+        { lat: -6.1681744, lng: 106.8201052 },
+        { lat: -6.1678731, lng: 106.8204016 },
+        { lat: -6.1675557, lng: 106.8206228 },
+        { lat: -6.1672811, lng: 106.8204431 },
+        { lat: -6.1668997, lng: 106.8203493 },
+        { lat: -6.1670357, lng: 106.8194803 },
+        { lat: -6.1673211, lng: 106.8182679 },
+        ]
+        const polygon070=new google.maps.Polygon({paths: coordinates070, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon070.setMap(map);
+        polygon070.addListener('click',function(event){showInfo(event,'ISTANA HARMONI, APARTEMEN')});
+
+        const coordinates071=[{ lat: -6.1654267, lng:          106.8160269 },
+        { lat: -6.165648, lng: 106.8161422 },
+        { lat: -6.1658173, lng: 106.8163715 },
+        { lat: -6.1660247, lng: 106.8167973 },
+        { lat: -6.1661817, lng: 106.8171014 },
+        { lat: -6.1669787, lng: 106.8180171 },
+        { lat: -6.166816, lng: 106.8180627 },
+        { lat: -6.166788, lng: 106.8181445 },
+        { lat: -6.16564, lng: 106.8185374 },
+        { lat: -6.1654933, lng: 106.8188056 },
+        { lat: -6.1653787, lng: 106.8191168 },
+        { lat: -6.164936, lng: 106.8190524 },
+        { lat: -6.1650373, lng: 106.818304 },
+        { lat: -6.16516, lng: 106.817545 },
+        { lat: -6.1654267, lng: 106.8160269 },
+        ]
+        const polygon071=new google.maps.Polygon({paths: coordinates071, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon071.setMap(map);
+        polygon071.addListener('click',function(event){showInfo(event,'HASYIM ASHARI DALAM')});
+
+        const coordinates072=[{ lat: -6.1677713, lng:          106.8154147 },
+        { lat: -6.1676807, lng: 106.8157848 },
+        { lat: -6.1676167, lng: 106.8164393 },
+        { lat: -6.1665393, lng: 106.8160584 },
+        { lat: -6.1663767, lng: 106.8171071 },
+        { lat: -6.1662653, lng: 106.8169489 },
+        { lat: -6.166082, lng: 106.8165519 },
+        { lat: -6.1659393, lng: 106.8162622 },
+        { lat: -6.1657393, lng: 106.816045 },
+        { lat: -6.1655713, lng: 106.8159001 },
+        { lat: -6.165454, lng: 106.8158304 },
+        { lat: -6.1654966, lng: 106.8154576 },
+        { lat: -6.1655259, lng: 106.8148568 },
+        { lat: -6.1677713, lng: 106.8154147 },
+        ]
+        const polygon072=new google.maps.Polygon({paths: coordinates072, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon072.setMap(map);
+        polygon072.addListener('click',function(event){showInfo(event,'PETOJO BINATU 1')});
+
+        const coordinates073=[{ lat: -6.1666043, lng:          106.8161667 },
+        { lat: -6.166863, lng: 106.8162391 },
+        { lat: -6.1676216, lng: 106.8165301 },
+        { lat: -6.1676576, lng: 106.8165707 },
+        { lat: -6.1676356, lng: 106.8166675 },
+        { lat: -6.1676933, lng: 106.8167416 },
+        { lat: -6.1683163, lng: 106.8169311 },
+        { lat: -6.1676923, lng: 106.8182266 },
+        { lat: -6.167511, lng: 106.8181247 },
+        { lat: -6.1671936, lng: 106.8180066 },
+        { lat: -6.1664336, lng: 106.8171537 },
+        { lat: -6.1666043, lng: 106.8161667 },
+        ]
+        const polygon073=new google.maps.Polygon({paths: coordinates073, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon073.setMap(map);
+        polygon073.addListener('click',function(event){showInfo(event,'PETOJO BINATU 2, 5')});
+
+        const coordinates074=[{ lat: -6.1678672, lng:          106.8154041 },
+        { lat: -6.1694565, lng: 106.8158199 },
+        { lat: -6.1700112, lng: 106.8159352 },
+        { lat: -6.1697872, lng: 106.8172441 },
+        { lat: -6.1695219, lng: 106.8172119 },
+        { lat: -6.1690965, lng: 106.8171047 },
+        { lat: -6.1683205, lng: 106.8168579 },
+        { lat: -6.1677179, lng: 106.816654 },
+        { lat: -6.1677192, lng: 106.8165126 },
+        { lat: -6.1676826, lng: 106.8164686 },
+        { lat: -6.1677206, lng: 106.8160385 },
+        { lat: -6.1677872, lng: 106.8156482 },
+        { lat: -6.1678672, lng: 106.8154041 },
+        ]
+        const polygon074=new google.maps.Polygon({paths: coordinates074, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon074.setMap(map);
+        polygon074.addListener('click',function(event){showInfo(event,'PETOJO BINATU, KAJI')});
+
+        const coordinates075=[{ lat: -6.1683927, lng:          106.8169616 },
+        { lat: -6.1690861, lng: 106.8171601 },
+        { lat: -6.1695688, lng: 106.8172835 },
+        { lat: -6.1697848, lng: 106.8173049 },
+        { lat: -6.1697501, lng: 106.8176 },
+        { lat: -6.1696048, lng: 106.8182786 },
+        { lat: -6.1694148, lng: 106.8189478 },
+        { lat: -6.1693131, lng: 106.8191322 },
+        { lat: -6.169145, lng: 106.8192955 },
+        { lat: -6.1689821, lng: 106.8194118 },
+        { lat: -6.1682701, lng: 106.8189116 },
+        { lat: -6.1679434, lng: 106.8186353 },
+        { lat: -6.1677128, lng: 106.8182733 },
+        { lat: -6.1683927, lng: 106.8169616 },
+        ]
+        const polygon075=new google.maps.Polygon({paths: coordinates075, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon075.setMap(map);
+        polygon075.addListener('click',function(event){showInfo(event,'PTJ BINATU 2 SMPN 72, SURYOPRONOTO')});
+
+        const coordinates076=[{ lat: -6.1712107, lng:          106.810768 },
+        { lat: -6.171344, lng: 106.8097916 },
+        { lat: -6.1721014, lng: 106.8099633 },
+        { lat: -6.17192, lng: 106.8108538 },
+        { lat: -6.1712107, lng: 106.810768 },
+        ]
+        const polygon076=new google.maps.Polygon({paths: coordinates076, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon076.setMap(map);
+        polygon076.addListener('click',function(event){showInfo(event,'RS TARAKAN')});
+
+        const coordinates077=[{ lat: -6.1715388, lng:          106.8087293 },
+        { lat: -6.1717841, lng: 106.8087561 },
+        { lat: -6.1721361, lng: 106.808799 },
+        { lat: -6.1728134, lng: 106.8091638 },
+        { lat: -6.1723654, lng: 106.8109716 },
+        { lat: -6.1719815, lng: 106.8108804 },
+        { lat: -6.1722001, lng: 106.8099577 },
+        { lat: -6.1713841, lng: 106.8097485 },
+        { lat: -6.1715388, lng: 106.8087293 },
+        ]
+        const polygon077=new google.maps.Polygon({paths: coordinates077, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon077.setMap(map);
+        polygon077.addListener('click',function(event){showInfo(event,'LEMATANG')});
+
+        const coordinates078=[{ lat: -6.1728867, lng:          106.8091852 },
+        { lat: -6.1733347, lng: 106.8093408 },
+        { lat: -6.1734414, lng: 106.8093301 },
+        { lat: -6.174284, lng: 106.8095447 },
+        { lat: -6.1738094, lng: 106.8113203 },
+        { lat: -6.172428, lng: 106.8109716 },
+        { lat: -6.1728867, lng: 106.8091852 },
+        ]
+        const polygon078=new google.maps.Polygon({paths: coordinates078, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon078.setMap(map);
+        polygon078.addListener('click',function(event){showInfo(event,'AMPASIT 1, 5, 6, BATANGHARI')});
+
+        const coordinates079=[{ lat: -6.174364, lng:          106.8095607 },
+        { lat: -6.1755427, lng: 106.8098665 },
+        { lat: -6.1760653, lng: 106.8099738 },
+        { lat: -6.175628, lng: 106.8117602 },
+        { lat: -6.1738894, lng: 106.8113203 },
+        { lat: -6.174364, lng: 106.8095607 },
+        ]
+        const polygon079=new google.maps.Polygon({paths: coordinates079, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon079.setMap(map);
+        polygon079.addListener('click',function(event){showInfo(event,'AMPASIT 2, 3, 4, KAPUAS')});
+
+        const coordinates080=[{ lat: -6.1711317, lng:          106.811196 },
+        { lat: -6.1714464, lng: 106.8112336 },
+        { lat: -6.1720064, lng: 106.8113087 },
+        { lat: -6.1726091, lng: 106.8114642 },
+        { lat: -6.1719691, lng: 106.8141411 },
+        { lat: -6.1706731, lng: 106.8137602 },
+        { lat: -6.1711317, lng: 106.811196 },
+        ]
+        const polygon080=new google.maps.Polygon({paths: coordinates080, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon080.setMap(map);
+        polygon080.addListener('click',function(event){showInfo(event,'KESEHATAN 8, 9')});
+
+        const coordinates081=[{ lat: -6.1727044, lng:          106.811475 },
+        { lat: -6.1739364, lng: 106.81177 },
+        { lat: -6.1735097, lng: 106.8139533 },
+        { lat: -6.1721924, lng: 106.8135403 },
+        { lat: -6.1727044, lng: 106.811475 },
+        ]
+        const polygon081=new google.maps.Polygon({paths: coordinates081, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon081.setMap(map);
+        polygon081.addListener('click',function(event){showInfo(event,'KESEHATAN 4, 10, 11')});
+
+        const coordinates082=[{ lat: -6.1706544, lng:          106.8138626 },
+        { lat: -6.1720624, lng: 106.8142488 },
+        { lat: -6.1721798, lng: 106.8136373 },
+        { lat: -6.1735077, lng: 106.814045 },
+        { lat: -6.1732731, lng: 106.8155094 },
+        { lat: -6.1710971, lng: 106.8149247 },
+        { lat: -6.1704944, lng: 106.8148013 },
+        { lat: -6.1706544, lng: 106.8138626 },
+        ]
+        const polygon082=new google.maps.Polygon({paths: coordinates082, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon082.setMap(map);
+        polygon082.addListener('click',function(event){showInfo(event,'KESEHATAN 1, 2, 3')});
+
+        const coordinates083=[{ lat: -6.1740063, lng:          106.811795 },
+        { lat: -6.1747903, lng: 106.812031 },
+        { lat: -6.1755476, lng: 106.8121919 },
+        { lat: -6.1752916, lng: 106.8134257 },
+        { lat: -6.1753556, lng: 106.8143109 },
+        { lat: -6.1754303, lng: 106.8156949 },
+        { lat: -6.1744276, lng: 106.8157003 },
+        { lat: -6.1738783, lng: 106.8156252 },
+        { lat: -6.173345, lng: 106.8155232 },
+        { lat: -6.173697, lng: 106.8134633 },
+        { lat: -6.1740063, lng: 106.811795 },
+        ]
+        const polygon083=new google.maps.Polygon({paths: coordinates083, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon083.setMap(map);
+        polygon083.addListener('click',function(event){showInfo(event,'PETOJO SABANGAN 1, 2, 3')});
+
+        const coordinates084=[{ lat: -6.169098, lng:          106.8196258 },
+        { lat: -6.1692793, lng: 106.8197116 },
+        { lat: -6.169802, lng: 106.8198511 },
+        { lat: -6.1706287, lng: 106.8200281 },
+        { lat: -6.1706713, lng: 106.8200764 },
+        { lat: -6.1706607, lng: 106.8202481 },
+        { lat: -6.1705167, lng: 106.8212995 },
+        { lat: -6.16817, lng: 106.8208328 },
+        { lat: -6.1681166, lng: 106.8207738 },
+        { lat: -6.1680206, lng: 106.8207362 },
+        { lat: -6.1680206, lng: 106.8206343 },
+        { lat: -6.168106, lng: 106.8205431 },
+        { lat: -6.1684847, lng: 106.8201569 },
+        { lat: -6.169098, lng: 106.8196258 },
+        ]
+        const polygon084=new google.maps.Polygon({paths: coordinates084, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon084.setMap(map);
+        polygon084.addListener('click',function(event){showInfo(event,'PERKANTORAN MAJAPAHIT')});
+
+        const coordinates085=[{ lat: -6.1701177, lng:          106.8171417 },
+        { lat: -6.1704591, lng: 106.8171793 },
+        { lat: -6.1705924, lng: 106.8171203 },
+        { lat: -6.1708164, lng: 106.8170935 },
+        { lat: -6.1708217, lng: 106.8172383 },
+        { lat: -6.1708591, lng: 106.8173992 },
+        { lat: -6.1710191, lng: 106.8179464 },
+        { lat: -6.1711311, lng: 106.8182575 },
+        { lat: -6.1711577, lng: 106.8184024 },
+        { lat: -6.1723417, lng: 106.8180805 },
+        { lat: -6.1728164, lng: 106.8197167 },
+        { lat: -6.1724857, lng: 106.8197971 },
+        { lat: -6.1723577, lng: 106.819663 },
+        { lat: -6.1722404, lng: 106.8195933 },
+        { lat: -6.1721337, lng: 106.8195879 },
+        { lat: -6.1711631, lng: 106.8198561 },
+        { lat: -6.1707844, lng: 106.8198937 },
+        { lat: -6.1701231, lng: 106.8178177 },
+        { lat: -6.1700431, lng: 106.8177265 },
+        { lat: -6.1701177, lng: 106.8171417 },
+        ]
+        const polygon085=new google.maps.Polygon({paths: coordinates085, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon085.setMap(map);
+        polygon085.addListener('click',function(event){showInfo(event,'HARMONI PLAZA, PASAR ENCLEK')});
+
+        const coordinates086=[{ lat: -6.1692519, lng:          106.8195373 },
+        { lat: -6.1694439, lng: 106.8193764 },
+        { lat: -6.1695825, lng: 106.8192262 },
+        { lat: -6.1697212, lng: 106.8189741 },
+        { lat: -6.1700145, lng: 106.81781 },
+        { lat: -6.1702065, lng: 106.8184591 },
+        { lat: -6.1704199, lng: 106.8190438 },
+        { lat: -6.1706065, lng: 106.8195427 },
+        { lat: -6.1705692, lng: 106.8197573 },
+        { lat: -6.1705319, lng: 106.8198538 },
+        { lat: -6.1704412, lng: 106.8198968 },
+        { lat: -6.1702439, lng: 106.8198807 },
+        { lat: -6.1697745, lng: 106.8197412 },
+        { lat: -6.1694599, lng: 106.8196554 },
+        { lat: -6.1692519, lng: 106.8195373 },
+        ]
+        const polygon086=new google.maps.Polygon({paths: coordinates086, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon086.setMap(map);
+        polygon086.addListener('click',function(event){showInfo(event,'TANAH ABANG I')});
+
+        const coordinates087=[{ lat: -6.1729009, lng:          106.8196986 },
+        { lat: -6.1723782, lng: 106.8180892 },
+        { lat: -6.1736155, lng: 106.8177406 },
+        { lat: -6.1739142, lng: 106.8187491 },
+        { lat: -6.1740582, lng: 106.8191353 },
+        { lat: -6.1740795, lng: 106.8192587 },
+        { lat: -6.1740262, lng: 106.8193391 },
+        { lat: -6.1733809, lng: 106.8195645 },
+        { lat: -6.1732422, lng: 106.8196342 },
+        { lat: -6.1729009, lng: 106.8196986 },
+        ]
+        const polygon087=new google.maps.Polygon({paths: coordinates087, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon087.setMap(map);
+        polygon087.addListener('click',function(event){showInfo(event,'WALIKOTA JAKARTA PUSAT')});
+
+        const coordinates088=[{ lat: -6.1704837, lng:          106.8148801 },
+        { lat: -6.1710971, lng: 106.8150411 },
+        { lat: -6.1730171, lng: 106.8155239 },
+        { lat: -6.1728731, lng: 106.8159262 },
+        { lat: -6.1728144, lng: 106.816232 },
+        { lat: -6.1727824, lng: 106.8164412 },
+        { lat: -6.1727344, lng: 106.8165324 },
+        { lat: -6.1725904, lng: 106.8165967 },
+        { lat: -6.1724037, lng: 106.8166236 },
+        { lat: -6.1708091, lng: 106.8166558 },
+        { lat: -6.1708144, lng: 106.8170044 },
+        { lat: -6.1705157, lng: 106.817042 },
+        { lat: -6.1704411, lng: 106.8170903 },
+        { lat: -6.1701317, lng: 106.8170527 },
+        { lat: -6.1704837, lng: 106.8148801 },
+        ]
+        const polygon088=new google.maps.Polygon({paths: coordinates088, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon088.setMap(map);
+        polygon088.addListener('click',function(event){showInfo(event,'PETOJO ENCLEK 7, 8')});
+
+        const coordinates089=[{ lat: -6.1708918, lng:          106.8167469 },
+        { lat: -6.1722838, lng: 106.8167255 },
+        { lat: -6.1725878, lng: 106.8166987 },
+        { lat: -6.1727638, lng: 106.8166343 },
+        { lat: -6.1728438, lng: 106.8165592 },
+        { lat: -6.1728598, lng: 106.8164626 },
+        { lat: -6.1729878, lng: 106.8165646 },
+        { lat: -6.1731105, lng: 106.8167845 },
+        { lat: -6.1732758, lng: 106.8170474 },
+        { lat: -6.1734571, lng: 106.8173102 },
+        { lat: -6.1736065, lng: 106.8176535 },
+        { lat: -6.1712331, lng: 106.8183026 },
+        { lat: -6.1710625, lng: 106.8178091 },
+        { lat: -6.1708865, lng: 106.8172137 },
+        { lat: -6.1708918, lng: 106.8167469 },
+        ]
+        const polygon089=new google.maps.Polygon({paths: coordinates089, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon089.setMap(map);
+        polygon089.addListener('click',function(event){showInfo(event,'PETOJO ENCLEK 2, 3, 4')});
+
+        const coordinates090=[{ lat: -6.1730837, lng:          106.8155505 },
+        { lat: -6.1735477, lng: 106.8156417 },
+        { lat: -6.1740064, lng: 106.8157436 },
+        { lat: -6.1743744, lng: 106.8157651 },
+        { lat: -6.1754357, lng: 106.8157651 },
+        { lat: -6.1754784, lng: 106.817192 },
+        { lat: -6.1755371, lng: 106.8179752 },
+        { lat: -6.1756064, lng: 106.8188657 },
+        { lat: -6.1756651, lng: 106.8192466 },
+        { lat: -6.1749611, lng: 106.8194075 },
+        { lat: -6.1742677, lng: 106.8195255 },
+        { lat: -6.1741771, lng: 106.8191929 },
+        { lat: -6.1738571, lng: 106.818222 },
+        { lat: -6.1736491, lng: 106.81753 },
+        { lat: -6.1735584, lng: 106.8172832 },
+        { lat: -6.1730731, lng: 106.8165161 },
+        { lat: -6.1728864, lng: 106.8163659 },
+        { lat: -6.1729504, lng: 106.8160226 },
+        { lat: -6.1730837, lng: 106.8155505 },
+        ]
+        const polygon090=new google.maps.Polygon({paths: coordinates090, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon090.setMap(map);
+        polygon090.addListener('click',function(event){showInfo(event,'PASPAMPRES TANAH ABANG II')});
+
+        const coordinates091=[{ lat: -6.1708099, lng:          106.8199661 },
+        { lat: -6.1711566, lng: 106.81995 },
+        { lat: -6.1721273, lng: 106.8196818 },
+        { lat: -6.1722553, lng: 106.8197032 },
+        { lat: -6.1724153, lng: 106.8198481 },
+        { lat: -6.1729326, lng: 106.8214681 },
+        { lat: -6.1722873, lng: 106.8215593 },
+        { lat: -6.1718393, lng: 106.8214413 },
+        { lat: -6.1712366, lng: 106.8213716 },
+        { lat: -6.1707353, lng: 106.8212965 },
+        { lat: -6.1708099, lng: 106.8202021 },
+        { lat: -6.1708099, lng: 106.8199661 },
+        ]
+        const polygon091=new google.maps.Polygon({paths: coordinates091, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon091.setMap(map);
+        polygon091.addListener('click',function(event){showInfo(event,'PERKANTORAN ITC, DHARMA NIAGA, ABDUL MUIS')});
+
+        const coordinates092=[{ lat: -6.1725283, lng:          106.8198574 },
+        { lat: -6.1732643, lng: 106.8197232 },
+        { lat: -6.1734509, lng: 106.819616 },
+        { lat: -6.1741923, lng: 106.8193692 },
+        { lat: -6.1742509, lng: 106.8195891 },
+        { lat: -6.1756589, lng: 106.8192887 },
+        { lat: -6.1757549, lng: 106.8203402 },
+        { lat: -6.1751203, lng: 106.8206513 },
+        { lat: -6.1749816, lng: 106.82078 },
+        { lat: -6.1737123, lng: 106.8213004 },
+        { lat: -6.1736056, lng: 106.8212682 },
+        { lat: -6.1735096, lng: 106.821295 },
+        { lat: -6.1733176, lng: 106.8213809 },
+        { lat: -6.1730029, lng: 106.8214291 },
+        { lat: -6.1725283, lng: 106.8198574 },
+        ]
+        const polygon092=new google.maps.Polygon({paths: coordinates092, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon092.setMap(map);
+        polygon092.addListener('click',function(event){showInfo(event,'ABDUL MUIS, KEBON JAHE KOBER')});
+
+        const coordinates093=[{ lat: -6.1755025, lng:          106.8157791 },
+        { lat: -6.1768358, lng: 106.8157308 },
+        { lat: -6.1769105, lng: 106.8174957 },
+        { lat: -6.1769371, lng: 106.8192552 },
+        { lat: -6.1769958, lng: 106.8194859 },
+        { lat: -6.1770971, lng: 106.8195932 },
+        { lat: -6.1769105, lng: 106.8197005 },
+        { lat: -6.1764091, lng: 106.8200223 },
+        { lat: -6.1758331, lng: 106.820312 },
+        { lat: -6.1756998, lng: 106.8190299 },
+        { lat: -6.1756091, lng: 106.8179034 },
+        { lat: -6.1755505, lng: 106.8169271 },
+        { lat: -6.1755025, lng: 106.8157791 },
+        ]
+        const polygon093=new google.maps.Polygon({paths: coordinates093, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon093.setMap(map);
+        polygon093.addListener('click',function(event){showInfo(event,'TANAH ABANG 2, 3')});
+
+        const coordinates094=[{ lat: -6.1769014, lng:          106.8157129 },
+        { lat: -6.1777654, lng: 106.8156914 },
+        { lat: -6.1776214, lng: 106.8192105 },
+        { lat: -6.1771148, lng: 106.8195216 },
+        { lat: -6.1769761, lng: 106.819366 },
+        { lat: -6.1769921, lng: 106.8187437 },
+        { lat: -6.1769548, lng: 106.817054 },
+        { lat: -6.1769014, lng: 106.8157129 },
+        ]
+        const polygon094=new google.maps.Polygon({paths: coordinates094, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon094.setMap(map);
+        polygon094.addListener('click',function(event){showInfo(event,'TANAH ABANG 3, 4')});
+
+        const coordinates095=[{ lat: -6.1778634, lng:          106.8153505 },
+        { lat: -6.1785248, lng: 106.8153291 },
+        { lat: -6.1785248, lng: 106.8156188 },
+        { lat: -6.1787274, lng: 106.8156456 },
+        { lat: -6.1789408, lng: 106.815667 },
+        { lat: -6.1794581, lng: 106.8157207 },
+        { lat: -6.1794208, lng: 106.8165468 },
+        { lat: -6.1793621, lng: 106.8180381 },
+        { lat: -6.1794901, lng: 106.8181186 },
+        { lat: -6.1788288, lng: 106.8185048 },
+        { lat: -6.1777034, lng: 106.8192022 },
+        { lat: -6.1777674, lng: 106.8179416 },
+        { lat: -6.1778208, lng: 106.8166863 },
+        { lat: -6.1778634, lng: 106.8153505 },
+        ]
+        const polygon095=new google.maps.Polygon({paths: coordinates095, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon095.setMap(map);
+        polygon095.addListener('click',function(event){showInfo(event,'TANAH ABANG 5, ABDUL MUIS, TANAH ABANG 4')});
+
+        const coordinates096=[{ lat: -6.179515, lng:          106.815799 },
+        { lat: -6.1803564, lng: 106.8158104 },
+        { lat: -6.1804404, lng: 106.8158003 },
+        { lat: -6.1804645, lng: 106.8157748 },
+        { lat: -6.1806363, lng: 106.8157889 },
+        { lat: -6.1807506, lng: 106.8157688 },
+        { lat: -6.1810058, lng: 106.8157715 },
+        { lat: -6.181143, lng: 106.8157608 },
+        { lat: -6.181508, lng: 106.815734 },
+        { lat: -6.181728, lng: 106.816646 },
+        { lat: -6.181643, lng: 106.816802 },
+        { lat: -6.181504, lng: 106.816893 },
+        { lat: -6.181483, lng: 106.8169336 },
+        { lat: -6.179558, lng: 106.818074 },
+        { lat: -6.179424, lng: 106.817998 },
+        { lat: -6.179459, lng: 106.8170865 },
+        { lat: -6.1794777, lng: 106.8166221 },
+        { lat: -6.179515, lng: 106.815799 },
+        ]
+        const polygon096=new google.maps.Polygon({paths: coordinates096, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon096.setMap(map);
+        polygon096.addListener('click',function(event){showInfo(event,'KEBON JAHE (1)')});
+
+        const coordinates097=[{ lat: -6.1756221, lng:          106.8121972 },
+        { lat: -6.1779047, lng: 106.8127604 },
+        { lat: -6.1778674, lng: 106.8140372 },
+        { lat: -6.1770514, lng: 106.8141659 },
+        { lat: -6.1767581, lng: 106.814182 },
+        { lat: -6.1767581, lng: 106.8142571 },
+        { lat: -6.1768221, lng: 106.8156572 },
+        { lat: -6.1754941, lng: 106.8157001 },
+        { lat: -6.1754354, lng: 106.8143644 },
+        { lat: -6.1754141, lng: 106.8139245 },
+        { lat: -6.1753874, lng: 106.8134954 },
+        { lat: -6.1754088, lng: 106.8131789 },
+        { lat: -6.1756221, lng: 106.8121972 },
+        ]
+        const polygon097=new google.maps.Polygon({paths: coordinates097, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon097.setMap(map);
+        polygon097.addListener('click',function(event){showInfo(event,'PETOJO SABANGAN 4, 5, 6, 7')});
+
+        const coordinates098=[{ lat: -6.1768232, lng:          106.8142674 },
+        { lat: -6.1770365, lng: 106.8142031 },
+        { lat: -6.1778419, lng: 106.8140958 },
+        { lat: -6.1779059, lng: 106.8140582 },
+        { lat: -6.1782739, lng: 106.8139831 },
+        { lat: -6.1784925, lng: 106.8139831 },
+        { lat: -6.1785032, lng: 106.8146698 },
+        { lat: -6.1784765, lng: 106.8150184 },
+        { lat: -6.1784872, lng: 106.8152759 },
+        { lat: -6.1777939, lng: 106.8153028 },
+        { lat: -6.1777885, lng: 106.8156246 },
+        { lat: -6.1769085, lng: 106.8156407 },
+        { lat: -6.1768605, lng: 106.8150077 },
+        { lat: -6.1768232, lng: 106.8142674 },
+        ]
+        const polygon098=new google.maps.Polygon({paths: coordinates098, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon098.setMap(map);
+        polygon098.addListener('click',function(event){showInfo(event,'TANAH ABANG 4, PTJ SABANGAN 10')});
+
+        const coordinates099=[{ lat: -6.1779602, lng:          106.8128074 },
+        { lat: -6.1795602, lng: 106.8131614 },
+        { lat: -6.1794856, lng: 106.8149639 },
+        { lat: -6.1794482, lng: 106.8156505 },
+        { lat: -6.1790109, lng: 106.8156344 },
+        { lat: -6.1789522, lng: 106.815613 },
+        { lat: -6.1788722, lng: 106.8156291 },
+        { lat: -6.1787976, lng: 106.815613 },
+        { lat: -6.1787389, lng: 106.8156023 },
+        { lat: -6.1787016, lng: 106.8155969 },
+        { lat: -6.1786109, lng: 106.8155808 },
+        { lat: -6.1785576, lng: 106.8152267 },
+        { lat: -6.1785576, lng: 106.814583 },
+        { lat: -6.1785416, lng: 106.8139232 },
+        { lat: -6.1779122, lng: 106.8139661 },
+        { lat: -6.1779389, lng: 106.8134404 },
+        { lat: -6.1779602, lng: 106.8128074 },
+        ]
+        const polygon099=new google.maps.Polygon({paths: coordinates099, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon099.setMap(map);
+        polygon099.addListener('click',function(event){showInfo(event,'PETOJO SABANGAN 8, 9, 10, 11')});
+
+        const coordinates100=[{ lat: -6.1796203, lng:          106.8131726 },
+        { lat: -6.180148, lng: 106.813315 },
+        { lat: -6.1801933, lng: 106.8133579 },
+        { lat: -6.1802533, lng: 106.81339 },
+        { lat: -6.181055, lng: 106.813562 },
+        { lat: -6.181236, lng: 106.813669 },
+        { lat: -6.181391, lng: 106.813857 },
+        { lat: -6.181524, lng: 106.814061 },
+        { lat: -6.181594, lng: 106.814275 },
+        { lat: -6.181642, lng: 106.814586 },
+        { lat: -6.181503, lng: 106.814855 },
+        { lat: -6.1814815, lng: 106.8151845 },
+        { lat: -6.181508, lng: 106.815734 },
+        { lat: -6.181143, lng: 106.8157608 },
+        { lat: -6.1810058, lng: 106.8157715 },
+        { lat: -6.1807506, lng: 106.8157688 },
+        { lat: -6.1806363, lng: 106.8157889 },
+        { lat: -6.1804645, lng: 106.8157748 },
+        { lat: -6.18041, lng: 106.81575 },
+        { lat: -6.1799657, lng: 106.8157701 },
+        { lat: -6.1795053, lng: 106.8157527 },
+        { lat: -6.1795507, lng: 106.8147852 },
+        { lat: -6.1795963, lng: 106.8140204 },
+        { lat: -6.1796203, lng: 106.8131726 },
+        ]
+        const polygon100=new google.maps.Polygon({paths: coordinates100, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon100.setMap(map);
+        polygon100.addListener('click',function(event){showInfo(event,'KEBON JAHE (2)')});
+
+        const coordinates101=[{ lat: -6.1734282, lng:          106.8057777 },
+        { lat: -6.1752842, lng: 106.8070223 },
+        { lat: -6.1744629, lng: 106.808299 },
+        { lat: -6.1744362, lng: 106.8085404 },
+        { lat: -6.1744682, lng: 106.808755 },
+        { lat: -6.1742975, lng: 106.8094631 },
+        { lat: -6.1734442, lng: 106.8092378 },
+        { lat: -6.1733269, lng: 106.8091681 },
+        { lat: -6.1729162, lng: 106.8090232 },
+        { lat: -6.1725482, lng: 106.8088408 },
+        { lat: -6.1722122, lng: 106.8086638 },
+        { lat: -6.1719295, lng: 106.8085994 },
+        { lat: -6.1717642, lng: 106.8085994 },
+        { lat: -6.1716895, lng: 106.808519 },
+        { lat: -6.1716629, lng: 106.8084385 },
+        { lat: -6.1716575, lng: 106.8083527 },
+        { lat: -6.1734282, lng: 106.8057777 },
+        ]
+        const polygon101=new google.maps.Polygon({paths: coordinates101, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon101.setMap(map);
+        polygon101.addListener('click',function(event){showInfo(event,'SIANTAR, PTJ VIJ I, PANE, BILA, ROKAN, SIAK, DSK')});
+
+        const coordinates102=[{ lat: -6.1745355, lng:          106.8083363 },
+        { lat: -6.1753674, lng: 106.8070703 },
+        { lat: -6.1769301, lng: 106.8081432 },
+        { lat: -6.1763328, lng: 106.8090015 },
+        { lat: -6.1760928, lng: 106.8098759 },
+        { lat: -6.1755914, lng: 106.8097847 },
+        { lat: -6.1743755, lng: 106.8094735 },
+        { lat: -6.1745461, lng: 106.8087386 },
+        { lat: -6.1745141, lng: 106.8085455 },
+        { lat: -6.1745355, lng: 106.8083363 },
+        ]
+        const polygon102=new google.maps.Polygon({paths: coordinates102, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon102.setMap(map);
+        polygon102.addListener('click',function(event){showInfo(event,'BERUMUN S/D TULANG BAWANG')});
+
+        const coordinates103=[{ lat: -6.1768503, lng:          106.8082023 },
+        { lat: -6.1788609, lng: 106.8094898 },
+        { lat: -6.1792929, lng: 106.8097741 },
+        { lat: -6.1796929, lng: 106.8100102 },
+        { lat: -6.1795169, lng: 106.8104393 },
+        { lat: -6.1791862, lng: 106.8109757 },
+        { lat: -6.1791542, lng: 106.811421 },
+        { lat: -6.1791116, lng: 106.8119306 },
+        { lat: -6.1791062, lng: 106.8122042 },
+        { lat: -6.1790316, lng: 106.8125046 },
+        { lat: -6.1789676, lng: 106.8126065 },
+        { lat: -6.1780769, lng: 106.812392 },
+        { lat: -6.1770369, lng: 106.8121237 },
+        { lat: -6.1757143, lng: 106.8118072 },
+        { lat: -6.1761409, lng: 106.8099994 },
+        { lat: -6.1761516, lng: 106.809919 },
+        { lat: -6.1764076, lng: 106.8090392 },
+        { lat: -6.1767649, lng: 106.8085618 },
+        { lat: -6.1767223, lng: 106.8084062 },
+        { lat: -6.1768503, lng: 106.8082023 },
+        ]
+        const polygon103=new google.maps.Polygon({paths: coordinates103, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon103.setMap(map);
+        polygon103.addListener('click',function(event){showInfo(event,'CIUJUNG S/D BRANTAS')});
+
+        const coordinates104=[{ lat: -6.1797354, lng:          106.8100257 },
+        { lat: -6.1799914, lng: 106.8101062 },
+        { lat: -6.1808181, lng: 106.8102081 },
+        { lat: -6.1815647, lng: 106.8102939 },
+        { lat: -6.1822794, lng: 106.8103154 },
+        { lat: -6.1822634, lng: 106.8106962 },
+        { lat: -6.1822101, lng: 106.8119247 },
+        { lat: -6.1818794, lng: 106.812032 },
+        { lat: -6.1812927, lng: 106.8120481 },
+        { lat: -6.1812927, lng: 106.8121554 },
+        { lat: -6.1812714, lng: 106.8127776 },
+        { lat: -6.1813354, lng: 106.8130298 },
+        { lat: -6.1814101, lng: 106.813121 },
+        { lat: -6.1814954, lng: 106.8132175 },
+        { lat: -6.1812661, lng: 106.8131585 },
+        { lat: -6.1796288, lng: 106.8127615 },
+        { lat: -6.1794634, lng: 106.8127776 },
+        { lat: -6.1794048, lng: 106.8127186 },
+        { lat: -6.1790634, lng: 106.8126274 },
+        { lat: -6.1791754, lng: 106.8122627 },
+        { lat: -6.1792128, lng: 106.8117799 },
+        { lat: -6.1792448, lng: 106.8110288 },
+        { lat: -6.1792928, lng: 106.8109537 },
+        { lat: -6.1795968, lng: 106.8104548 },
+        { lat: -6.1796021, lng: 106.810369 },
+        { lat: -6.1797354, lng: 106.8100257 },
+        ]
+        const polygon104=new google.maps.Polygon({paths: coordinates104, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon104.setMap(map);
+        polygon104.addListener('click',function(event){showInfo(event,'CIDENG BARAT DALAM DSK')});
+
+        const coordinates105=[{ lat: -6.1823409, lng:          106.8103216 },
+        { lat: -6.1837382, lng: 106.8105147 },
+        { lat: -6.1838182, lng: 106.8104932 },
+        { lat: -6.1847301, lng: 106.8105898 },
+        { lat: -6.1842821, lng: 106.8112389 },
+        { lat: -6.1836155, lng: 106.8119631 },
+        { lat: -6.1829115, lng: 106.8127409 },
+        { lat: -6.1826342, lng: 106.8130789 },
+        { lat: -6.1824262, lng: 106.8132935 },
+        { lat: -6.1822395, lng: 106.8133203 },
+        { lat: -6.1820422, lng: 106.8133364 },
+        { lat: -6.1818875, lng: 106.813331 },
+        { lat: -6.1816262, lng: 106.8132237 },
+        { lat: -6.1814929, lng: 106.8131111 },
+        { lat: -6.1814075, lng: 106.8129984 },
+        { lat: -6.1813542, lng: 106.8128536 },
+        { lat: -6.1813595, lng: 106.8121187 },
+        { lat: -6.1819515, lng: 106.8120972 },
+        { lat: -6.1822982, lng: 106.8119631 },
+        { lat: -6.1822822, lng: 106.8118558 },
+        { lat: -6.1823409, lng: 106.8103216 },
+        ]
+        const polygon105=new google.maps.Polygon({paths: coordinates105, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon105.setMap(map);
+        polygon105.addListener('click',function(event){showInfo(event,'JATI BARU DSK')});
+
+        const coordinates106=[{ lat: -6.1711244, lng:          106.8047818 },
+        { lat: -6.1720017, lng: 106.8053263 },
+        { lat: -6.1728017, lng: 106.8060693 },
+        { lat: -6.172887, lng: 106.8061176 },
+        { lat: -6.172639, lng: 106.8063536 },
+        { lat: -6.1722017, lng: 106.8069571 },
+        { lat: -6.1720284, lng: 106.8073058 },
+        { lat: -6.1712577, lng: 106.8067291 },
+        { lat: -6.171055, lng: 106.8065494 },
+        { lat: -6.171295, lng: 106.8062892 },
+        { lat: -6.1717137, lng: 106.8057367 },
+        { lat: -6.171663, lng: 106.8056723 },
+        { lat: -6.171287, lng: 106.8054282 },
+        { lat: -6.1708684, lng: 106.8051198 },
+        { lat: -6.1711244, lng: 106.8047818 },
+        ]
+        const polygon106=new google.maps.Polygon({paths: coordinates106, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon106.setMap(map);
+        polygon106.addListener('click',function(event){showInfo(event,'TANJUNG SELOR – PETOJO VIJ 4')});
+
+        const coordinates107=[{ lat: -6.1700852, lng:          106.8040701 },
+        { lat: -6.1710745, lng: 106.8047406 },
+        { lat: -6.1707652, lng: 106.8051295 },
+        { lat: -6.1711758, lng: 106.805438 },
+        { lat: -6.1716078, lng: 106.8057384 },
+        { lat: -6.1713945, lng: 106.8060442 },
+        { lat: -6.1710025, lng: 106.8064921 },
+        { lat: -6.1706345, lng: 106.8061756 },
+        { lat: -6.1705678, lng: 106.8061488 },
+        { lat: -6.1703012, lng: 106.8059288 },
+        { lat: -6.1699065, lng: 106.805615 },
+        { lat: -6.1694425, lng: 106.8052556 },
+        { lat: -6.1693438, lng: 106.8051241 },
+        { lat: -6.1695252, lng: 106.8048586 },
+        { lat: -6.1698345, lng: 106.8044563 },
+        { lat: -6.1700852, lng: 106.8040701 },
+        ]
+        const polygon107=new google.maps.Polygon({paths: coordinates107, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon107.setMap(map);
+        polygon107.addListener('click',function(event){showInfo(event,'SANGGAU – MARABAHAN')});
+
+        const coordinates108=[{ lat: -6.169438, lng:          106.8053662 },
+        { lat: -6.1705154, lng: 106.8062084 },
+        { lat: -6.1719767, lng: 106.8073832 },
+        { lat: -6.1717154, lng: 106.8078767 },
+        { lat: -6.1716247, lng: 106.8078821 },
+        { lat: -6.1712034, lng: 106.8075388 },
+        { lat: -6.1694913, lng: 106.806364 },
+        { lat: -6.1689953, lng: 106.8060099 },
+        { lat: -6.1691713, lng: 106.8057256 },
+        { lat: -6.169438, lng: 106.8053662 },
+        ]
+        const polygon108=new google.maps.Polygon({paths: coordinates108, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon108.setMap(map);
+        polygon108.addListener('click',function(event){showInfo(event,'PETOJO VIJ 4 – PETOJO VIJ 2')});
+
+        const coordinates109=[{ lat: -6.1689473, lng:          106.806085 },
+        { lat: -6.1710647, lng: 106.8075388 },
+        { lat: -6.1716514, lng: 106.8079894 },
+        { lat: -6.171358, lng: 106.8085151 },
+        { lat: -6.1705367, lng: 106.808381 },
+        { lat: -6.1702967, lng: 106.8083166 },
+        { lat: -6.1687607, lng: 106.8082522 },
+        { lat: -6.168814, lng: 106.8066161 },
+        { lat: -6.1688673, lng: 106.806262 },
+        { lat: -6.1689473, lng: 106.806085 },
+        ]
+        const polygon109=new google.maps.Polygon({paths: coordinates109, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon109.setMap(map);
+        polygon109.addListener('click',function(event){showInfo(event,'PETOJO VIJ 2 – BIAK')});
+
+        const coordinates110=[{ lat: -6.1667625, lng:          106.806123 },
+        { lat: -6.1685972, lng: 106.8061981 },
+        { lat: -6.1687625, lng: 106.806284 },
+        { lat: -6.1687358, lng: 106.8064288 },
+        { lat: -6.1687038, lng: 106.807212 },
+        { lat: -6.1670825, lng: 106.807153 },
+        { lat: -6.1667412, lng: 106.807153 },
+        { lat: -6.1667625, lng: 106.806123 },
+        ]
+        const polygon110=new google.maps.Polygon({paths: coordinates110, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon110.setMap(map);
+        polygon110.addListener('click',function(event){showInfo(event,'BACAN – HALMAHERA')});
+
+        const coordinates111=[{ lat: -6.1687016, lng:          106.8072832 },
+        { lat: -6.1686909, lng: 106.8082541 },
+        { lat: -6.1670376, lng: 106.808179 },
+        { lat: -6.1668669, lng: 106.8081415 },
+        { lat: -6.1659922, lng: 106.8080932 },
+        { lat: -6.1660455, lng: 106.8073958 },
+        { lat: -6.1667335, lng: 106.8073851 },
+        { lat: -6.1667389, lng: 106.8072188 },
+        { lat: -6.1687016, lng: 106.8072832 },
+        ]
+        const polygon111=new google.maps.Polygon({paths: coordinates111, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon111.setMap(map);
+        polygon111.addListener('click',function(event){showInfo(event,'HALMAHERA – BIAK')});
+
+        const coordinates112=[{ lat: -6.1661802, lng:          106.8048068 },
+        { lat: -6.1668096, lng: 106.8048283 },
+        { lat: -6.1680469, lng: 106.8053486 },
+        { lat: -6.1682229, lng: 106.8051233 },
+        { lat: -6.1690549, lng: 106.8057241 },
+        { lat: -6.1688256, lng: 106.8060889 },
+        { lat: -6.1687936, lng: 106.8061855 },
+        { lat: -6.1686176, lng: 106.8061318 },
+        { lat: -6.1666762, lng: 106.8060514 },
+        { lat: -6.1666549, lng: 106.807312 },
+        { lat: -6.1660469, lng: 106.8073013 },
+        { lat: -6.1661202, lng: 106.8063585 },
+        { lat: -6.1661722, lng: 106.8051045 },
+        { lat: -6.1661802, lng: 106.8048068 },
+        ]
+        const polygon112=new google.maps.Polygon({paths: coordinates112, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon112.setMap(map);
+        polygon112.addListener('click',function(event){showInfo(event,'MOROTAI – SUPIORI')});
+
+        const coordinates113=[{ lat: -6.1661851, lng:          106.8024454 },
+        { lat: -6.1663931, lng: 106.8024132 },
+        { lat: -6.1677105, lng: 106.8026117 },
+        { lat: -6.1681532, lng: 106.8027994 },
+        { lat: -6.1700198, lng: 106.8040333 },
+        { lat: -6.1693638, lng: 106.8049345 },
+        { lat: -6.1692358, lng: 106.8051383 },
+        { lat: -6.1693905, lng: 106.8053261 },
+        { lat: -6.1691132, lng: 106.805664 },
+        { lat: -6.1682758, lng: 106.8050525 },
+        { lat: -6.1682065, lng: 106.8049935 },
+        { lat: -6.1680412, lng: 106.805251 },
+        { lat: -6.1668038, lng: 106.8047521 },
+        { lat: -6.1661851, lng: 106.8047253 },
+        { lat: -6.1662118, lng: 106.8043337 },
+        { lat: -6.1661851, lng: 106.8024454 },
+        ]
+        const polygon113=new google.maps.Polygon({paths: coordinates113, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon113.setMap(map);
+        polygon113.addListener('click',function(event){showInfo(event,'ROXY MAS – APARTEMEN ROXY')});
+
+        const coordinates114=[{ lat: -6.1661787, lng:          106.8008291 },
+        { lat: -6.1684401, lng: 106.802433 },
+        { lat: -6.1680241, lng: 106.8022453 },
+        { lat: -6.1675121, lng: 106.802079 },
+        { lat: -6.1668614, lng: 106.8019717 },
+        { lat: -6.1661947, lng: 106.8019395 },
+        { lat: -6.1661787, lng: 106.8008291 },
+        ]
+        const polygon114=new google.maps.Polygon({paths: coordinates114, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon114.setMap(map);
+        polygon114.addListener('click',function(event){showInfo(event,'BAKTI')});
+
+        const coordinates127=[{ lat: -6.1668656, lng:          106.7912699 },
+        { lat: -6.1669883, lng: 106.7900253 },
+        { lat: -6.1670417, lng: 106.7892743 },
+        { lat: -6.1671803, lng: 106.7889632 },
+        { lat: -6.1673083, lng: 106.7888183 },
+        { lat: -6.1675323, lng: 106.7887325 },
+        { lat: -6.1679057, lng: 106.7886306 },
+        { lat: -6.1681723, lng: 106.7885769 },
+        { lat: -6.1686897, lng: 106.7885448 },
+        { lat: -6.168647, lng: 106.7910231 },
+        { lat: -6.1686363, lng: 106.7911089 },
+        { lat: -6.1685883, lng: 106.791184 },
+        { lat: -6.1685457, lng: 106.7912484 },
+        { lat: -6.1684123, lng: 106.7913021 },
+        { lat: -6.168087, lng: 106.7913021 },
+        { lat: -6.1672977, lng: 106.7913075 },
+        { lat: -6.1668656, lng: 106.7912699 },
+        ]
+        const polygon127=new google.maps.Polygon({paths: coordinates127, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon127.setMap(map);
+        polygon127.addListener('click',function(event){showInfo(event,'TRISAKTI – TARUMA NEGARA')});
+
+        const coordinates128=[{ lat: -6.16878, lng:          106.7885279 },
+        { lat: -6.1690947, lng: 106.7885547 },
+        { lat: -6.1694493, lng: 106.7886164 },
+        { lat: -6.1696387, lng: 106.7886727 },
+        { lat: -6.1695453, lng: 106.7898261 },
+        { lat: -6.1695, lng: 106.790907 },
+        { lat: -6.1694653, lng: 106.7911672 },
+        { lat: -6.169348, lng: 106.7914756 },
+        { lat: -6.169348, lng: 106.7915561 },
+        { lat: -6.1693613, lng: 106.7916285 },
+        { lat: -6.1693747, lng: 106.7916848 },
+        { lat: -6.1694093, lng: 106.7917304 },
+        { lat: -6.169236, lng: 106.7918163 },
+        { lat: -6.1689427, lng: 106.791937 },
+        { lat: -6.168804, lng: 106.7920067 },
+        { lat: -6.1686707, lng: 106.7920711 },
+        { lat: -6.1684947, lng: 106.7921676 },
+        { lat: -6.1683907, lng: 106.7922374 },
+        { lat: -6.1686707, lng: 106.7928489 },
+        { lat: -6.1685626, lng: 106.7929021 },
+        { lat: -6.1679119, lng: 106.7930979 },
+        { lat: -6.1678287, lng: 106.7931522 },
+        { lat: -6.1678047, lng: 106.793246 },
+        { lat: -6.1678154, lng: 106.7933064 },
+        { lat: -6.1678034, lng: 106.7933399 },
+        { lat: -6.1676714, lng: 106.7932943 },
+        { lat: -6.1675487, lng: 106.7932809 },
+        { lat: -6.1674207, lng: 106.7932782 },
+        { lat: -6.1672501, lng: 106.7933158 },
+        { lat: -6.1671541, lng: 106.793348 },
+        { lat: -6.1669381, lng: 106.7934231 },
+        { lat: -6.1667994, lng: 106.7934633 },
+        { lat: -6.1666954, lng: 106.7934713 },
+        { lat: -6.1667674, lng: 106.7925299 },
+        { lat: -6.1668634, lng: 106.7913765 },
+        { lat: -6.1677301, lng: 106.7913846 },
+        { lat: -6.1684474, lng: 106.7913873 },
+        { lat: -6.1685807, lng: 106.7913202 },
+        { lat: -6.1686821, lng: 106.7912129 },
+        { lat: -6.1687087, lng: 106.7911056 },
+        { lat: -6.1687381, lng: 106.7905209 },
+        { lat: -6.1687381, lng: 106.7900435 },
+        { lat: -6.16878, lng: 106.7885279 },
+        ]
+        const polygon128=new google.maps.Polygon({paths: coordinates128, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon128.setMap(map);
+        polygon128.addListener('click',function(event){showInfo(event,'TJ. GEDONG – TJ. GEDONG BARU 3')});
+
+        const coordinates129=[{ lat: -6.1697071, lng:          106.7886881 },
+        { lat: -6.1701391, lng: 106.7887712 },
+        { lat: -6.1702831, lng: 106.7887766 },
+        { lat: -6.1703471, lng: 106.7887578 },
+        { lat: -6.1703898, lng: 106.7887363 },
+        { lat: -6.1709818, lng: 106.7889241 },
+        { lat: -6.1715764, lng: 106.7891494 },
+        { lat: -6.1718991, lng: 106.7893264 },
+        { lat: -6.1721578, lng: 106.7895222 },
+        { lat: -6.1724431, lng: 106.7897556 },
+        { lat: -6.1719818, lng: 106.7900319 },
+        { lat: -6.1715818, lng: 106.7897905 },
+        { lat: -6.1713364, lng: 106.7896376 },
+        { lat: -6.1709258, lng: 106.7894337 },
+        { lat: -6.1707204, lng: 106.7893506 },
+        { lat: -6.1706111, lng: 106.7893264 },
+        { lat: -6.1703764, lng: 106.7893103 },
+        { lat: -6.1696431, lng: 106.7892835 },
+        { lat: -6.1696884, lng: 106.7886854 },
+        { lat: -6.1697071, lng: 106.7886881 },
+        ]
+        const polygon129=new google.maps.Polygon({paths: coordinates129, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon129.setMap(map);
+        polygon129.addListener('click',function(event){showInfo(event,'KODIM JAKARTA BARAT')});
+
+        const coordinates130=[{ lat: -6.1696454, lng:          106.7893599 },
+        { lat: -6.1702401, lng: 106.789384 },
+        { lat: -6.1705228, lng: 106.7893921 },
+        { lat: -6.1706721, lng: 106.7894108 },
+        { lat: -6.1709628, lng: 106.7895235 },
+        { lat: -6.1713228, lng: 106.7897166 },
+        { lat: -6.1719334, lng: 106.7900787 },
+        { lat: -6.1715654, lng: 106.7904328 },
+        { lat: -6.1713068, lng: 106.7905776 },
+        { lat: -6.1707281, lng: 106.7908834 },
+        { lat: -6.1699361, lng: 106.7912374 },
+        { lat: -6.1694374, lng: 106.7914654 },
+        { lat: -6.1694934, lng: 106.7912857 },
+        { lat: -6.1695228, lng: 106.7912106 },
+        { lat: -6.1695361, lng: 106.7911194 },
+        { lat: -6.1695788, lng: 106.7907305 },
+        { lat: -6.1696454, lng: 106.7893599 },
+        ]
+        const polygon130=new google.maps.Polygon({paths: coordinates130, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon130.setMap(map);
+        polygon130.addListener('click',function(event){showInfo(event,'TANJUNG GEDONG BARU 3 – T. S. PARMAN')});
+
+        const coordinates131=[{ lat: -6.1718204, lng:          106.7902881 },
+        { lat: -6.1720097, lng: 106.7901057 },
+        { lat: -6.1725004, lng: 106.7898053 },
+        { lat: -6.173487, lng: 106.7907548 },
+        { lat: -6.173127, lng: 106.7910874 },
+        { lat: -6.1725004, lng: 106.7916077 },
+        { lat: -6.172423, lng: 106.7915031 },
+        { lat: -6.1721617, lng: 106.7909023 },
+        { lat: -6.1718204, lng: 106.7902881 },
+        ]
+        const polygon131=new google.maps.Polygon({paths: coordinates131, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon131.setMap(map);
+        polygon131.addListener('click',function(event){showInfo(event,'T. S. PARMAN – GELONG BARU UTARA 4')});
+
+        const coordinates132=[{ lat: -6.1717654, lng:          106.7903356 },
+        { lat: -6.1721147, lng: 106.7909766 },
+        { lat: -6.1723734, lng: 106.7915667 },
+        { lat: -6.172472, lng: 106.7916794 },
+        { lat: -6.172848, lng: 106.7923902 },
+        { lat: -6.1722347, lng: 106.7927657 },
+        { lat: -6.17216, lng: 106.7926852 },
+        { lat: -6.1719174, lng: 106.7921783 },
+        { lat: -6.171856, lng: 106.792138 },
+        { lat: -6.171776, lng: 106.7921273 },
+        { lat: -6.1716747, lng: 106.7921541 },
+        { lat: -6.1712214, lng: 106.7924063 },
+        { lat: -6.1702187, lng: 106.7928783 },
+        { lat: -6.1700934, lng: 106.7925913 },
+        { lat: -6.1699174, lng: 106.7922641 },
+        { lat: -6.169648, lng: 106.7917652 },
+        { lat: -6.1696134, lng: 106.7917116 },
+        { lat: -6.1695654, lng: 106.7916847 },
+        { lat: -6.1694854, lng: 106.7917116 },
+        { lat: -6.1694427, lng: 106.7916552 },
+        { lat: -6.1694267, lng: 106.7916096 },
+        { lat: -6.1694267, lng: 106.7915426 },
+        { lat: -6.170112, lng: 106.7912234 },
+        { lat: -6.170784, lng: 106.7909203 },
+        { lat: -6.1716134, lng: 106.7904751 },
+        { lat: -6.1717654, lng: 106.7903356 },
+        ]
+        const polygon132=new google.maps.Polygon({paths: coordinates132, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon132.setMap(map);
+        polygon132.addListener('click',function(event){showInfo(event,'TJ. GEDONG BARU 2 – G. BARU UTARA 5')});
+
+        const coordinates133=[{ lat: -6.1684867, lng:          106.7922697 },
+        { lat: -6.1686974, lng: 106.7921544 },
+        { lat: -6.1688227, lng: 106.7920927 },
+        { lat: -6.1689214, lng: 106.7920256 },
+        { lat: -6.1692254, lng: 106.7919076 },
+        { lat: -6.1694601, lng: 106.791803 },
+        { lat: -6.1695561, lng: 106.7917681 },
+        { lat: -6.1698121, lng: 106.7922348 },
+        { lat: -6.1700067, lng: 106.7926023 },
+        { lat: -6.1701641, lng: 106.7929242 },
+        { lat: -6.1700334, lng: 106.7932434 },
+        { lat: -6.1698334, lng: 106.7935035 },
+        { lat: -6.1696654, lng: 106.7936832 },
+        { lat: -6.1695747, lng: 106.7938013 },
+        { lat: -6.1693774, lng: 106.7939461 },
+        { lat: -6.1692627, lng: 106.7939997 },
+        { lat: -6.1691641, lng: 106.7940373 },
+        { lat: -6.1689294, lng: 106.7939166 },
+        { lat: -6.1687987, lng: 106.7938013 },
+        { lat: -6.1686734, lng: 106.7937288 },
+        { lat: -6.1680761, lng: 106.7934365 },
+        { lat: -6.1678921, lng: 106.7933748 },
+        { lat: -6.1678787, lng: 106.7932487 },
+        { lat: -6.1678841, lng: 106.7932058 },
+        { lat: -6.1679107, lng: 106.7931817 },
+        { lat: -6.1685401, lng: 106.7929912 },
+        { lat: -6.1687614, lng: 106.7928893 },
+        { lat: -6.1684867, lng: 106.7922697 },
+        ]
+        const polygon133=new google.maps.Polygon({paths: coordinates133, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon133.setMap(map);
+        polygon133.addListener('click',function(event){showInfo(event,'TANJUNG GEDONG')});
+
+        const coordinates134=[{ lat: -6.1666942, lng:          106.7935527 },
+        { lat: -6.1668569, lng: 106.7935393 },
+        { lat: -6.1670169, lng: 106.793483 },
+        { lat: -6.1672596, lng: 106.7933971 },
+        { lat: -6.1674729, lng: 106.7933569 },
+        { lat: -6.1676356, lng: 106.7933596 },
+        { lat: -6.1681049, lng: 106.7935446 },
+        { lat: -6.1687316, lng: 106.7938558 },
+        { lat: -6.1689263, lng: 106.7940113 },
+        { lat: -6.1691343, lng: 106.7941213 },
+        { lat: -6.1692303, lng: 106.7942876 },
+        { lat: -6.1693983, lng: 106.7946953 },
+        { lat: -6.1684276, lng: 106.7950762 },
+        { lat: -6.1677636, lng: 106.7953256 },
+        { lat: -6.1672569, lng: 106.7954705 },
+        { lat: -6.1665582, lng: 106.7955241 },
+        { lat: -6.1666942, lng: 106.7935527 },
+        ]
+        const polygon134=new google.maps.Polygon({paths: coordinates134, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon134.setMap(map);
+        polygon134.addListener('click',function(event){showInfo(event,'TANJUNG GEDONG – TAWAKAL')});
+
+        const coordinates135=[{ lat: -6.1692146, lng:          106.7941026 },
+        { lat: -6.1692946, lng: 106.7940624 },
+        { lat: -6.16942, lng: 106.7940141 },
+        { lat: -6.1695666, lng: 106.7939148 },
+        { lat: -6.1697426, lng: 106.7937271 },
+        { lat: -6.1698946, lng: 106.7935661 },
+        { lat: -6.1700893, lng: 106.7933087 },
+        { lat: -6.170172, lng: 106.7931397 },
+        { lat: -6.170228, lng: 106.7929546 },
+        { lat: -6.171172, lng: 106.7925174 },
+        { lat: -6.1715293, lng: 106.7923162 },
+        { lat: -6.1717506, lng: 106.7922009 },
+        { lat: -6.1718386, lng: 106.7922009 },
+        { lat: -6.1718893, lng: 106.792268 },
+        { lat: -6.1720893, lng: 106.7927078 },
+        { lat: -6.17202, lng: 106.7928178 },
+        { lat: -6.171916, lng: 106.7929197 },
+        { lat: -6.1718066, lng: 106.7929814 },
+        { lat: -6.170468, lng: 106.7936305 },
+        { lat: -6.170244, lng: 106.7937378 },
+        { lat: -6.1702146, lng: 106.7937727 },
+        { lat: -6.1702013, lng: 106.7938344 },
+        { lat: -6.1704066, lng: 106.7942287 },
+        { lat: -6.1701426, lng: 106.7943547 },
+        { lat: -6.1696493, lng: 106.7945934 },
+        { lat: -6.1694573, lng: 106.7946685 },
+        { lat: -6.1692973, lng: 106.7942394 },
+        { lat: -6.1692146, lng: 106.7941026 },
+        ]
+        const polygon135=new google.maps.Polygon({paths: coordinates135, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon135.setMap(map);
+        polygon135.addListener('click',function(event){showInfo(event,'TJ. GEDONG – GELONG BARU UTARA 3')});
+
+        const coordinates136=[{ lat: -6.1725506, lng:          106.7916697 },
+        { lat: -6.1732866, lng: 106.7910421 },
+        { lat: -6.1735426, lng: 106.7908061 },
+        { lat: -6.174044, lng: 106.7913157 },
+        { lat: -6.1745026, lng: 106.7917931 },
+        { lat: -6.1734253, lng: 106.7928231 },
+        { lat: -6.173052, lng: 106.7931047 },
+        { lat: -6.172932, lng: 106.7932174 },
+        { lat: -6.1728866, lng: 106.7932362 },
+        { lat: -6.1722893, lng: 106.7928177 },
+        { lat: -6.172892, lng: 106.7924637 },
+        { lat: -6.1729133, lng: 106.7924288 },
+        { lat: -6.1729213, lng: 106.7923725 },
+        { lat: -6.1728866, lng: 106.7922974 },
+        { lat: -6.1725506, lng: 106.7916697 },
+        ]
+        const polygon136=new google.maps.Polygon({paths: coordinates136, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon136.setMap(map);
+        polygon136.addListener('click',function(event){showInfo(event,'G. BARU UTARA 4 – G. BARU UTARA 2')});
+
+        const coordinates137=[{ lat: -6.1745511, lng:          106.7918652 },
+        { lat: -6.1749671, lng: 106.7923372 },
+        { lat: -6.1757617, lng: 106.793217 },
+        { lat: -6.1740337, lng: 106.7947512 },
+        { lat: -6.1739964, lng: 106.7946117 },
+        { lat: -6.1739484, lng: 106.7943221 },
+        { lat: -6.1739164, lng: 106.7941021 },
+        { lat: -6.1738044, lng: 106.7938285 },
+        { lat: -6.1736804, lng: 106.7936676 },
+        { lat: -6.1735391, lng: 106.7935389 },
+        { lat: -6.1734191, lng: 106.7934557 },
+        { lat: -6.1732244, lng: 106.7933538 },
+        { lat: -6.1730004, lng: 106.7932545 },
+        { lat: -6.1733951, lng: 106.792938 },
+        { lat: -6.1739444, lng: 106.7924231 },
+        { lat: -6.1745511, lng: 106.7918652 },
+        ]
+        const polygon137=new google.maps.Polygon({paths: coordinates137, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon137.setMap(map);
+        polygon137.addListener('click',function(event){showInfo(event,'G. BARU UTARA 2 – G. BARU UTARA')});
+
+        const coordinates138=[{ lat: -6.1721287, lng:          106.7927647 },
+        { lat: -6.1722167, lng: 106.7928533 },
+        { lat: -6.1722993, lng: 106.7929176 },
+        { lat: -6.172614, lng: 106.7931403 },
+        { lat: -6.1728273, lng: 106.7932744 },
+        { lat: -6.1725447, lng: 106.7934809 },
+        { lat: -6.1722593, lng: 106.7935077 },
+        { lat: -6.1721553, lng: 106.793556 },
+        { lat: -6.171926, lng: 106.7936928 },
+        { lat: -6.1719633, lng: 106.7937518 },
+        { lat: -6.1723633, lng: 106.7942802 },
+        { lat: -6.1723847, lng: 106.7943097 },
+        { lat: -6.172366, lng: 106.7943499 },
+        { lat: -6.1718327, lng: 106.7947791 },
+        { lat: -6.1717713, lng: 106.7948032 },
+        { lat: -6.1717233, lng: 106.7947737 },
+        { lat: -6.1716033, lng: 106.794527 },
+        { lat: -6.1714887, lng: 106.7942802 },
+        { lat: -6.1714327, lng: 106.7940951 },
+        { lat: -6.1712967, lng: 106.7938189 },
+        { lat: -6.1710807, lng: 106.7934165 },
+        { lat: -6.1718273, lng: 106.7930625 },
+        { lat: -6.1719287, lng: 106.7930035 },
+        { lat: -6.1720087, lng: 106.7929364 },
+        { lat: -6.1720753, lng: 106.7928586 },
+        { lat: -6.1721287, lng: 106.7927647 },
+        ]
+        const polygon138=new google.maps.Polygon({paths: coordinates138, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon138.setMap(map);
+        polygon138.addListener('click',function(event){showInfo(event,'TAWAKAL UJUNG 2 – G. BARU UTARA 2A')});
+
+        const coordinates139=[{ lat: -6.1729004, lng:          106.7933056 },
+        { lat: -6.173079, lng: 106.7933646 },
+        { lat: -6.173391, lng: 106.7935175 },
+        { lat: -6.1736417, lng: 106.7937267 },
+        { lat: -6.173719, lng: 106.793834 },
+        { lat: -6.173847, lng: 106.7941237 },
+        { lat: -6.1738684, lng: 106.7943838 },
+        { lat: -6.1739297, lng: 106.7946708 },
+        { lat: -6.173951, lng: 106.7947593 },
+        { lat: -6.1739883, lng: 106.794813 },
+        { lat: -6.173511, lng: 106.7952448 },
+        { lat: -6.173439, lng: 106.7952663 },
+        { lat: -6.172935, lng: 106.7953521 },
+        { lat: -6.1722337, lng: 106.7955801 },
+        { lat: -6.171823, lng: 106.7957357 },
+        { lat: -6.1713697, lng: 106.7961434 },
+        { lat: -6.171319, lng: 106.7961809 },
+        { lat: -6.1712337, lng: 106.795969 },
+        { lat: -6.171119, lng: 106.7956042 },
+        { lat: -6.1709297, lng: 106.795269 },
+        { lat: -6.170639, lng: 106.7945609 },
+        { lat: -6.170271, lng: 106.7938018 },
+        { lat: -6.171023, lng: 106.7934531 },
+        { lat: -6.171367, lng: 106.7941076 },
+        { lat: -6.1714444, lng: 106.7943275 },
+        { lat: -6.1716737, lng: 106.7948157 },
+        { lat: -6.1717084, lng: 106.7948532 },
+        { lat: -6.1717457, lng: 106.7948666 },
+        { lat: -6.171807, lng: 106.7948613 },
+        { lat: -6.1718577, lng: 106.7948264 },
+        { lat: -6.1721617, lng: 106.7945957 },
+        { lat: -6.172399, lng: 106.7943972 },
+        { lat: -6.1724444, lng: 106.7943436 },
+        { lat: -6.1724444, lng: 106.79429 },
+        { lat: -6.1723937, lng: 106.7942095 },
+        { lat: -6.1720017, lng: 106.7937133 },
+        { lat: -6.172255, lng: 106.7935711 },
+        { lat: -6.1725724, lng: 106.7935309 },
+        { lat: -6.1729004, lng: 106.7933056 },
+        ]
+        const polygon139=new google.maps.Polygon({paths: coordinates139, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon139.setMap(map);
+        polygon139.addListener('click',function(event){showInfo(event,'TAWAKAL UJUNG – GELONG BARU UTARA 1')});
+
+        const coordinates140=[{ lat: -6.1691875, lng:          106.7948495 },
+        { lat: -6.1696061, lng: 106.7946912 },
+        { lat: -6.1700355, lng: 106.7944847 },
+        { lat: -6.1704381, lng: 106.7942916 },
+        { lat: -6.1708221, lng: 106.7951874 },
+        { lat: -6.1708915, lng: 106.7953725 },
+        { lat: -6.1710381, lng: 106.7956085 },
+        { lat: -6.1712541, lng: 106.7962201 },
+        { lat: -6.1710701, lng: 106.7963006 },
+        { lat: -6.1708675, lng: 106.7964293 },
+        { lat: -6.1704755, lng: 106.7966922 },
+        { lat: -6.1703448, lng: 106.7967324 },
+        { lat: -6.1701181, lng: 106.7967538 },
+        { lat: -6.1700088, lng: 106.7967753 },
+        { lat: -6.1691875, lng: 106.7948495 },
+        ]
+        const polygon140=new google.maps.Polygon({paths: coordinates140, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon140.setMap(map);
+        polygon140.addListener('click',function(event){showInfo(event,'TAWAKAL 6 – TAWAKAL UJUNG')});
+
+        const coordinates141=[{ lat: -6.1684057, lng:          106.7951618 },
+        { lat: -6.1691151, lng: 106.7948802 },
+        { lat: -6.1697284, lng: 106.7963017 },
+        { lat: -6.1690057, lng: 106.7965673 },
+        { lat: -6.1684057, lng: 106.7951618 },
+        ]
+        const polygon141=new google.maps.Polygon({paths: coordinates141, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon141.setMap(map);
+        polygon141.addListener('click',function(event){showInfo(event,'TAWAKAL 4 – TAWAKAL 6')});
+
+        const coordinates142=[{ lat: -6.1683434, lng:          106.7951874 },
+        { lat: -6.1686367, lng: 106.7958794 },
+        { lat: -6.1674527, lng: 106.7963354 },
+        { lat: -6.1672234, lng: 106.7964507 },
+        { lat: -6.1672047, lng: 106.7963971 },
+        { lat: -6.1673114, lng: 106.7955227 },
+        { lat: -6.1675754, lng: 106.7954556 },
+        { lat: -6.1678821, lng: 106.7953698 },
+        { lat: -6.1683434, lng: 106.7951874 },
+        ]
+        const polygon142=new google.maps.Polygon({paths: coordinates142, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon142.setMap(map);
+        polygon142.addListener('click',function(event){showInfo(event,'TAWAKAL 1 – TAWAKAL 4')});
+
+        const coordinates143=[{ lat: -6.1675329, lng:          106.7963781 },
+        { lat: -6.1686609, lng: 106.7959274 },
+        { lat: -6.1689303, lng: 106.7965846 },
+        { lat: -6.1677569, lng: 106.7970137 },
+        { lat: -6.1675329, lng: 106.7963781 },
+        ]
+        const polygon143=new google.maps.Polygon({paths: coordinates143, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon143.setMap(map);
+        polygon143.addListener('click',function(event){showInfo(event,'TAWAKAL 8 – TAWAKAL 11')});
+
+        const coordinates144=[{ lat: -6.1665557, lng:          106.7956016 },
+        { lat: -6.1672304, lng: 106.7955372 },
+        { lat: -6.1671344, lng: 106.7963794 },
+        { lat: -6.1671344, lng: 106.796425 },
+        { lat: -6.1671584, lng: 106.7964894 },
+        { lat: -6.1671824, lng: 106.7965135 },
+        { lat: -6.1672224, lng: 106.7965269 },
+        { lat: -6.1672784, lng: 106.7965082 },
+        { lat: -6.1674757, lng: 106.7964089 },
+        { lat: -6.1676891, lng: 106.7970419 },
+        { lat: -6.1676357, lng: 106.7970661 },
+        { lat: -6.1675931, lng: 106.7971251 },
+        { lat: -6.1676144, lng: 106.7972163 },
+        { lat: -6.1674037, lng: 106.7973128 },
+        { lat: -6.1665717, lng: 106.7972646 },
+        { lat: -6.1664357, lng: 106.7972619 },
+        { lat: -6.1665211, lng: 106.796197 },
+        { lat: -6.1665557, lng: 106.7956016 },
+        ]
+        const polygon144=new google.maps.Polygon({paths: coordinates144, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon144.setMap(map);
+        polygon144.addListener('click',function(event){showInfo(event,'KYAI TAPA – TAWAKAL 10')});
+
+        const coordinates145=[{ lat: -6.1664405, lng:          106.797326 },
+        { lat: -6.1671246, lng: 106.7973686 },
+        { lat: -6.1673059, lng: 106.7973767 },
+        { lat: -6.1674473, lng: 106.7973713 },
+        { lat: -6.1676339, lng: 106.7972908 },
+        { lat: -6.1676846, lng: 106.7972426 },
+        { lat: -6.1676739, lng: 106.797146 },
+        { lat: -6.1677059, lng: 106.7971058 },
+        { lat: -6.1679273, lng: 106.797036 },
+        { lat: -6.1688793, lng: 106.7966927 },
+        { lat: -6.1689806, lng: 106.7966525 },
+        { lat: -6.1697619, lng: 106.7963735 },
+        { lat: -6.1699486, lng: 106.7967946 },
+        { lat: -6.1696099, lng: 106.7968536 },
+        { lat: -6.1698458, lng: 106.7977256 },
+        { lat: -6.1700511, lng: 106.7976827 },
+        { lat: -6.1700671, lng: 106.7978088 },
+        { lat: -6.1701258, lng: 106.7979509 },
+        { lat: -6.1701685, lng: 106.7980475 },
+        { lat: -6.1701791, lng: 106.7982299 },
+        { lat: -6.1701658, lng: 106.7982835 },
+        { lat: -6.1701258, lng: 106.7983211 },
+        { lat: -6.1696671, lng: 106.7984391 },
+        { lat: -6.1694991, lng: 106.7984525 },
+        { lat: -6.1694618, lng: 106.7984793 },
+        { lat: -6.1694618, lng: 106.7985088 },
+        { lat: -6.1694965, lng: 106.7987717 },
+        { lat: -6.1694698, lng: 106.7992625 },
+        { lat: -6.1689018, lng: 106.7993832 },
+        { lat: -6.1682725, lng: 106.7995549 },
+        { lat: -6.1672858, lng: 106.7998392 },
+        { lat: -6.1668085, lng: 106.7988522 },
+        { lat: -6.1667631, lng: 106.7987288 },
+        { lat: -6.1667018, lng: 106.7985974 },
+        { lat: -6.1666591, lng: 106.7985652 },
+        { lat: -6.1666005, lng: 106.7985518 },
+        { lat: -6.1665498, lng: 106.7985518 },
+        { lat: -6.1663258, lng: 106.7986134 },
+        { lat: -6.1663445, lng: 106.7985088 },
+        { lat: -6.1663231, lng: 106.7983935 },
+        { lat: -6.1663631, lng: 106.7982272 },
+        { lat: -6.1664405, lng: 106.797326 },
+        ]
+        const polygon145=new google.maps.Polygon({paths: coordinates145, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon145.setMap(map);
+        polygon145.addListener('click',function(event){showInfo(event,'SUMBER WARAS')});
+
+        const coordinates146=[{ lat: -6.1696961, lng:          106.7969266 },
+        { lat: -6.1700135, lng: 106.7968488 },
+        { lat: -6.1703175, lng: 106.7968139 },
+        { lat: -6.1704188, lng: 106.7967871 },
+        { lat: -6.1705095, lng: 106.7967603 },
+        { lat: -6.1708562, lng: 106.7965323 },
+        { lat: -6.1709335, lng: 106.7969051 },
+        { lat: -6.1709761, lng: 106.7969695 },
+        { lat: -6.1711575, lng: 106.7969722 },
+        { lat: -6.1711415, lng: 106.7976615 },
+        { lat: -6.1711735, lng: 106.7980316 },
+        { lat: -6.1711175, lng: 106.7980638 },
+        { lat: -6.1710988, lng: 106.7981255 },
+        { lat: -6.1711148, lng: 106.7981926 },
+        { lat: -6.1711975, lng: 106.7985574 },
+        { lat: -6.1712481, lng: 106.7986485 },
+        { lat: -6.1709255, lng: 106.7990294 },
+        { lat: -6.1708615, lng: 106.7991206 },
+        { lat: -6.1703281, lng: 106.7990965 },
+        { lat: -6.1700775, lng: 106.7991179 },
+        { lat: -6.1695308, lng: 106.7992467 },
+        { lat: -6.1695468, lng: 106.7989463 },
+        { lat: -6.1695601, lng: 106.7987719 },
+        { lat: -6.1695175, lng: 106.7985118 },
+        { lat: -6.1696935, lng: 106.798501 },
+        { lat: -6.1701415, lng: 106.7983723 },
+        { lat: -6.1702108, lng: 106.798324 },
+        { lat: -6.1702348, lng: 106.7982248 },
+        { lat: -6.1702295, lng: 106.7980531 },
+        { lat: -6.1701921, lng: 106.7979351 },
+        { lat: -6.1701521, lng: 106.7978627 },
+        { lat: -6.1700721, lng: 106.7975998 },
+        { lat: -6.1698775, lng: 106.7976561 },
+        { lat: -6.1698695, lng: 106.7975676 },
+        { lat: -6.1696961, lng: 106.7969266 },
+        ]
+        const polygon146=new google.maps.Polygon({paths: coordinates146, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon146.setMap(map);
+        polygon146.addListener('click',function(event){showInfo(event,'TOMANG UTARA – TOMANG TINGGI 4')});
+
+        const coordinates147=[{ lat: -6.1716064, lng:          106.7960221 },
+        { lat: -6.1716197, lng: 106.7960516 },
+        { lat: -6.1716757, lng: 106.7961079 },
+        { lat: -6.1717344, lng: 106.7962259 },
+        { lat: -6.1718811, lng: 106.7965237 },
+        { lat: -6.1718917, lng: 106.7967919 },
+        { lat: -6.1719264, lng: 106.7969823 },
+        { lat: -6.1719477, lng: 106.7972157 },
+        { lat: -6.1719504, lng: 106.7975188 },
+        { lat: -6.1721424, lng: 106.7982027 },
+        { lat: -6.1717184, lng: 106.7983234 },
+        { lat: -6.1714411, lng: 106.798487 },
+        { lat: -6.1712944, lng: 106.7986077 },
+        { lat: -6.1712411, lng: 106.7984817 },
+        { lat: -6.1711531, lng: 106.7981276 },
+        { lat: -6.1711797, lng: 106.7981035 },
+        { lat: -6.1712224, lng: 106.7980713 },
+        { lat: -6.1712357, lng: 106.7980391 },
+        { lat: -6.1712011, lng: 106.7975858 },
+        { lat: -6.1712117, lng: 106.7968992 },
+        { lat: -6.1710091, lng: 106.7969045 },
+        { lat: -6.1708997, lng: 106.7964834 },
+        { lat: -6.1711771, lng: 106.7963306 },
+        { lat: -6.1713264, lng: 106.7962635 },
+        { lat: -6.1713984, lng: 106.7962099 },
+        { lat: -6.1716064, lng: 106.7960221 },
+        ]
+        const polygon147=new google.maps.Polygon({paths: coordinates147, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon147.setMap(map);
+        polygon147.addListener('click',function(event){showInfo(event,'TOMANG TINGGI 4 – MANDALA UTARA 3')});
+
+        const coordinates148=[{ lat: -6.1726164, lng:          106.7964007 },
+        { lat: -6.1725657, lng: 106.7964329 },
+        { lat: -6.1719364, lng: 106.7965911 },
+        { lat: -6.1719284, lng: 106.7964785 },
+        { lat: -6.1717151, lng: 106.796052 },
+        { lat: -6.1716697, lng: 106.7960091 },
+        { lat: -6.1716591, lng: 106.7959689 },
+        { lat: -6.1718404, lng: 106.7958133 },
+        { lat: -6.1719551, lng: 106.7957543 },
+        { lat: -6.1725497, lng: 106.7955478 },
+        { lat: -6.1729391, lng: 106.7954297 },
+        { lat: -6.1732351, lng: 106.795368 },
+        { lat: -6.1735444, lng: 106.7953117 },
+        { lat: -6.1736217, lng: 106.7952393 },
+        { lat: -6.1741577, lng: 106.7947565 },
+        { lat: -6.1745604, lng: 106.7951883 },
+        { lat: -6.1740591, lng: 106.7956738 },
+        { lat: -6.1739871, lng: 106.795757 },
+        { lat: -6.1738511, lng: 106.7960091 },
+        { lat: -6.1737897, lng: 106.796339 },
+        { lat: -6.1737711, lng: 106.7964436 },
+        { lat: -6.1735444, lng: 106.7963819 },
+        { lat: -6.1730964, lng: 106.7963524 },
+        { lat: -6.1728964, lng: 106.7963122 },
+        { lat: -6.1727711, lng: 106.7963283 },
+        { lat: -6.1726164, lng: 106.7964007 },
+        ]
+        const polygon148=new google.maps.Polygon({paths: coordinates148, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon148.setMap(map);
+        polygon148.addListener('click',function(event){showInfo(event,'TOMANG TINGGI – UTIRA')});
+
+        const coordinates149=[{ lat: -6.1737578, lng:          106.7964993 },
+        { lat: -6.1737231, lng: 106.7968024 },
+        { lat: -6.1736751, lng: 106.7970062 },
+        { lat: -6.1736164, lng: 106.7972288 },
+        { lat: -6.1735151, lng: 106.797422 },
+        { lat: -6.1733471, lng: 106.7975856 },
+        { lat: -6.1731791, lng: 106.7977116 },
+        { lat: -6.1727791, lng: 106.7979477 },
+        { lat: -6.1724831, lng: 106.7980845 },
+        { lat: -6.1721898, lng: 106.7981864 },
+        { lat: -6.1720084, lng: 106.7974783 },
+        { lat: -6.1720084, lng: 106.797194 },
+        { lat: -6.1719898, lng: 106.7970143 },
+        { lat: -6.1719364, lng: 106.7966468 },
+        { lat: -6.1722244, lng: 106.7965824 },
+        { lat: -6.1725871, lng: 106.7964885 },
+        { lat: -6.1727871, lng: 106.7963893 },
+        { lat: -6.1728778, lng: 106.7963705 },
+        { lat: -6.1731044, lng: 106.7964134 },
+        { lat: -6.1732991, lng: 106.7964269 },
+        { lat: -6.1735631, lng: 106.796451 },
+        { lat: -6.1737578, lng: 106.7964993 },
+        ]
+        const polygon149=new google.maps.Polygon({paths: coordinates149, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon149.setMap(map);
+        polygon149.addListener('click',function(event){showInfo(event,'MANDALA UTARA 3 – UTIRA')});
+
+        const coordinates150=[{ lat: -6.1684765, lng:          106.8007338 },
+        { lat: -6.1681672, lng: 106.8005219 },
+        { lat: -6.1674392, lng: 106.8000042 },
+        { lat: -6.1673272, lng: 106.7998915 },
+        { lat: -6.1676472, lng: 106.7997977 },
+        { lat: -6.1686579, lng: 106.7995214 },
+        { lat: -6.1694819, lng: 106.7993363 },
+        { lat: -6.1698339, lng: 106.7992478 },
+        { lat: -6.1700685, lng: 106.7991969 },
+        { lat: -6.1703352, lng: 106.7991674 },
+        { lat: -6.1703165, lng: 106.7993363 },
+        { lat: -6.1702819, lng: 106.7994651 },
+        { lat: -6.1701859, lng: 106.799677 },
+        { lat: -6.1699805, lng: 106.8000739 },
+        { lat: -6.1697192, lng: 106.8004682 },
+        { lat: -6.1696045, lng: 106.8003743 },
+        { lat: -6.1695565, lng: 106.8003583 },
+        { lat: -6.1694845, lng: 106.8003583 },
+        { lat: -6.1693245, lng: 106.800377 },
+        { lat: -6.1690579, lng: 106.8004441 },
+        { lat: -6.1686925, lng: 106.8005433 },
+        { lat: -6.1686099, lng: 106.8005728 },
+        { lat: -6.1685672, lng: 106.8006104 },
+        { lat: -6.1684765, lng: 106.8007338 },
+        ]
+        const polygon150=new google.maps.Polygon({paths: coordinates150, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon150.setMap(map);
+        polygon150.addListener('click',function(event){showInfo(event,'TOMANG UTARA – TOMANG UTARA 5')});
+
+        const coordinates151=[{ lat: -6.1685279, lng:          106.80077 },
+        { lat: -6.1686186, lng: 106.800652 },
+        { lat: -6.1686559, lng: 106.8006252 },
+        { lat: -6.1689226, lng: 106.8005501 },
+        { lat: -6.1692079, lng: 106.800475 },
+        { lat: -6.1693359, lng: 106.8004482 },
+        { lat: -6.1695146, lng: 106.8004294 },
+        { lat: -6.1695946, lng: 106.8004562 },
+        { lat: -6.1697466, lng: 106.8005662 },
+        { lat: -6.1700506, lng: 106.8001049 },
+        { lat: -6.1702426, lng: 106.799732 },
+        { lat: -6.1703599, lng: 106.7994584 },
+        { lat: -6.1704026, lng: 106.7991714 },
+        { lat: -6.1708399, lng: 106.7991956 },
+        { lat: -6.1706426, lng: 106.7998661 },
+        { lat: -6.1705946, lng: 106.8000217 },
+        { lat: -6.1702959, lng: 106.800483 },
+        { lat: -6.1695893, lng: 106.8015023 },
+        { lat: -6.1685279, lng: 106.80077 },
+        ]
+        const polygon151=new google.maps.Polygon({paths: coordinates151, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon151.setMap(map);
+        polygon151.addListener('click',function(event){showInfo(event,'TOMANG UTARA 5 – MANDALA UTARA')});
+
+        const coordinates152=[{ lat: -6.1663173, lng:          106.7986939 },
+        { lat: -6.1665573, lng: 106.7986188 },
+        { lat: -6.1665867, lng: 106.7986188 },
+        { lat: -6.166624, lng: 106.7986242 },
+        { lat: -6.1666507, lng: 106.7986564 },
+        { lat: -6.1668133, lng: 106.7990506 },
+        { lat: -6.16716, lng: 106.7997561 },
+        { lat: -6.1672133, lng: 106.799858 },
+        { lat: -6.167168, lng: 106.7998794 },
+        { lat: -6.1671253, lng: 106.7999438 },
+        { lat: -6.1667386, lng: 106.8005849 },
+        { lat: -6.1661627, lng: 106.8001744 },
+        { lat: -6.1661947, lng: 106.7997158 },
+        { lat: -6.1663173, lng: 106.7986939 },
+        ]
+        const polygon152=new google.maps.Polygon({paths: coordinates152, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon152.setMap(map);
+        polygon152.addListener('click',function(event){showInfo(event,'ROXY SQUARE')});
+
+        const coordinates153=[{ lat: -6.1689649, lng:          106.8011602 },
+        { lat: -6.1685525, lng: 106.8018347 },
+        { lat: -6.1677089, lng: 106.8012595 },
+        { lat: -6.1668022, lng: 106.8006345 },
+        { lat: -6.1671995, lng: 106.7999586 },
+        { lat: -6.1672475, lng: 106.799913 },
+        { lat: -6.1673649, lng: 106.8000391 },
+        { lat: -6.1678928, lng: 106.8004066 },
+        { lat: -6.1689649, lng: 106.8011602 },
+        ]
+        const polygon153=new google.maps.Polygon({paths: coordinates153, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon153.setMap(map);
+        polygon153.addListener('click',function(event){showInfo(event,'TOMANG UTARA 1')});
+
+        const coordinates154=[{ lat: -6.1685915, lng:          106.8017798 },
+        { lat: -6.1689649, lng: 106.8011602 },
+        { lat: -6.1714085, lng: 106.8028352 },
+        { lat: -6.1713232, lng: 106.8029881 },
+        { lat: -6.1712725, lng: 106.8030015 },
+        { lat: -6.1712325, lng: 106.8029747 },
+        { lat: -6.1710032, lng: 106.8028137 },
+        { lat: -6.1706805, lng: 106.8032831 },
+        { lat: -6.1685525, lng: 106.8018347 },
+        { lat: -6.1685915, lng: 106.8017798 },
+        ]
+        const polygon154=new google.maps.Polygon({paths: coordinates154, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon154.setMap(map);
+        polygon154.addListener('click',function(event){showInfo(event,'TOMANG UTARA 1 – RAWA KEPA UTAMA')});
+
+        const coordinates155=[{ lat: -6.1714745, lng:          106.8028725 },
+        { lat: -6.1717129, lng: 106.8030561 },
+        { lat: -6.1723902, lng: 106.8035443 },
+        { lat: -6.1727875, lng: 106.8037857 },
+        { lat: -6.1730249, lng: 106.8039654 },
+        { lat: -6.1733689, lng: 106.8041907 },
+        { lat: -6.1732799, lng: 106.8043289 },
+        { lat: -6.1731439, lng: 106.8045327 },
+        { lat: -6.1731412, lng: 106.8045918 },
+        { lat: -6.1731679, lng: 106.8046374 },
+        { lat: -6.1731865, lng: 106.8046642 },
+        { lat: -6.1737092, lng: 106.8050182 },
+        { lat: -6.1735385, lng: 106.8052596 },
+        { lat: -6.1730852, lng: 106.8049539 },
+        { lat: -6.1718319, lng: 106.8040929 },
+        { lat: -6.1710825, lng: 106.8035618 },
+        { lat: -6.1714745, lng: 106.8028725 },
+        ]
+        const polygon155=new google.maps.Polygon({paths: coordinates155, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon155.setMap(map);
+        polygon155.addListener('click',function(event){showInfo(event,'RAWA KEPA UTAMA')});
+
+        const coordinates156=[{ lat: -6.1735253, lng:          106.8048048 },
+        { lat: -6.1732106, lng: 106.8045769 },
+        { lat: -6.1740639, lng: 106.8031848 },
+        { lat: -6.1743333, lng: 106.8027878 },
+        { lat: -6.1754213, lng: 106.8012992 },
+        { lat: -6.1766373, lng: 106.7995799 },
+        { lat: -6.1770879, lng: 106.7998884 },
+        { lat: -6.1755253, lng: 106.8021092 },
+        { lat: -6.1751546, lng: 106.8025733 },
+        { lat: -6.1743599, lng: 106.8041209 },
+        { lat: -6.1742373, lng: 106.804306 },
+        { lat: -6.1737413, lng: 106.8049631 },
+        { lat: -6.1735253, lng: 106.8048048 },
+        ]
+        const polygon156=new google.maps.Polygon({paths: coordinates156, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon156.setMap(map);
+        polygon156.addListener('click',function(event){showInfo(event,'PULO MACAN RAYA – TOMANG RAYA')});
+
+        const coordinates157=[{ lat: -6.1757978, lng:          106.7989665 },
+        { lat: -6.1765925, lng: 106.7995431 },
+        { lat: -6.1754751, lng: 106.8011122 },
+        { lat: -6.1749925, lng: 106.800793 },
+        { lat: -6.1755525, lng: 106.8000286 },
+        { lat: -6.1756298, lng: 106.7999401 },
+        { lat: -6.1759151, lng: 106.7995297 },
+        { lat: -6.1755818, lng: 106.7992722 },
+        { lat: -6.1757978, lng: 106.7989665 },
+        ]
+        const polygon157=new google.maps.Polygon({paths: coordinates157, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon157.setMap(map);
+        polygon157.addListener('click',function(event){showInfo(event,'PULO MACAN 3 – PULO MACAN 2')});
+
+        const coordinates158=[{ lat: -6.1758316, lng:          106.7995435 },
+        { lat: -6.1747356, lng: 106.8010268 },
+        { lat: -6.174277, lng: 106.8006781 },
+        { lat: -6.1742423, lng: 106.8006111 },
+        { lat: -6.1743596, lng: 106.800603 },
+        { lat: -6.1744183, lng: 106.8006003 },
+        { lat: -6.174309, lng: 106.8001792 },
+        { lat: -6.174661, lng: 106.8000585 },
+        { lat: -6.1748236, lng: 106.7999888 },
+        { lat: -6.1749623, lng: 106.7999137 },
+        { lat: -6.175125, lng: 106.7997903 },
+        { lat: -6.1753303, lng: 106.7995945 },
+        { lat: -6.1755356, lng: 106.799329 },
+        { lat: -6.1758316, lng: 106.7995435 },
+        ]
+        const polygon158=new google.maps.Polygon({paths: coordinates158, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon158.setMap(map);
+        polygon158.addListener('click',function(event){showInfo(event,'MANDALA SELATAN – PULO MACAN 5')});
+
+        const coordinates159=[{ lat: -6.1749525, lng:          106.8008401 },
+        { lat: -6.1754485, lng: 106.80117 },
+        { lat: -6.1745392, lng: 106.8024012 },
+        { lat: -6.1739846, lng: 106.8021786 },
+        { lat: -6.1749525, lng: 106.8008401 },
+        ]
+        const polygon159=new google.maps.Polygon({paths: coordinates159, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon159.setMap(map);
+        polygon159.addListener('click',function(event){showInfo(event,'PULO MACAN 5 – PULO MACAN RAYA')});
+
+        const coordinates160=[{ lat: -6.1741739, lng:          106.8006163 },
+        { lat: -6.1742272, lng: 106.8007182 },
+        { lat: -6.1746939, lng: 106.8010776 },
+        { lat: -6.1739206, lng: 106.8021585 },
+        { lat: -6.1736219, lng: 106.8020378 },
+        { lat: -6.1734219, lng: 106.8018984 },
+        { lat: -6.1731819, lng: 106.8016623 },
+        { lat: -6.1738672, lng: 106.8006941 },
+        { lat: -6.1741739, lng: 106.8006163 },
+        ]
+        const polygon160=new google.maps.Polygon({paths: coordinates160, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon160.setMap(map);
+        polygon160.addListener('click',function(event){showInfo(event,'PULO MACAN 8 – PULO MACAN 5')});
+
+        const coordinates161=[{ lat: -6.1742542, lng:          106.8001962 },
+        { lat: -6.1743369, lng: 106.8005422 },
+        { lat: -6.1741689, lng: 106.8005529 },
+        { lat: -6.1738142, lng: 106.8006495 },
+        { lat: -6.1734116, lng: 106.8012476 },
+        { lat: -6.1731476, lng: 106.8016151 },
+        { lat: -6.1725556, lng: 106.8008936 },
+        { lat: -6.1728809, lng: 106.8006844 },
+        { lat: -6.1731289, lng: 106.8005556 },
+        { lat: -6.1733262, lng: 106.8004537 },
+        { lat: -6.1736489, lng: 106.800341 },
+        { lat: -6.1738515, lng: 106.800282 },
+        { lat: -6.1740595, lng: 106.8002364 },
+        { lat: -6.1742542, lng: 106.8001962 },
+        ]
+        const polygon161=new google.maps.Polygon({paths: coordinates161, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon161.setMap(map);
+        polygon161.addListener('click',function(event){showInfo(event,'MANDALA SELATAN – PULO MACAN 8')});
+
+        const coordinates162=[{ lat: -6.1725844, lng:          106.8010346 },
+        { lat: -6.1731124, lng: 106.8016783 },
+        { lat: -6.173387, lng: 106.8019465 },
+        { lat: -6.1735284, lng: 106.8020512 },
+        { lat: -6.1736404, lng: 106.8021209 },
+        { lat: -6.1745124, lng: 106.8024481 },
+        { lat: -6.1742937, lng: 106.8027458 },
+        { lat: -6.173683, lng: 106.8025152 },
+        { lat: -6.1731657, lng: 106.8022496 },
+        { lat: -6.173043, lng: 106.8021665 },
+        { lat: -6.172211, lng: 106.8012223 },
+        { lat: -6.1725017, lng: 106.8009407 },
+        { lat: -6.1725844, lng: 106.8010346 },
+        ]
+        const polygon162=new google.maps.Polygon({paths: coordinates162, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon162.setMap(map);
+        polygon162.addListener('click',function(event){showInfo(event,'PULO MACAN 1 – RAWA KEPA')});
+
+        const coordinates163=[{ lat: -6.173116, lng:          106.8023096 },
+        { lat: -6.1734173, lng: 106.8024705 },
+        { lat: -6.1736386, lng: 106.8025751 },
+        { lat: -6.173844, lng: 106.8026663 },
+        { lat: -6.1742413, lng: 106.8027924 },
+        { lat: -6.1734066, lng: 106.8041335 },
+        { lat: -6.1728466, lng: 106.8037553 },
+        { lat: -6.17342, lng: 106.8028809 },
+        { lat: -6.1733666, lng: 106.8028568 },
+        { lat: -6.172988, lng: 106.8026261 },
+        { lat: -6.173116, lng: 106.8023096 },
+        ]
+        const polygon163=new google.maps.Polygon({paths: coordinates163, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon163.setMap(map);
+        polygon163.addListener('click',function(event){showInfo(event,'RAWA KEPA 10 – KEPA UJUNG')});
+
+        const coordinates164=[{ lat: -6.1730554, lng:          106.8022713 },
+        { lat: -6.1728928, lng: 106.8026602 },
+        { lat: -6.1733141, lng: 106.802915 },
+        { lat: -6.1727941, lng: 106.8037089 },
+        { lat: -6.1721568, lng: 106.8032932 },
+        { lat: -6.1716074, lng: 106.8028828 },
+        { lat: -6.1718368, lng: 106.8026334 },
+        { lat: -6.1720021, lng: 106.8024831 },
+        { lat: -6.1721488, lng: 106.8024 },
+        { lat: -6.1723274, lng: 106.8023249 },
+        { lat: -6.1725594, lng: 106.8022686 },
+        { lat: -6.1727754, lng: 106.8022417 },
+        { lat: -6.1730021, lng: 106.802231 },
+        { lat: -6.1730554, lng: 106.8022713 },
+        ]
+        const polygon164=new google.maps.Polygon({paths: coordinates164, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon164.setMap(map);
+        polygon164.addListener('click',function(event){showInfo(event,'RAWA KEPA 8 – RAWA KEPA 13')});
+
+        const coordinates165=[{ lat: -6.170524, lng:          106.8021392 },
+        { lat: -6.1712546, lng: 106.8010582 },
+        { lat: -6.171476, lng: 106.8012111 },
+        { lat: -6.171796, lng: 106.8014579 },
+        { lat: -6.1720973, lng: 106.8017127 },
+        { lat: -6.1723373, lng: 106.8014552 },
+        { lat: -6.1729426, lng: 106.8021687 },
+        { lat: -6.172748, lng: 106.8021767 },
+        { lat: -6.172604, lng: 106.8021901 },
+        { lat: -6.1724253, lng: 106.8022143 },
+        { lat: -6.172244, lng: 106.802276 },
+        { lat: -6.171996, lng: 106.8024047 },
+        { lat: -6.171884, lng: 106.8024986 },
+        { lat: -6.1716813, lng: 106.8026837 },
+        { lat: -6.1715506, lng: 106.8028446 },
+        { lat: -6.1712306, lng: 106.8026354 },
+        { lat: -6.1709426, lng: 106.8024449 },
+        { lat: -6.170524, lng: 106.8021392 },
+        ]
+        const polygon165=new google.maps.Polygon({paths: coordinates165, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon165.setMap(map);
+        polygon165.addListener('click',function(event){showInfo(event,'RAWA KEPA 3 – RAWA KEPA 8')});
+
+        const coordinates166=[{ lat: -6.1720906, lng:          106.8016273 },
+        { lat: -6.1717733, lng: 106.8013537 },
+        { lat: -6.1714986, lng: 106.8011445 },
+        { lat: -6.1712453, lng: 106.8009808 },
+        { lat: -6.17048, lng: 106.8021154 },
+        { lat: -6.1696533, lng: 106.8015441 },
+        { lat: -6.1701626, lng: 106.8008145 },
+        { lat: -6.170576, lng: 106.8001842 },
+        { lat: -6.171256, lng: 106.8005839 },
+        { lat: -6.1715946, lng: 106.800785 },
+        { lat: -6.1719226, lng: 106.8010238 },
+        { lat: -6.172296, lng: 106.8014207 },
+        { lat: -6.1720906, lng: 106.8016273 },
+        ]
+        const polygon166=new google.maps.Polygon({paths: coordinates166, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon166.setMap(map);
+        polygon166.addListener('click',function(event){showInfo(event,'MANDALA UTARA – RAWA KEPA 3')});
+
+        const coordinates167=[{ lat: -6.1724769, lng:          106.7981627 },
+        { lat: -6.1726609, lng: 106.7984899 },
+        { lat: -6.1721862, lng: 106.7986804 },
+        { lat: -6.1720662, lng: 106.798726 },
+        { lat: -6.1717089, lng: 106.7989352 },
+        { lat: -6.1714289, lng: 106.799198 },
+        { lat: -6.1713089, lng: 106.7994073 },
+        { lat: -6.1712102, lng: 106.7996674 },
+        { lat: -6.1711249, lng: 106.8000295 },
+        { lat: -6.1709889, lng: 106.800338 },
+        { lat: -6.1706049, lng: 106.8001234 },
+        { lat: -6.1706609, lng: 106.800051 },
+        { lat: -6.1707942, lng: 106.7996272 },
+        { lat: -6.1709142, lng: 106.7991659 },
+        { lat: -6.1712902, lng: 106.7987072 },
+        { lat: -6.1714982, lng: 106.7985463 },
+        { lat: -6.1717462, lng: 106.7983907 },
+        { lat: -6.1720022, lng: 106.7983102 },
+        { lat: -6.1724769, lng: 106.7981627 },
+        ]
+        const polygon167=new google.maps.Polygon({paths: coordinates167, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon167.setMap(map);
+        polygon167.addListener('click',function(event){showInfo(event,'MANDALA UTARA – MANDALA TENGAH')});
+
+        const coordinates168=[{ lat: -6.1711764, lng:          106.8000602 },
+        { lat: -6.1714991, lng: 106.8002292 },
+        { lat: -6.1718404, lng: 106.8004304 },
+        { lat: -6.1721604, lng: 106.8006825 },
+        { lat: -6.1731204, lng: 106.8000951 },
+        { lat: -6.1732671, lng: 106.8004035 },
+        { lat: -6.1730564, lng: 106.8005081 },
+        { lat: -6.1728324, lng: 106.8006342 },
+        { lat: -6.1725471, lng: 106.8008166 },
+        { lat: -6.1721604, lng: 106.8011706 },
+        { lat: -6.1720297, lng: 106.8010446 },
+        { lat: -6.1718671, lng: 106.8008971 },
+        { lat: -6.1717391, lng: 106.8008005 },
+        { lat: -6.1715391, lng: 106.8006717 },
+        { lat: -6.1710377, lng: 106.800374 },
+        { lat: -6.1711764, lng: 106.8000602 },
+        ]
+        const polygon168=new google.maps.Polygon({paths: coordinates168, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon168.setMap(map);
+        polygon168.addListener('click',function(event){showInfo(event,'MANDALA SELATAN 4')});
+
+        const coordinates169=[{ lat: -6.1712093, lng:          106.7999899 },
+        { lat: -6.1713426, lng: 106.7994964 },
+        { lat: -6.1714413, lng: 106.7993006 },
+        { lat: -6.1715559, lng: 106.7991611 },
+        { lat: -6.1717426, lng: 106.7990082 },
+        { lat: -6.172092, lng: 106.7988044 },
+        { lat: -6.172244, lng: 106.7991155 },
+        { lat: -6.1728333, lng: 106.8002071 },
+        { lat: -6.1721826, lng: 106.8005987 },
+        { lat: -6.1719293, lng: 106.8003922 },
+        { lat: -6.1714733, lng: 106.8001347 },
+        { lat: -6.1712093, lng: 106.7999899 },
+        ]
+        const polygon169=new google.maps.Polygon({paths: coordinates169, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon169.setMap(map);
+        polygon169.addListener('click',function(event){showInfo(event,'MANDALA SELATAN 4 – MANDALA SELATAN 6')});
+
+        const coordinates170=[{ lat: -6.1721601, lng:          106.7987636 },
+        { lat: -6.1724454, lng: 106.7986402 },
+        { lat: -6.1726961, lng: 106.7985463 },
+        { lat: -6.1736321, lng: 106.8002764 },
+        { lat: -6.1733388, lng: 106.8003729 },
+        { lat: -6.1731521, lng: 106.7999947 },
+        { lat: -6.1728668, lng: 106.8001691 },
+        { lat: -6.1722641, lng: 106.7989996 },
+        { lat: -6.1721601, lng: 106.7987636 },
+        ]
+        const polygon170=new google.maps.Polygon({paths: coordinates170, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon170.setMap(map);
+        polygon170.addListener('click',function(event){showInfo(event,'MANDALA SELATAN 6 – MANDALA SELATAN 2')});
+
+        const coordinates171=[{ lat: -6.1741433, lng:          106.7999654 },
+        { lat: -6.1741646, lng: 106.7999117 },
+        { lat: -6.174466, lng: 106.7997025 },
+        { lat: -6.1747326, lng: 106.7995148 },
+        { lat: -6.1749273, lng: 106.7993485 },
+        { lat: -6.175266, lng: 106.7990642 },
+        { lat: -6.174218, lng: 106.798407 },
+        { lat: -6.173858, lng: 106.7981737 },
+        { lat: -6.1737993, lng: 106.7981737 },
+        { lat: -6.173682, lng: 106.7980074 },
+        { lat: -6.1738926, lng: 106.7977445 },
+        { lat: -6.1752526, lng: 106.7986001 },
+        { lat: -6.175738, lng: 106.7989247 },
+        { lat: -6.17533, lng: 106.7994826 },
+        { lat: -6.175058, lng: 106.7997562 },
+        { lat: -6.1748793, lng: 106.7998822 },
+        { lat: -6.1746846, lng: 106.7999788 },
+        { lat: -6.1745753, lng: 106.8000137 },
+        { lat: -6.1742526, lng: 106.8001263 },
+        { lat: -6.1741433, lng: 106.7999654 },
+        ]
+        const polygon171=new google.maps.Polygon({paths: coordinates171, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon171.setMap(map);
+        polygon171.addListener('click',function(event){showInfo(event,'MANDALA BARAT – MANDALA SELATAN 1')});
+
+        const coordinates172=[{ lat: -6.1732098, lng:          106.7993553 },
+        { lat: -6.1735404, lng: 106.799197 },
+        { lat: -6.1738604, lng: 106.7990012 },
+        { lat: -6.1741457, lng: 106.798792 },
+        { lat: -6.1743804, lng: 106.7985828 },
+        { lat: -6.1751511, lng: 106.799071 },
+        { lat: -6.1740977, lng: 106.7998676 },
+        { lat: -6.1740684, lng: 106.7999615 },
+        { lat: -6.1740924, lng: 106.8000258 },
+        { lat: -6.1741751, lng: 106.8001412 },
+        { lat: -6.1736951, lng: 106.8002512 },
+        { lat: -6.1732098, lng: 106.7993553 },
+        ]
+        const polygon172=new google.maps.Polygon({paths: coordinates172, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon172.setMap(map);
+        polygon172.addListener('click',function(event){showInfo(event,'MANDALA BARAT 2 – MANDALA SELATAN 1')});
+
+        const coordinates173=[{ lat: -6.1735271, lng:          106.7975108 },
+        { lat: -6.1738471, lng: 106.7977174 },
+        { lat: -6.1736258, lng: 106.7979856 },
+        { lat: -6.1735804, lng: 106.7980097 },
+        { lat: -6.1737458, lng: 106.798227 },
+        { lat: -6.1743191, lng: 106.7985515 },
+        { lat: -6.1738978, lng: 106.7988975 },
+        { lat: -6.1736311, lng: 106.7990558 },
+        { lat: -6.1731884, lng: 106.7992945 },
+        { lat: -6.1725378, lng: 106.7981358 },
+        { lat: -6.1727884, lng: 106.7980258 },
+        { lat: -6.1730018, lng: 106.7979078 },
+        { lat: -6.1732044, lng: 106.7977898 },
+        { lat: -6.1734444, lng: 106.797594 },
+        { lat: -6.1735271, lng: 106.7975108 },
+        ]
+        const polygon173=new google.maps.Polygon({paths: coordinates173, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon173.setMap(map);
+        polygon173.addListener('click',function(event){showInfo(event,'MANDALA UTARA – MANDALA BARAT 2')});
+
+        const coordinates174=[{ lat: -6.1739365, lng:          106.7976854 },
+        { lat: -6.1741419, lng: 106.797377 },
+        { lat: -6.1744859, lng: 106.7975808 },
+        { lat: -6.1754458, lng: 106.7981977 },
+        { lat: -6.1768965, lng: 106.7991472 },
+        { lat: -6.1766432, lng: 106.7994932 },
+        { lat: -6.1754112, lng: 106.7986054 },
+        { lat: -6.1742325, lng: 106.7978758 },
+        { lat: -6.1739365, lng: 106.7976854 },
+        ]
+        const polygon174=new google.maps.Polygon({paths: coordinates174, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon174.setMap(map);
+        polygon174.addListener('click',function(event){showInfo(event,'GELONG BARU TIMUR – GELONG BARU SELATAN 1')});
+
+        const coordinates175=[{ lat: -6.1738753, lng:          106.7976497 },
+        { lat: -6.1735767, lng: 106.7974512 },
+        { lat: -6.1736673, lng: 106.7972903 },
+        { lat: -6.1737313, lng: 106.7971079 },
+        { lat: -6.173798, lng: 106.7967941 },
+        { lat: -6.1738327, lng: 106.7964803 },
+        { lat: -6.1739153, lng: 106.7960431 },
+        { lat: -6.1740887, lng: 106.7957292 },
+        { lat: -6.1746033, lng: 106.795233 },
+        { lat: -6.174878, lng: 106.7954905 },
+        { lat: -6.1746193, lng: 106.7957748 },
+        { lat: -6.1750247, lng: 106.796204 },
+        { lat: -6.174806, lng: 106.7964293 },
+        { lat: -6.1743527, lng: 106.7970006 },
+        { lat: -6.1738753, lng: 106.7976497 },
+        ]
+        const polygon175=new google.maps.Polygon({paths: coordinates175, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon175.setMap(map);
+        polygon175.addListener('click',function(event){showInfo(event,'MANDALA UTARA – GELONG BARU TIMUR 6')});
+
+        const coordinates176=[{ lat: -6.174714, lng:          106.797639 },
+        { lat: -6.174194, lng: 106.7973332 },
+        { lat: -6.17445, lng: 106.7969953 },
+        { lat: -6.1748447, lng: 106.796499 },
+        { lat: -6.1751247, lng: 106.7962174 },
+        { lat: -6.174706, lng: 106.7957909 },
+        { lat: -6.1749247, lng: 106.7955415 },
+        { lat: -6.1761087, lng: 106.7968209 },
+        { lat: -6.175906, lng: 106.7970382 },
+        { lat: -6.1755167, lng: 106.7966251 },
+        { lat: -6.1752287, lng: 106.7969094 },
+        { lat: -6.1750767, lng: 106.7971025 },
+        { lat: -6.174714, lng: 106.797639 },
+        ]
+        const polygon176=new google.maps.Polygon({paths: coordinates176, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon176.setMap(map);
+        polygon176.addListener('click',function(event){showInfo(event,'GELONG BARU TIMUR 6 – GELONG BARU TIMUR 4')});
+
+        const coordinates177=[{ lat: -6.1747765, lng:          106.7976666 },
+        { lat: -6.1751525, lng: 106.7971328 },
+        { lat: -6.1752512, lng: 106.7969987 },
+        { lat: -6.1755018, lng: 106.7967278 },
+        { lat: -6.1763605, lng: 106.7976075 },
+        { lat: -6.1757845, lng: 106.7983505 },
+        { lat: -6.1747765, lng: 106.7976666 },
+        ]
+        const polygon177=new google.maps.Polygon({paths: coordinates177, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon177.setMap(map);
+        polygon177.addListener('click',function(event){showInfo(event,'GELONG BARU TIMUR 4 – GELONG BARU')});
+
+        const coordinates178=[{ lat: -6.1748498, lng:          106.794903 },
+        { lat: -6.1750765, lng: 106.7950961 },
+        { lat: -6.1752498, lng: 106.7952999 },
+        { lat: -6.1758018, lng: 106.7958847 },
+        { lat: -6.1764525, lng: 106.7965686 },
+        { lat: -6.1773031, lng: 106.7957398 },
+        { lat: -6.1773538, lng: 106.7957961 },
+        { lat: -6.1768738, lng: 106.7967966 },
+        { lat: -6.1766364, lng: 106.7972794 },
+        { lat: -6.1764045, lng: 106.7975583 },
+        { lat: -6.1759591, lng: 106.7970756 },
+        { lat: -6.1762098, lng: 106.7968073 },
+        { lat: -6.1760071, lng: 106.7966035 },
+        { lat: -6.1749805, lng: 106.7954904 },
+        { lat: -6.1746098, lng: 106.795139 },
+        { lat: -6.1748498, lng: 106.794903 },
+        ]
+        const polygon178=new google.maps.Polygon({paths: coordinates178, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon178.setMap(map);
+        polygon178.addListener('click',function(event){showInfo(event,'GELONG BARU TENGAH – GELONG BARU BARAT 2')});
+
+        const coordinates179=[{ lat: -6.1755973, lng:          106.7955509 },
+        { lat: -6.1764159, lng: 106.7947972 },
+        { lat: -6.1772506, lng: 106.7956877 },
+        { lat: -6.1764453, lng: 106.7964816 },
+        { lat: -6.1755973, lng: 106.7955509 },
+        ]
+        const polygon179=new google.maps.Polygon({paths: coordinates179, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon179.setMap(map);
+        polygon179.addListener('click',function(event){showInfo(event,'GELONG BARU BARAT 6 – GELONG BARU BARAT 1')});
+
+        const coordinates180=[{ lat: -6.1753456, lng:          106.7936822 },
+        { lat: -6.1757483, lng: 106.794114 },
+        { lat: -6.1763723, lng: 106.7947551 },
+        { lat: -6.1755403, lng: 106.7955088 },
+        { lat: -6.1750923, lng: 106.7950206 },
+        { lat: -6.1748443, lng: 106.7948167 },
+        { lat: -6.174567, lng: 106.7950903 },
+        { lat: -6.1742043, lng: 106.7947121 },
+        { lat: -6.1753456, lng: 106.7936822 },
+        ]
+        const polygon180=new google.maps.Polygon({paths: coordinates180, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon180.setMap(map);
+        polygon180.addListener('click',function(event){showInfo(event,'GELONG BARU UTARA – GELONG BARU BARAT 6')});
+
+        const coordinates181=[{ lat: -6.1754027, lng:          106.793635 },
+        { lat: -6.1758134, lng: 106.7932703 },
+        { lat: -6.1774507, lng: 106.7950244 },
+        { lat: -6.1783547, lng: 106.7958371 },
+        { lat: -6.1785173, lng: 106.7959498 },
+        { lat: -6.1789067, lng: 106.7961804 },
+        { lat: -6.178984, lng: 106.796281 },
+        { lat: -6.17904, lng: 106.7963957 },
+        { lat: -6.179068, lng: 106.7965711 },
+        { lat: -6.17892, lng: 106.7968537 },
+        { lat: -6.1785333, lng: 106.7966176 },
+        { lat: -6.1784907, lng: 106.7966069 },
+        { lat: -6.178448, lng: 106.7966069 },
+        { lat: -6.1784187, lng: 106.7966337 },
+        { lat: -6.1783893, lng: 106.7966767 },
+        { lat: -6.1781573, lng: 106.7971729 },
+        { lat: -6.1777734, lng: 106.7979105 },
+        { lat: -6.1769547, lng: 106.7973821 },
+        { lat: -6.1767147, lng: 106.7972641 },
+        { lat: -6.1774374, lng: 106.7957996 },
+        { lat: -6.176456, lng: 106.7947401 },
+        { lat: -6.1754027, lng: 106.793635 },
+        ]
+        const polygon181=new google.maps.Polygon({paths: coordinates181, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon181.setMap(map);
+        polygon181.addListener('click',function(event){showInfo(event,'S. PARMAN – GELONG BARU SELATAN 2')});
+
+        const coordinates182=[{ lat: -6.1758462, lng:          106.7983843 },
+        { lat: -6.1764435, lng: 106.7976172 },
+        { lat: -6.1766702, lng: 106.7973275 },
+        { lat: -6.1769555, lng: 106.7974589 },
+        { lat: -6.1772729, lng: 106.7976762 },
+        { lat: -6.1777395, lng: 106.7979685 },
+        { lat: -6.1774249, lng: 106.7984245 },
+        { lat: -6.1769422, lng: 106.7990816 },
+        { lat: -6.1763315, lng: 106.7986847 },
+        { lat: -6.1758462, lng: 106.7983843 },
+        ]
+        const polygon182=new google.maps.Polygon({paths: coordinates182, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon182.setMap(map);
+        polygon182.addListener('click',function(event){showInfo(event,'GELONG BARU – GELONG BARU SELATAN')});
+
+        const coordinates183=[{ lat: -6.1788946, lng:          106.7969062 },
+        { lat: -6.1786813, lng: 106.7973542 },
+        { lat: -6.1785959, lng: 106.7976143 },
+        { lat: -6.1784839, lng: 106.7978531 },
+        { lat: -6.1781693, lng: 106.798368 },
+        { lat: -6.1775319, lng: 106.799272 },
+        { lat: -6.1771293, lng: 106.7998352 },
+        { lat: -6.1766919, lng: 106.7995214 },
+        { lat: -6.1769239, lng: 106.7992237 },
+        { lat: -6.1772919, lng: 106.7987489 },
+        { lat: -6.1778306, lng: 106.7979523 },
+        { lat: -6.1783239, lng: 106.7969518 },
+        { lat: -6.1784759, lng: 106.7966622 },
+        { lat: -6.1788946, lng: 106.7969062 },
+        ]
+        const polygon183=new google.maps.Polygon({paths: coordinates183, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon183.setMap(map);
+        polygon183.addListener('click',function(event){showInfo(event,'GELONG BARU SELATAN – TOMANG RAYA')});
+
+        const coordinates184=[{ lat: -6.1790536, lng:          106.797301 },
+        { lat: -6.1795203, lng: 106.7975451 },
+        { lat: -6.1789843, lng: 106.7985536 },
+        { lat: -6.1786909, lng: 106.7990391 },
+        { lat: -6.1778936, lng: 106.8001522 },
+        { lat: -6.1772163, lng: 106.8011097 },
+        { lat: -6.176995, lng: 106.8013887 },
+        { lat: -6.1765336, lng: 106.8010695 },
+        { lat: -6.177043, lng: 106.8003426 },
+        { lat: -6.1775336, lng: 106.7996372 },
+        { lat: -6.178371, lng: 106.7984436 },
+        { lat: -6.1785949, lng: 106.7980869 },
+        { lat: -6.1787736, lng: 106.7977597 },
+        { lat: -6.1789389, lng: 106.7975048 },
+        { lat: -6.1790536, lng: 106.797301 },
+        ]
+        const polygon184=new google.maps.Polygon({paths: coordinates184, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon184.setMap(map);
+        polygon184.addListener('click',function(event){showInfo(event,'TOMANG RAYA – KEMUNING')});
+
+        const coordinates185=[{ lat: -6.1837592, lng:          106.7981233 },
+        { lat: -6.1826032, lng: 106.7980817 },
+        { lat: -6.1820406, lng: 106.798063 },
+        { lat: -6.1813446, lng: 106.7979583 },
+        { lat: -6.1809286, lng: 106.7978859 },
+        { lat: -6.1805926, lng: 106.7977947 },
+        { lat: -6.1800193, lng: 106.7976472 },
+        { lat: -6.1796166, lng: 106.7975077 },
+        { lat: -6.1790833, lng: 106.7972449 },
+        { lat: -6.1794166, lng: 106.7966253 },
+        { lat: -6.1795339, lng: 106.7965904 },
+        { lat: -6.1796139, lng: 106.7965958 },
+        { lat: -6.1796833, lng: 106.7965636 },
+        { lat: -6.1797153, lng: 106.7965877 },
+        { lat: -6.1799019, lng: 106.7966414 },
+        { lat: -6.1802006, lng: 106.7967031 },
+        { lat: -6.1807579, lng: 106.796813 },
+        { lat: -6.1810752, lng: 106.7969203 },
+        { lat: -6.1813686, lng: 106.796982 },
+        { lat: -6.1820592, lng: 106.7970679 },
+        { lat: -6.1822672, lng: 106.7970947 },
+        { lat: -6.1829845, lng: 106.7971242 },
+        { lat: -6.1834405, lng: 106.7971751 },
+        { lat: -6.1841018, lng: 106.7972154 },
+        { lat: -6.1858645, lng: 106.7972556 },
+        { lat: -6.1858165, lng: 106.7989213 },
+        { lat: -6.1857685, lng: 106.8002543 },
+        { lat: -6.1857418, lng: 106.8008203 },
+        { lat: -6.1857525, lng: 106.801059 },
+        { lat: -6.1857498, lng: 106.8012548 },
+        { lat: -6.1852138, lng: 106.8012521 },
+        { lat: -6.1845125, lng: 106.8012454 },
+        { lat: -6.1842445, lng: 106.801228 },
+        { lat: -6.1840778, lng: 106.8012306 },
+        { lat: -6.1841257, lng: 106.8016687 },
+        { lat: -6.184035, lng: 106.8017313 },
+        { lat: -6.1837841, lng: 106.801524 },
+        { lat: -6.1836611, lng: 106.8014257 },
+        { lat: -6.1835965, lng: 106.801417 },
+        { lat: -6.1835699, lng: 106.80146 },
+        { lat: -6.1835005, lng: 106.8015995 },
+        { lat: -6.1834952, lng: 106.8016397 },
+        { lat: -6.1835272, lng: 106.8016933 },
+        { lat: -6.1835245, lng: 106.8017469 },
+        { lat: -6.1834605, lng: 106.8019561 },
+        { lat: -6.1834525, lng: 106.8021439 },
+        { lat: -6.1834312, lng: 106.8023129 },
+        { lat: -6.1833938, lng: 106.8024631 },
+        { lat: -6.1833539, lng: 106.8030586 },
+        { lat: -6.1825139, lng: 106.80308 },
+        { lat: -6.1818046, lng: 106.8030747 },
+        { lat: -6.1814926, lng: 106.8030586 },
+        { lat: -6.1811326, lng: 106.802962 },
+        { lat: -6.1813272, lng: 106.8023156 },
+        { lat: -6.1813992, lng: 106.8022271 },
+        { lat: -6.1815539, lng: 106.8015619 },
+        { lat: -6.1821193, lng: 106.8016665 },
+        { lat: -6.1820979, lng: 106.8014171 },
+        { lat: -6.1819752, lng: 106.8012105 },
+        { lat: -6.1819619, lng: 106.8011542 },
+        { lat: -6.1820419, lng: 106.8010415 },
+        { lat: -6.1820792, lng: 106.8009343 },
+        { lat: -6.1820579, lng: 106.8006795 },
+        { lat: -6.1820686, lng: 106.8005695 },
+        { lat: -6.1824712, lng: 106.8006231 },
+        { lat: -6.1825219, lng: 106.8001806 },
+        { lat: -6.1836525, lng: 106.8002664 },
+        { lat: -6.1837592, lng: 106.7981233 },
+        ]
+        const polygon185=new google.maps.Polygon({paths: coordinates185, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon185.setMap(map);
+        polygon185.addListener('click',function(event){showInfo(event,'S. PARMAN – KAMBOJA')});
+
+        const coordinates186=[{ lat: -6.182872, lng:          106.7981525 },
+        { lat: -6.18348, lng: 106.7981686 },
+        { lat: -6.1837573, lng: 106.7981901 },
+        { lat: -6.1836507, lng: 106.8001776 },
+        { lat: -6.1833627, lng: 106.8001347 },
+        { lat: -6.182824, lng: 106.8001266 },
+        { lat: -6.1824373, lng: 106.8001079 },
+        { lat: -6.1824053, lng: 106.800529 },
+        { lat: -6.1820614, lng: 106.8004914 },
+        { lat: -6.182048, lng: 106.8004404 },
+        { lat: -6.1820667, lng: 106.8002822 },
+        { lat: -6.1821414, lng: 106.7999952 },
+        { lat: -6.1822214, lng: 106.7996948 },
+        { lat: -6.1823254, lng: 106.7993193 },
+        { lat: -6.1823867, lng: 106.7990162 },
+        { lat: -6.1824507, lng: 106.7986246 },
+        { lat: -6.1824747, lng: 106.7985978 },
+        { lat: -6.182848, lng: 106.7986139 },
+        { lat: -6.182872, lng: 106.7981525 },
+        ]
+        const polygon186=new google.maps.Polygon({paths: coordinates186, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon186.setMap(map);
+        polygon186.addListener('click',function(event){showInfo(event,'KATALIA 1 – KATALIA 6')});
+
+        const coordinates187=[{ lat: -6.1827984, lng:          106.7981597 },
+        { lat: -6.182777, lng: 106.7985379 },
+        { lat: -6.182481, lng: 106.7985298 },
+        { lat: -6.182425, lng: 106.7985405 },
+        { lat: -6.1823877, lng: 106.7985835 },
+        { lat: -6.182361, lng: 106.7986532 },
+        { lat: -6.1823557, lng: 106.798798 },
+        { lat: -6.1821957, lng: 106.7995544 },
+        { lat: -6.182001, lng: 106.8002116 },
+        { lat: -6.1819664, lng: 106.8004476 },
+        { lat: -6.1820197, lng: 106.8005495 },
+        { lat: -6.181993, lng: 106.8006675 },
+        { lat: -6.1820197, lng: 106.800917 },
+        { lat: -6.181985, lng: 106.8010028 },
+        { lat: -6.181905, lng: 106.8011155 },
+        { lat: -6.181897, lng: 106.8011718 },
+        { lat: -6.1819184, lng: 106.8012576 },
+        { lat: -6.1820197, lng: 106.8014078 },
+        { lat: -6.1820384, lng: 106.8014481 },
+        { lat: -6.1820464, lng: 106.8015768 },
+        { lat: -6.1815157, lng: 106.801491 },
+        { lat: -6.1812331, lng: 106.8014159 },
+        { lat: -6.1814197, lng: 106.8007453 },
+        { lat: -6.181689, lng: 106.79982 },
+        { lat: -6.1818597, lng: 106.7991682 },
+        { lat: -6.1820704, lng: 106.7981355 },
+        { lat: -6.1827984, lng: 106.7981597 },
+        ]
+        const polygon187=new google.maps.Polygon({paths: coordinates187, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon187.setMap(map);
+        polygon187.addListener('click',function(event){showInfo(event,'CEMPAKA – KATALIA 1')});
+
+        const coordinates188=[{ lat: -6.1814931, lng:          106.8015638 },
+        { lat: -6.1813491, lng: 106.8021539 },
+        { lat: -6.1812718, lng: 106.8022692 },
+        { lat: -6.1810718, lng: 106.8029478 },
+        { lat: -6.1801891, lng: 106.8027144 },
+        { lat: -6.1793891, lng: 106.8024891 },
+        { lat: -6.1791811, lng: 106.8024489 },
+        { lat: -6.1789174, lng: 106.8023602 },
+        { lat: -6.1793334, lng: 106.8012149 },
+        { lat: -6.1797387, lng: 106.8013437 },
+        { lat: -6.1801014, lng: 106.8014188 },
+        { lat: -6.1806081, lng: 106.8014912 },
+        { lat: -6.1806934, lng: 106.8014939 },
+        { lat: -6.1807414, lng: 106.801341 },
+        { lat: -6.1814931, lng: 106.8015638 },
+        ]
+        const polygon188=new google.maps.Polygon({paths: coordinates188, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon188.setMap(map);
+        polygon188.addListener('click',function(event){showInfo(event,'NUSA INDAH – KATALIA 1 TIMUR')});
+
+        const coordinates189=[{ lat: -6.1810588, lng:          106.7992382 },
+        { lat: -6.1817627, lng: 106.7993267 },
+        { lat: -6.1811601, lng: 106.8013973 },
+        { lat: -6.1806934, lng: 106.801274 },
+        { lat: -6.1806588, lng: 106.8013169 },
+        { lat: -6.1806401, lng: 106.8014268 },
+        { lat: -6.1803788, lng: 106.8013786 },
+        { lat: -6.1810588, lng: 106.7992382 },
+        ]
+        const polygon189=new google.maps.Polygon({paths: coordinates189, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon189.setMap(map);
+        polygon189.addListener('click',function(event){showInfo(event,'DAHLIA – CEMPAKA')});
+
+        const coordinates190=[{ lat: -6.1803396, lng:          106.7991059 },
+        { lat: -6.1806916, lng: 106.799181 },
+        { lat: -6.1809903, lng: 106.799232 },
+        { lat: -6.180505, lng: 106.8007931 },
+        { lat: -6.1802996, lng: 106.8013751 },
+        { lat: -6.179761, lng: 106.8012705 },
+        { lat: -6.1796223, lng: 106.8012222 },
+        { lat: -6.1797983, lng: 106.8007099 },
+        { lat: -6.1803396, lng: 106.7991059 },
+        ]
+        const polygon190=new google.maps.Polygon({paths: coordinates190, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon190.setMap(map);
+        polygon190.addListener('click',function(event){showInfo(event,'TOMANG ANCAK – DAHLIA')});
+
+        const coordinates191=[{ lat: -6.1814829, lng:          106.7984631 },
+        { lat: -6.1807122, lng: 106.7983316 },
+        { lat: -6.1798882, lng: 106.7980795 },
+        { lat: -6.1797736, lng: 106.7980366 },
+        { lat: -6.1797256, lng: 106.7980446 },
+        { lat: -6.1796962, lng: 106.7980715 },
+        { lat: -6.1793736, lng: 106.7986937 },
+        { lat: -6.1790589, lng: 106.798565 },
+        { lat: -6.1795842, lng: 106.7975699 },
+        { lat: -6.1799442, lng: 106.797696 },
+        { lat: -6.1803202, lng: 106.7978086 },
+        { lat: -6.1806962, lng: 106.7978971 },
+        { lat: -6.1811575, lng: 106.797999 },
+        { lat: -6.1815122, lng: 106.7980661 },
+        { lat: -6.1819922, lng: 106.7981278 },
+        { lat: -6.1817602, lng: 106.7992543 },
+        { lat: -6.1814269, lng: 106.799206 },
+        { lat: -6.1815549, lng: 106.7985757 },
+        { lat: -6.1815629, lng: 106.7985221 },
+        { lat: -6.1815309, lng: 106.7984792 },
+        { lat: -6.1814829, lng: 106.7984631 },
+        ]
+        const polygon191=new google.maps.Polygon({paths: coordinates191, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon191.setMap(map);
+        polygon191.addListener('click',function(event){showInfo(event,'WIJAYA KUSUMA – P. KOMALA')});
+
+        const coordinates192=[{ lat: -6.180843, lng:          106.7984246 },
+        { lat: -6.1813124, lng: 106.7985104 },
+        { lat: -6.1814884, lng: 106.7985399 },
+        { lat: -6.1813657, lng: 106.7991997 },
+        { lat: -6.1810297, lng: 106.7991622 },
+        { lat: -6.1806084, lng: 106.7990924 },
+        { lat: -6.1802857, lng: 106.79902 },
+        { lat: -6.1800937, lng: 106.7995833 },
+        { lat: -6.1799897, lng: 106.7994894 },
+        { lat: -6.1799097, lng: 106.7994304 },
+        { lat: -6.1797151, lng: 106.7993151 },
+        { lat: -6.1796057, lng: 106.7992668 },
+        { lat: -6.1792137, lng: 106.7990924 },
+        { lat: -6.1797471, lng: 106.7981027 },
+        { lat: -6.1805284, lng: 106.7983548 },
+        { lat: -6.180715, lng: 106.7984058 },
+        { lat: -6.180843, lng: 106.7984246 },
+        ]
+        const polygon192=new google.maps.Polygon({paths: coordinates192, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon192.setMap(map);
+        polygon192.addListener('click',function(event){showInfo(event,'P. KOMALA – MELUR')});
+
+        const coordinates193=[{ lat: -6.1790354, lng:          106.7986217 },
+        { lat: -6.1793288, lng: 106.7987558 },
+        { lat: -6.1791074, lng: 106.7991286 },
+        { lat: -6.1794967, lng: 106.799303 },
+        { lat: -6.1796461, lng: 106.7993512 },
+        { lat: -6.1797901, lng: 106.7994505 },
+        { lat: -6.1798914, lng: 106.7995014 },
+        { lat: -6.1800674, lng: 106.7996517 },
+        { lat: -6.1796807, lng: 106.8008506 },
+        { lat: -6.1788328, lng: 106.8005261 },
+        { lat: -6.1783341, lng: 106.8003007 },
+        { lat: -6.1781048, lng: 106.8006119 },
+        { lat: -6.1777714, lng: 106.8004322 },
+        { lat: -6.1783181, lng: 106.7996812 },
+        { lat: -6.1788968, lng: 106.798847 },
+        { lat: -6.1790354, lng: 106.7986217 },
+        ]
+        const polygon193=new google.maps.Polygon({paths: coordinates193, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon193.setMap(map);
+        polygon193.addListener('click',function(event){showInfo(event,'MELUR – ANGGREK')});
+
+        const coordinates194=[{ lat: -6.1777437, lng:          106.8004909 },
+        { lat: -6.178125, lng: 106.8007216 },
+        { lat: -6.1783544, lng: 106.8003917 },
+        { lat: -6.1786477, lng: 106.8005338 },
+        { lat: -6.179093, lng: 106.8007055 },
+        { lat: -6.1796584, lng: 106.8009093 },
+        { lat: -6.179565, lng: 106.8012017 },
+        { lat: -6.1793117, lng: 106.8011132 },
+        { lat: -6.1788557, lng: 106.8023551 },
+        { lat: -6.178541, lng: 106.802237 },
+        { lat: -6.1778637, lng: 106.8019259 },
+        { lat: -6.1774051, lng: 106.8016738 },
+        { lat: -6.1770531, lng: 106.8014351 },
+        { lat: -6.1772344, lng: 106.8012124 },
+        { lat: -6.1777437, lng: 106.8004909 },
+        ]
+        const polygon194=new google.maps.Polygon({paths: coordinates194, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon194.setMap(map);
+        polygon194.addListener('click',function(event){showInfo(event,'ANGGREK – KAMBOJA')});
+
+        const coordinates195=[{ lat: -6.1765133, lng:          106.8011648 },
+        { lat: -6.1769186, lng: 106.801433 },
+        { lat: -6.1757986, lng: 106.8029779 },
+        { lat: -6.1756813, lng: 106.8036753 },
+        { lat: -6.1750946, lng: 106.8048769 },
+        { lat: -6.1745506, lng: 106.804598 },
+        { lat: -6.1741133, lng: 106.8052095 },
+        { lat: -6.1739746, lng: 106.805113 },
+        { lat: -6.1749879, lng: 106.8034607 },
+        { lat: -6.1752759, lng: 106.8028492 },
+        { lat: -6.1765133, lng: 106.8011648 },
+        ]
+        const polygon195=new google.maps.Polygon({paths: coordinates195, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon195.setMap(map);
+        polygon195.addListener('click',function(event){showInfo(event,'TOMANG RAYA – TUNJUNG')});
+
+        const coordinates196=[{ lat: -6.1770039, lng:          106.8014973 },
+        { lat: -6.1779959, lng: 106.8020767 },
+        { lat: -6.1791159, lng: 106.8024951 },
+        { lat: -6.1787532, lng: 106.8032676 },
+        { lat: -6.1771639, lng: 106.8025059 },
+        { lat: -6.1765773, lng: 106.8020767 },
+        { lat: -6.1770039, lng: 106.8014973 },
+        ]
+        const polygon196=new google.maps.Polygon({paths: coordinates196, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon196.setMap(map);
+        polygon196.addListener('click',function(event){showInfo(event,'KAMBOJA – KOSAMBI')});
+
+        const coordinates197=[{ lat: -6.1765133, lng:          106.8021518 },
+        { lat: -6.1770786, lng: 106.8025273 },
+        { lat: -6.1776546, lng: 106.8028492 },
+        { lat: -6.1769719, lng: 106.8039542 },
+        { lat: -6.1758413, lng: 106.8032247 },
+        { lat: -6.1758626, lng: 106.8030852 },
+        { lat: -6.1765133, lng: 106.8021518 },
+        ]
+        const polygon197=new google.maps.Polygon({paths: coordinates197, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon197.setMap(map);
+        polygon197.addListener('click',function(event){showInfo(event,'TUNJUNG – WARU')});
+
+        const coordinates198=[{ lat: -6.1777044, lng:          106.802876 },
+        { lat: -6.178723, lng: 106.8033481 },
+        { lat: -6.1778644, lng: 106.804834 },
+        { lat: -6.1771764, lng: 106.8044156 },
+        { lat: -6.1773257, lng: 106.8041849 },
+        { lat: -6.177027, lng: 106.8039864 },
+        { lat: -6.1777044, lng: 106.802876 },
+        ]
+        const polygon198=new google.maps.Polygon({paths: coordinates198, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon198.setMap(map);
+        polygon198.addListener('click',function(event){showInfo(event,'WARU – TOMANG ASLI')});
+
+        const coordinates199=[{ lat: -6.175827, lng:          106.8033105 },
+        { lat: -6.1772244, lng: 106.8042171 },
+        { lat: -6.1770004, lng: 106.8045551 },
+        { lat: -6.1767657, lng: 106.8048662 },
+        { lat: -6.176467, lng: 106.8046677 },
+        { lat: -6.175955, lng: 106.8054509 },
+        { lat: -6.175139, lng: 106.8049038 },
+        { lat: -6.175715, lng: 106.8037611 },
+        { lat: -6.175827, lng: 106.8033105 },
+        ]
+        const polygon199=new google.maps.Polygon({paths: coordinates199, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon199.setMap(map);
+        polygon199.addListener('click',function(event){showInfo(event,'TUNJUNG – AT TAQWA 2')});
+
+        const coordinates200=[{ lat: -6.177155, lng:          106.8044907 },
+        { lat: -6.1778217, lng: 106.8049145 },
+        { lat: -6.177011, lng: 106.8060678 },
+        { lat: -6.1769097, lng: 106.8061107 },
+        { lat: -6.176003, lng: 106.8054777 },
+        { lat: -6.1764884, lng: 106.8047696 },
+        { lat: -6.1767817, lng: 106.8049735 },
+        { lat: -6.1770004, lng: 106.8046463 },
+        { lat: -6.1770697, lng: 106.8046355 },
+        { lat: -6.177155, lng: 106.8044907 },
+        ]
+        const polygon200=new google.maps.Polygon({paths: coordinates200, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon200.setMap(map);
+        polygon200.addListener('click',function(event){showInfo(event,'AT TAQWA 2 – TOMANG ASLI')});
+
+        const coordinates201=[{ lat: -6.1745417, lng:          106.8047321 },
+        { lat: -6.1749897, lng: 106.8049467 },
+        { lat: -6.176931, lng: 106.8062341 },
+        { lat: -6.1763551, lng: 106.8071676 },
+        { lat: -6.1737951, lng: 106.8053222 },
+        { lat: -6.1739017, lng: 106.8051613 },
+        { lat: -6.1741897, lng: 106.8053007 },
+        { lat: -6.1745417, lng: 106.8047321 },
+        ]
+        const polygon201=new google.maps.Polygon({paths: coordinates201, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon201.setMap(map);
+        polygon201.addListener('click',function(event){showInfo(event,'RASAMALA – RASAMALA DALAM')});
+
+        const coordinates202=[{ lat: -6.177891, lng:          106.8049145 },
+        { lat: -6.1781897, lng: 106.8050218 },
+        { lat: -6.178083, lng: 106.8053115 },
+        { lat: -6.1783604, lng: 106.8054617 },
+        { lat: -6.1779657, lng: 106.806159 },
+        { lat: -6.1778804, lng: 106.8063414 },
+        { lat: -6.177859, lng: 106.8070925 },
+        { lat: -6.1774964, lng: 106.8078864 },
+        { lat: -6.1764297, lng: 106.8071676 },
+        { lat: -6.177891, lng: 106.8049145 },
+        ]
+        const polygon202=new google.maps.Polygon({paths: coordinates202, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon202.setMap(map);
+        polygon202.addListener('click',function(event){showInfo(event,'TOMANG ASLI – NANAS')});
+
+        const coordinates203=[{ lat: -6.1782644, lng:          106.8050593 },
+        { lat: -6.179587, lng: 106.8055368 },
+        { lat: -6.1794803, lng: 106.8058801 },
+        { lat: -6.1799123, lng: 106.8059713 },
+        { lat: -6.179763, lng: 106.8064165 },
+        { lat: -6.1795977, lng: 106.8065989 },
+        { lat: -6.179587, lng: 106.8070013 },
+        { lat: -6.1790537, lng: 106.8069047 },
+        { lat: -6.1784244, lng: 106.8068993 },
+        { lat: -6.1782217, lng: 106.806835 },
+        { lat: -6.177923, lng: 106.8068457 },
+        { lat: -6.1779977, lng: 106.8062449 },
+        { lat: -6.1784617, lng: 106.8054134 },
+        { lat: -6.178179, lng: 106.8053115 },
+        { lat: -6.1782644, lng: 106.8050593 },
+        ]
+        const polygon203=new google.maps.Polygon({paths: coordinates203, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon203.setMap(map);
+        polygon203.addListener('click',function(event){showInfo(event,'NANAS – SEMANGKA 2')});
+
+        const coordinates204=[{ lat: -6.177907, lng:          106.8068993 },
+        { lat: -6.1783977, lng: 106.8069423 },
+        { lat: -6.179091, lng: 106.8069583 },
+        { lat: -6.1795603, lng: 106.8070495 },
+        { lat: -6.1794963, lng: 106.8085677 },
+        { lat: -6.1793523, lng: 106.8091953 },
+        { lat: -6.1775284, lng: 106.8079615 },
+        { lat: -6.1779017, lng: 106.807248 },
+        { lat: -6.177907, lng: 106.8068993 },
+        ]
+        const polygon204=new google.maps.Polygon({paths: coordinates204, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon204.setMap(map);
+        polygon204.addListener('click',function(event){showInfo(event,'SEMANGKA 2')});
+
+        const coordinates205=[{ lat: -6.1790288, lng:          106.8029249 },
+        { lat: -6.1793701, lng: 106.8030321 },
+        { lat: -6.1789755, lng: 106.8038583 },
+        { lat: -6.1789221, lng: 106.8043518 },
+        { lat: -6.1800848, lng: 106.8046737 },
+        { lat: -6.1799568, lng: 106.8050492 },
+        { lat: -6.1796048, lng: 106.8049526 },
+        { lat: -6.1794448, lng: 106.8053925 },
+        { lat: -6.1779515, lng: 106.8048453 },
+        { lat: -6.1790288, lng: 106.8029249 },
+        ]
+        const polygon205=new google.maps.Polygon({paths: coordinates205, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon205.setMap(map);
+        polygon205.addListener('click',function(event){showInfo(event,'NANGKA – BUNI')});
+
+        const coordinates206=[{ lat: -6.1792315, lng:          106.8025386 },
+        { lat: -6.1805861, lng: 106.8028927 },
+        { lat: -6.1800848, lng: 106.8046093 },
+        { lat: -6.1789861, lng: 106.8043089 },
+        { lat: -6.1790501, lng: 106.8038904 },
+        { lat: -6.1794554, lng: 106.8029678 },
+        { lat: -6.1790821, lng: 106.8028498 },
+        { lat: -6.1792315, lng: 106.8025386 },
+        ]
+        const polygon206=new google.maps.Polygon({paths: coordinates206, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon206.setMap(map);
+        polygon206.addListener('click',function(event){showInfo(event,'KAMBOJA – NANGKA')});
+
+        const coordinates207=[{ lat: -6.1806672, lng:          106.8029141 },
+        { lat: -6.1812272, lng: 106.8030751 },
+        { lat: -6.1806459, lng: 106.8050277 },
+        { lat: -6.1816805, lng: 106.8051135 },
+        { lat: -6.1817072, lng: 106.8054354 },
+        { lat: -6.1815205, lng: 106.8054247 },
+        { lat: -6.1814245, lng: 106.806106 },
+        { lat: -6.1808485, lng: 106.8060738 },
+        { lat: -6.1799206, lng: 106.8058967 },
+        { lat: -6.1795579, lng: 106.8058377 },
+        { lat: -6.1798086, lng: 106.8051457 },
+        { lat: -6.1800112, lng: 106.8051725 },
+        { lat: -6.1806672, lng: 106.8029141 },
+        ]
+        const polygon207=new google.maps.Polygon({paths: coordinates207, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon207.setMap(map);
+        polygon207.addListener('click',function(event){showInfo(event,'BIDARA RAYA – SEMANGKA 1')});
+
+        const coordinates208=[{ lat: -6.1799499, lng:          106.8060041 },
+        { lat: -6.1806832, lng: 106.8060952 },
+        { lat: -6.1806085, lng: 106.8071949 },
+        { lat: -6.1813392, lng: 106.8072593 },
+        { lat: -6.1814672, lng: 106.8073076 },
+        { lat: -6.1816059, lng: 106.8080371 },
+        { lat: -6.1814619, lng: 106.8081659 },
+        { lat: -6.1814139, lng: 106.8085199 },
+        { lat: -6.1813179, lng: 106.8096679 },
+        { lat: -6.1798966, lng: 106.8095338 },
+        { lat: -6.1794166, lng: 106.8092549 },
+        { lat: -6.1796086, lng: 106.8081927 },
+        { lat: -6.1797259, lng: 106.8066907 },
+        { lat: -6.1799499, lng: 106.8060041 },
+        ]
+        const polygon208=new google.maps.Polygon({paths: coordinates208, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon208.setMap(map);
+        polygon208.addListener('click',function(event){showInfo(event,'SEMANGKA 2 – SAWO')});
+
+        const coordinates209=[{ lat: -6.1839178, lng:          106.8084556 },
+        { lat: -6.1837552, lng: 106.8099201 },
+        { lat: -6.1813872, lng: 106.8096304 },
+        { lat: -6.1815072, lng: 106.8085199 },
+        { lat: -6.1815125, lng: 106.8081766 },
+        { lat: -6.1816512, lng: 106.808123 },
+        { lat: -6.1823605, lng: 106.8082464 },
+        { lat: -6.1826165, lng: 106.8082464 },
+        { lat: -6.1829098, lng: 106.8083536 },
+        { lat: -6.1839178, lng: 106.8084556 },
+        ]
+        const polygon209=new google.maps.Polygon({paths: coordinates209, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon209.setMap(map);
+        polygon209.addListener('click',function(event){showInfo(event,'MELATI – KRESNA')});
+
+        const coordinates210=[{ lat: -6.1816005, lng:          106.8054891 },
+        { lat: -6.1823472, lng: 106.8056607 },
+        { lat: -6.1824539, lng: 106.8059611 },
+        { lat: -6.1822512, lng: 106.8071413 },
+        { lat: -6.1826779, lng: 106.8071735 },
+        { lat: -6.1825925, lng: 106.808182 },
+        { lat: -6.1816859, lng: 106.8080425 },
+        { lat: -6.1816219, lng: 106.8075919 },
+        { lat: -6.1815365, lng: 106.8072486 },
+        { lat: -6.1812912, lng: 106.8071413 },
+        { lat: -6.1807152, lng: 106.8070984 },
+        { lat: -6.1807792, lng: 106.8061328 },
+        { lat: -6.1814726, lng: 106.8061757 },
+        { lat: -6.1816005, lng: 106.8054891 },
+        ]
+        const polygon210=new google.maps.Polygon({paths: coordinates210, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon210.setMap(map);
+        polygon210.addListener('click',function(event){showInfo(event,'SEMANGKA – MELATI')});
+
+        const coordinates211=[{ lat: -6.181286, lng:          106.803091 },
+        { lat: -6.181494, lng: 106.803129 },
+        { lat: -6.182987, lng: 106.80314 },
+        { lat: -6.182928, lng: 106.804545 },
+        { lat: -6.1828773, lng: 106.8045691 },
+        { lat: -6.182432, lng: 106.804518 },
+        { lat: -6.181696, lng: 106.804556 },
+        { lat: -6.181675, lng: 106.805065 },
+        { lat: -6.180731, lng: 106.804969 },
+        { lat: -6.181286, lng: 106.803091 },
+        ]
+        const polygon211=new google.maps.Polygon({paths: coordinates211, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon211.setMap(map);
+        polygon211.addListener('click',function(event){showInfo(event,'KAMBOJA – WULUH 4')});
+
+        const coordinates212=[{ lat: -6.183056, lng:          106.803145 },
+        { lat: -6.183435, lng: 106.8031238 },
+        { lat: -6.1834392, lng: 106.802684 },
+        { lat: -6.1835173, lng: 106.8022764 },
+        { lat: -6.1835243, lng: 106.8019653 },
+        { lat: -6.1835972, lng: 106.8017078 },
+        { lat: -6.1835696, lng: 106.8016112 },
+        { lat: -6.1836198, lng: 106.8014718 },
+        { lat: -6.1840396, lng: 106.8018392 },
+        { lat: -6.1842921, lng: 106.8023904 },
+        { lat: -6.1845127, lng: 106.8027485 },
+        { lat: -6.184742, lng: 106.803022 },
+        { lat: -6.185307, lng: 106.80358 },
+        { lat: -6.185056, lng: 106.803698 },
+        { lat: -6.184672, lng: 106.803564 },
+        { lat: -6.184539, lng: 106.803623 },
+        { lat: -6.184336, lng: 106.803574 },
+        { lat: -6.183536, lng: 106.803596 },
+        { lat: -6.183563, lng: 106.804148 },
+        { lat: -6.183723, lng: 106.804422 },
+        { lat: -6.183782, lng: 106.804894 },
+        { lat: -6.183808, lng: 106.80549 },
+        { lat: -6.183483, lng: 106.80543 },
+        { lat: -6.182347, lng: 106.805548 },
+        { lat: -6.181744, lng: 106.805425 },
+        { lat: -6.181739, lng: 106.80462 },
+        { lat: -6.1824244, lng: 106.8045839 },
+        { lat: -6.1828112, lng: 106.8046175 },
+        { lat: -6.18295, lng: 106.804615 },
+        { lat: -6.1829817, lng: 106.8045184 },
+        { lat: -6.183056, lng: 106.803145 },
+        ]
+        const polygon212=new google.maps.Polygon({paths: coordinates212, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon212.setMap(map);
+        polygon212.addListener('click',function(event){showInfo(event,'KOTA BAMBU UTARA – SEMANGKA RAYA')});
+
+        const coordinates213=[{ lat: -6.1836165, lng:          106.8036495 },
+        { lat: -6.1843365, lng: 106.8036388 },
+        { lat: -6.1845551, lng: 106.8036656 },
+        { lat: -6.1847045, lng: 106.8036656 },
+        { lat: -6.1851045, lng: 106.8037622 },
+        { lat: -6.1853711, lng: 106.8036173 },
+        { lat: -6.1855791, lng: 106.8038104 },
+        { lat: -6.1856431, lng: 106.8040358 },
+        { lat: -6.1855044, lng: 106.8055753 },
+        { lat: -6.1838831, lng: 106.8054841 },
+        { lat: -6.1837925, lng: 106.8043791 },
+        { lat: -6.1836272, lng: 106.8041323 },
+        { lat: -6.1836165, lng: 106.8036495 },
+        ]
+        const polygon213=new google.maps.Polygon({paths: coordinates213, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon213.setMap(map);
+        polygon213.addListener('click',function(event){showInfo(event,'KOTA BAMBU UTARA 5 – SEMANGKA RAYA')});
+
+        const coordinates214=[{ lat: -6.1824272, lng:          106.8056129 },
+        { lat: -6.1834245, lng: 106.8055002 },
+        { lat: -6.1836538, lng: 106.8055592 },
+        { lat: -6.1837018, lng: 106.8060957 },
+        { lat: -6.1835632, lng: 106.8066268 },
+        { lat: -6.1835258, lng: 106.8070881 },
+        { lat: -6.1838618, lng: 106.8071096 },
+        { lat: -6.1838671, lng: 106.8072061 },
+        { lat: -6.1838991, lng: 106.8075924 },
+        { lat: -6.1839418, lng: 106.8077211 },
+        { lat: -6.1839045, lng: 106.8083541 },
+        { lat: -6.1834992, lng: 106.8083326 },
+        { lat: -6.1832698, lng: 106.8083219 },
+        { lat: -6.1830618, lng: 106.8082897 },
+        { lat: -6.1826405, lng: 106.8081824 },
+        { lat: -6.1826885, lng: 106.8075977 },
+        { lat: -6.1827685, lng: 106.8070988 },
+        { lat: -6.1823738, lng: 106.8070988 },
+        { lat: -6.1824218, lng: 106.8065678 },
+        { lat: -6.1825018, lng: 106.8058918 },
+        { lat: -6.1824272, lng: 106.8056129 },
+        ]
+        const polygon214=new google.maps.Polygon({paths: coordinates214, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon214.setMap(map);
+        polygon214.addListener('click',function(event){showInfo(event,'SEMANGKA RAYA – KOTA BAMBU UTARA 1')});
+
+        const coordinates215=[{ lat: -6.183728, lng:          106.8055321 },
+        { lat: -6.1854987, lng: 106.8056608 },
+        { lat: -6.1855306, lng: 106.8058539 },
+        { lat: -6.186288, lng: 106.8069805 },
+        { lat: -6.185552, lng: 106.8071736 },
+        { lat: -6.1851253, lng: 106.8072701 },
+        { lat: -6.183984, lng: 106.8071199 },
+        { lat: -6.183632, lng: 106.807077 },
+        { lat: -6.1836214, lng: 106.8067337 },
+        { lat: -6.1837814, lng: 106.8059183 },
+        { lat: -6.183728, lng: 106.8055321 },
+        ]
+        const polygon215=new google.maps.Polygon({paths: coordinates215, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon215.setMap(map);
+        polygon215.addListener('click',function(event){showInfo(event,'SEMANGKA RAYA – KOTA BAMBU UTARA 2')});
+
+        const coordinates216=[{ lat: -6.1839382, lng:          106.8072272 },
+        { lat: -6.1851541, lng: 106.8073667 },
+        { lat: -6.1862528, lng: 106.8070556 },
+        { lat: -6.1866261, lng: 106.8079139 },
+        { lat: -6.1861354, lng: 106.8086327 },
+        { lat: -6.1855701, lng: 106.8085254 },
+        { lat: -6.1842901, lng: 106.8083645 },
+        { lat: -6.1839808, lng: 106.8083216 },
+        { lat: -6.1840235, lng: 106.8077851 },
+        { lat: -6.1839382, lng: 106.8072272 },
+        ]
+        const polygon216=new google.maps.Polygon({paths: coordinates216, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon216.setMap(map);
+        polygon216.addListener('click',function(event){showInfo(event,'KOTA BAMBU UTARA 1 – 2')});
+
+        const coordinates217=[{ lat: -6.1840022, lng:          106.808461 },
+        { lat: -6.1849515, lng: 106.8085683 },
+        { lat: -6.1856021, lng: 106.8085898 },
+        { lat: -6.1860501, lng: 106.80874 },
+        { lat: -6.1851435, lng: 106.8100489 },
+        { lat: -6.1838422, lng: 106.8099202 },
+        { lat: -6.1840022, lng: 106.808461 },
+        ]
+        const polygon217=new google.maps.Polygon({paths: coordinates217, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon217.setMap(map);
+        polygon217.addListener('click',function(event){showInfo(event,'KOTA BAMBU UTARA 1 – KRESNA')});
+
+        const coordinates218=[{ lat: -6.1859541, lng:          106.7973067 },
+        { lat: -6.1876181, lng: 106.797296 },
+        { lat: -6.1875434, lng: 106.7987551 },
+        { lat: -6.1871381, lng: 106.79868 },
+        { lat: -6.1859114, lng: 106.7985942 },
+        { lat: -6.1859541, lng: 106.7973067 },
+        ]
+        const polygon218=new google.maps.Polygon({paths: coordinates218, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon218.setMap(map);
+        polygon218.addListener('click',function(event){showInfo(event,'DHARMAIS')});
+
+        const coordinates219=[{ lat: -6.1877141, lng:          106.7972638 },
+        { lat: -6.1893673, lng: 106.7973872 },
+        { lat: -6.189282, lng: 106.7980416 },
+        { lat: -6.1893727, lng: 106.7991092 },
+        { lat: -6.189282, lng: 106.8000318 },
+        { lat: -6.1886154, lng: 106.8000479 },
+        { lat: -6.1880394, lng: 106.8000962 },
+        { lat: -6.1875007, lng: 106.800123 },
+        { lat: -6.1872554, lng: 106.800123 },
+        { lat: -6.1867114, lng: 106.8000211 },
+        { lat: -6.1864394, lng: 106.8001284 },
+        { lat: -6.1858634, lng: 106.8001499 },
+        { lat: -6.1859008, lng: 106.7986693 },
+        { lat: -6.1869834, lng: 106.7987283 },
+        { lat: -6.1872607, lng: 106.7987551 },
+        { lat: -6.1876128, lng: 106.7988624 },
+        { lat: -6.1877141, lng: 106.7972638 },
+        ]
+        const polygon219=new google.maps.Polygon({paths: coordinates219, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon219.setMap(map);
+        polygon219.addListener('click',function(event){showInfo(event,'KOTA BAMBU SELATAN 1 – 2')});
+
+        const coordinates220=[{ lat: -6.1858474, lng:          106.8002679 },
+        { lat: -6.1863274, lng: 106.8002357 },
+        { lat: -6.1867221, lng: 106.8000855 },
+        { lat: -6.1872341, lng: 106.8002035 },
+        { lat: -6.1885887, lng: 106.8001606 },
+        { lat: -6.1892713, lng: 106.8000747 },
+        { lat: -6.1892287, lng: 106.8005683 },
+        { lat: -6.1892927, lng: 106.8011691 },
+        { lat: -6.189218, lng: 106.801609 },
+        { lat: -6.1874687, lng: 106.801491 },
+        { lat: -6.1858368, lng: 106.8013729 },
+        { lat: -6.1858474, lng: 106.8002679 },
+        ]
+        const polygon220=new google.maps.Polygon({paths: coordinates220, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon220.setMap(map);
+        polygon220.addListener('click',function(event){showInfo(event,'KOTA BAMBU SELATAN 2 – 4')});
+
+        const coordinates221=[{ lat: -6.1841674, lng:          106.8013085 },
+        { lat: -6.1857034, lng: 106.8013085 },
+        { lat: -6.1857141, lng: 106.8014695 },
+        { lat: -6.1862154, lng: 106.8014587 },
+        { lat: -6.1862261, lng: 106.8017806 },
+        { lat: -6.1861621, lng: 106.8021883 },
+        { lat: -6.1861514, lng: 106.8026067 },
+        { lat: -6.1862794, lng: 106.8031861 },
+        { lat: -6.1856287, lng: 106.803111 },
+        { lat: -6.1856074, lng: 106.8037225 },
+        { lat: -6.1846154, lng: 106.8027676 },
+        { lat: -6.1844234, lng: 106.8023492 },
+        { lat: -6.1840928, lng: 106.8017913 },
+        { lat: -6.1842101, lng: 106.801684 },
+        { lat: -6.1841674, lng: 106.8013085 },
+        ]
+        const polygon221=new google.maps.Polygon({paths: coordinates221, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon221.setMap(map);
+        polygon221.addListener('click',function(event){showInfo(event,'KOTA BAMBU UTARA – SELATAN 3')});
+
+        const coordinates222=[{ lat: -6.1857141, lng:          106.8031807 },
+        { lat: -6.1860981, lng: 106.8033524 },
+        { lat: -6.1862687, lng: 106.8032344 },
+        { lat: -6.1864607, lng: 106.8033095 },
+        { lat: -6.1869514, lng: 106.8032665 },
+        { lat: -6.186994, lng: 106.8038459 },
+        { lat: -6.1871754, lng: 106.8041356 },
+        { lat: -6.1871567, lng: 106.8044789 },
+        { lat: -6.1871167, lng: 106.8048007 },
+        { lat: -6.1865567, lng: 106.8050046 },
+        { lat: -6.1865887, lng: 106.8054445 },
+        { lat: -6.186482, lng: 106.8055518 },
+        { lat: -6.1866847, lng: 106.8055518 },
+        { lat: -6.186962, lng: 106.8057234 },
+        { lat: -6.1868874, lng: 106.8060346 },
+        { lat: -6.187058, lng: 106.8063457 },
+        { lat: -6.187026, lng: 106.8065818 },
+        { lat: -6.1871647, lng: 106.8068607 },
+        { lat: -6.1873673, lng: 106.806968 },
+        { lat: -6.187698, lng: 106.806968 },
+        { lat: -6.1871967, lng: 106.8073006 },
+        { lat: -6.1867167, lng: 106.8078907 },
+        { lat: -6.186354, lng: 106.8069465 },
+        { lat: -6.1855754, lng: 106.8057771 },
+        { lat: -6.1856181, lng: 106.8049939 },
+        { lat: -6.1857034, lng: 106.8040068 },
+        { lat: -6.1856714, lng: 106.8037923 },
+        { lat: -6.1857141, lng: 106.8031807 },
+        ]
+        const polygon222=new google.maps.Polygon({paths: coordinates222, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon222.setMap(map);
+        polygon222.addListener('click',function(event){showInfo(event,'KOTA BAMBU SELATAN 4 – ORI')});
+
+        const coordinates223=[{ lat: -6.1863167, lng:          106.8014856 },
+        { lat: -6.1892286, lng: 106.8017216 },
+        { lat: -6.1889193, lng: 106.8066998 },
+        { lat: -6.1877727, lng: 106.8069412 },
+        { lat: -6.1873514, lng: 106.8068929 },
+        { lat: -6.1872234, lng: 106.8067963 },
+        { lat: -6.187122, lng: 106.8064584 },
+        { lat: -6.1870687, lng: 106.806115 },
+        { lat: -6.1869834, lng: 106.8059917 },
+        { lat: -6.1870634, lng: 106.8056537 },
+        { lat: -6.18669, lng: 106.8054713 },
+        { lat: -6.1866314, lng: 106.8051012 },
+        { lat: -6.1872394, lng: 106.8048008 },
+        { lat: -6.1872607, lng: 106.8041302 },
+        { lat: -6.1871007, lng: 106.8039425 },
+        { lat: -6.1870527, lng: 106.8033416 },
+        { lat: -6.186994, lng: 106.8031539 },
+        { lat: -6.1864767, lng: 106.8032344 },
+        { lat: -6.1863167, lng: 106.80317 },
+        { lat: -6.1862101, lng: 106.8022205 },
+        { lat: -6.1863167, lng: 106.8014856 },
+        ]
+        const polygon223=new google.maps.Polygon({paths: coordinates223, strokeColor: '#FF0000',strokeOpacity: 0.8,strokeWeight: 3,fillColor: '#FF0000',fillOpacity: 0.35,});
+        polygon223.setMap(map);
+        polygon223.addListener('click',function(event){showInfo(event,'KOTA BAMBU UTARA – ORI')});
+
+
+
+
+
+        infoWindow = new google.maps.InfoWindow();
+      }
+
+      function showInfo(event,title) {
+        infoWindow.setHeaderContent(title);
+        infoWindow.setPosition(event.latLng);
+        infoWindow.open(map);
+      }
+
+    </script>
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <!--
+      The `defer` attribute causes the script to execute after the full HTML
+      document has been parsed. For non-blocking uses, avoiding race conditions,
+      and consistent behavior across browsers, consider loading using Promises. See
+      https://developers.google.com/maps/documentation/javascript/load-maps-js-api
+      for more information.
+      -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByvRNgrsFTWHQlflwbZYvZmAH3_l3ryXk&callback=initMap&v=weekly&"
+
+    ></script>
+  </body>
+</html>
